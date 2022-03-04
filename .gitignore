@@ -13,6 +13,7 @@ plugins/*
 backups-dup-lite/
 languages/
 uploads/
+upgrade/
 
 
 # ignore specific themes
