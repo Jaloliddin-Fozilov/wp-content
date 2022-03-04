@@ -116,7 +116,7 @@ class Post_Sliders extends Widget_Base {
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => 'solid',
 				'options' => [
-					'post' => esc_html__( 'Blog', 'elementor-master' ),
+					'post' => esc_html__( 'E\'lonlar', 'elementor-master' ),
 					'infographics'  => esc_html__( 'Infographics', 'elementor-master' ),
 					'page' => esc_html__( 'Page', 'elementor-master' ),
 					'demografik-pasport' => esc_html__( 'Dempgraphic passport', 'elementor-master' ),
