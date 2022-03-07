@@ -115,7 +115,7 @@ function register_taxonomy_library() {
      );
      register_taxonomy( 'library-category', [ 'library' ], $args );
 }
-add_action( 'init', 'register_taxonomy_demografik' );
+add_action( 'init', 'register_taxonomy_library' );
 
 function library_custom_post_type() {
     register_post_type('library',
