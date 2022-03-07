@@ -14,10 +14,10 @@ get_header();
 			<div class="my__container">
 				<div class="page__body">
 				<div class="headline">
-					<h1><?php pll_e('Digital library', 'demografik'); ?></h1>
+					<h1><?php pll_e('Digital library', 'demografik') ?></h1>
 				</div>
 
-				<form role="search" class="search__form action="<?php echo site_url('/'); ?>" method="get" id="searchform">
+				<form role="search" class="search__form" method="get" id="searchform">
 					<input type="text" name="s" placeholder="<?php pll_e('Search', 'demografik') ?>"/>
 					<input type="hidden" name="post_type" value="library" /> <!-- // hidden 'products' value -->
 					<input type="submit" alt="Search" value="<?php pll_e('Search', 'demografik') ?>" />
