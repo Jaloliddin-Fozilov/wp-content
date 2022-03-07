@@ -1,0 +1,56 @@
+@media only screen and (max-width: 767px) {
+    .scrolable__categories{
+        display: block;
+    }
+    .headline h1 {
+        font-size: 22px;
+    }
+    .full__search {
+        display: none;
+    }
+    .file__list {
+        width: 90%;
+        margin: 0 auto;
+        text-align-last: left;
+    }
+    /* .img__content img {
+        width: 100px;
+        text-align-last: left;
+    } */
+    .file__title h3 {
+        font-size: 14px;
+    }
+    .file__date {
+        font-size: 14px;
+    }
+    .page__body {
+        width: 100%;
+    }
+    .search__form input {
+        font-size: 15px;
+        padding: 5px;
+        width: 75%;
+    }
+    .search__form button {
+        width: 23%;
+    }
+    .scrolable_category__list {
+        overflow-x: scroll;
+        white-space: nowrap;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        list-style: none;
+    }
+    .scrolable_category__list li {
+        margin: 0 20px;
+        text-align: center;
+    }
+    .scrolable_category__list::-webkit-scrollbar {
+        display: none;
+    }
+    .scrolable_category__list li a {
+        text-decoration: none;
+        color: #333;
+    }
+}

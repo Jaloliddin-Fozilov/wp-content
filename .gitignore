@@ -4,6 +4,7 @@
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins", "plugins", "themes" directory
 
+
 plugins/*
 !plugins/elementor-master/
 !themes/demografik/
