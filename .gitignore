@@ -4,6 +4,8 @@
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins", "plugins", "themes" directory
 
+themes/
+
 plugins/*
 !plugins/elementor-master/
 !themes/demografik/
@@ -16,8 +18,7 @@ upgrade/
 .vscode/
 
 
-# ignore specific themes
-themes/
+
 
 # ignore node dependency directories
 node_modules/
