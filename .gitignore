@@ -12,6 +12,7 @@ plugins/*
 backups-dup-lite/
 languages/
 uploads/
+.vscode/
 
 
 # ignore specific themes
