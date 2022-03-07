@@ -18,15 +18,6 @@ get_header();
           <div class="headline">
             <h1><?php  pll_e('Digital library') ?></h1>
           </div>
-          <div class="search__form">
-            <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
-              <input type="text" placeholder="Search" name="s" id="s" />
-              <input type="hidden" name="post_type" value="library" />
-              <input type="hidden" id="searchsubmit" />
-              <input type="submit" value="<?php pll_e('Search', 'demografik'); ?>" />
-            </form>
-
-          </div>
         </div>
       </div>
     </section>

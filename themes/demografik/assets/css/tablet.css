@@ -1,0 +1,32 @@
+@media only screen and (max-width: 1024px) {
+    .container{
+        width: 78.5%;
+    }
+    .headline h1{
+        font-size: 32px;
+    }
+    .full__search{
+        width: 30%;
+    }
+    /* .img__content img{
+        width: 100px;
+        text-align-last: left;
+    } */
+    .file__title h3{
+        font-size: 14px;
+    }
+    .file__date{
+        font-size: 14px;
+    }
+    .page__body{
+        width: 90%;
+    }
+    .search__form input{
+        font-size: 15px;
+        padding: 5px;
+        width: 75%;
+    }
+    .search__form button{
+        width: 23%;
+    }
+}
