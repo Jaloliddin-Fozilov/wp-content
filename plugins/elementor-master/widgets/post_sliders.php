@@ -120,7 +120,7 @@ class Post_Sliders extends Widget_Base {
 					'infographics'  => esc_html__( 'Infographics', 'elementor-master' ),
 					'page' => esc_html__( 'Page', 'elementor-master' ),
 					'demografik-pasport' => esc_html__( 'Dempgraphic passport', 'elementor-master' ),
-					'double' => esc_html__( 'Double', 'elementor-master' ),
+					'library' => esc_html__( 'Raqamli kutubxona', 'elementor-master' ),
 				],
 			]
 		);
