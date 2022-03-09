@@ -3544,18 +3544,17 @@ pre.wp-block-verse {
     align-items: center;
     background-color: #f2f2f2;
 }
-
-.ads-wrapper-blog .site-main .row {
+.ads-wrapper-blog .site-main .row{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .category-ads {
-    height: 470px;
+    height: 400px;
     margin: 1% 2%;
     background: #fff;
     border-radius: 0 0 15% 0;
@@ -3699,10 +3698,12 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
     max-width: 360px !important;
     max-height: 240px !important;
 }
+
 .post-thumbnail img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
     max-width: 100% !important;
     max-height: 100% !important;
 }
+
 .block.related-content {
     padding: 20px 0 70px;
 }
@@ -3753,9 +3754,11 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
     font-weight: 600;
     color: #181818;
 }
+
 .field__item .image-container {
     padding-bottom: 0px;
 }
+
 .node--type-news-and-stories.node--view-mode-teaser time {
     color: #656565;
     font-size: 16px;
@@ -3764,6 +3767,7 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
     text-transform: uppercase;
     font-weight: 600;
 }
+
 .node--type-news-and-stories.node--view-mode-teaser:hover .image-wrapper .field--name-field-image,
 .node--type-news-and-stories.node--view-mode-teaser:hover .image-wrapper .field--name-field-media-image,
 .node--type-news-and-stories.node--view-mode-teaser:hover .image-wrapper .field--name-field-video {
@@ -3774,6 +3778,50 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
 .node--type-news-and-stories.node--view-mode-teaser:hover .card_title span {
     background-size: 100% 2px;
 }
+
 a.node.node--type-news-and-stories.node--view-mode-teaser.no-video {
     text-decoration: none;
+}
+
+.category-ads .block__img:hover .overlay,
+.category-ads .block__img:focus .overlay {
+    opacity: 1;
+}
+
+.category-ads .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 201, 209, 0.7);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.category-ads .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.category-ads .icon__plus {
+    margin: auto;
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.category-ads .icon__plus polygon {
+    fill: #fff;
+}
+.center {
+    margin: auto;
+    width: 74%;
 }
