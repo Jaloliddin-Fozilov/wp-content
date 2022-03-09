@@ -17,7 +17,7 @@ get_header();
 					<h1><?php pll_e('Digital library', 'demografik') ?></h1>
 				</div>
 
-				<form class="search__form" method="get" action="<?php echo esc_url( home_url( '/library' ) ); ?>">
+				<form class="search__form" method="get" >
 					<input type="text" class="search-field" name="s" placeholder="<?php pll_e('Search', 'demografik') ?>" value="<?php echo get_search_query(); ?>">
 					<input type="hidden" name="post_type" value="library" />
 					<input type="submit" value="<?php pll_e('Search', 'demografik') ?>">
