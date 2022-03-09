@@ -33,6 +33,7 @@ alltTabsOnPage.forEach(tabs => {
         tab.addEventListener('click', () => {
             tabsChildrens.forEach((tab, index) => {
                 tab.classList.remove('admiral-active')
+                 jQuery('.document-slider').slick('refresh');
             });
 
             tab.classList.add('admiral-active')

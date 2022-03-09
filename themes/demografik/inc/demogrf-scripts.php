@@ -26,8 +26,8 @@ function demografik_scripts() {
     wp_enqueue_script( 'admiral', get_template_directory_uri() . '/assets/js/admiral-tabs.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'slickjs',  get_template_directory_uri() . '/assets/js/slick.js', array(), _S_VERSION, true );
-    wp_enqueue_script( 'demografik', get_template_directory_uri() . '/assets/js/demografik.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'ekko-lightbox', get_template_directory_uri() . '/assets/js/ekko-lightbox.min.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'demografik', get_template_directory_uri() . '/assets/js/demografik.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'flickity.pkgd', get_template_directory_uri() . '/assets/js/flickity.pkgd.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.min.js', array(), _S_VERSION, true );
