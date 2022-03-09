@@ -147,3 +147,13 @@
     width: 100%;
     margin: 0 auto;
 }
+
+.dropdown-menu {
+  display: grid!important;
+  grid-template-columns: 1fr 1fr!important;
+}
+
+.dropdown-menu li.menu-projects.nav__item:first-child {
+  padding-left: 46px;
+  border-left: 1px solid #eaeaea;
+}
