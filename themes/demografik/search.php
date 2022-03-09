@@ -29,7 +29,7 @@ global $wp_query;
 		  <h1 class="search-result-page-title">
 					<?php
 					/* translators: %s: search query. */
-					printf( pll_e( 'Search Results for: %s', 'demografik' ), '<span>' . get_search_query() . '</span>' );
+					printf( pll_e( 'Search Results for:', 'demografik' ), '<span>' . get_search_query() . '</span>' );
 					?>
 				</h1>
             <?php
