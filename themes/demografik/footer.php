@@ -118,45 +118,6 @@
 </footer>
 
 <?php wp_footer(); ?>
-<script>
-	//  Lighbox
-	jQuery(document).on('click', '[data-toggle="lightbox"]', function (event) {
-		event.preventDefault();
-		jQuery(this).ekkoLightbox({
-			alwaysShowClose: true
-		}, );
-	});
-		jQuery('.document-slider').slick({
-		centerMode: true,
-		centerPadding: '60px',
-		slidesToShow: 5,
-		autoplay: true,
-  		autoplaySpeed: 2000,
-		responsive: [
-			{
-			breakpoint: 768,
-			settings: {
-				arrows: true,
-				centerMode: true,
-				centerPadding: '40px',
-				slidesToShow: 3
-			}
-			},
-			{
-			breakpoint: 480,
-			settings: {
-				arrows: true,
-				centerMode: true,
-				centerPadding: '40px',
-				slidesToShow: 1
-			}
-			}
-		]
-    });
-    
-
-
-</script>
 
 </body>
 </html>

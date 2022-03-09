@@ -20,7 +20,8 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 
-			<div class="row">
+			<div class="center">
+				<div class="row">
 				<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -45,6 +46,7 @@ get_header();
 		?>
 			</div>
 
+			</div>
 	</div>
 
 </div>
