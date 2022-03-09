@@ -8,7 +8,7 @@
  */
 
 get_header();
-global $wp_query;
+// global $wp_query;
 ?>
 
 
