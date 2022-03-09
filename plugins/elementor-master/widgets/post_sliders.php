@@ -373,7 +373,7 @@ class Post_Sliders extends Widget_Base {
                                         ?>
                                         <div>
 
-                                                    <a href="e_permalink(); ?>" class="items-center w-full h-auto flex flex-col py-8 px-2 text-center ">
+                                                    <a href="<?php the_permalink(); ?>" class="items-center w-full h-auto flex flex-col py-8 px-2 text-center ">
 
                                                         <img src="<?php the_post_thumbnail_url() ?>" class="zoomable block mx-auto">
 
