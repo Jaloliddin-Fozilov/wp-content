@@ -18,7 +18,7 @@ get_header();
 				</div>
 
 				<form role="search" class="search__form" method="get" id="searchform">
-					<input type="text" name="s" placeholder="<?php pll_e('Search', 'demografik') ?>"/>
+					<input type="text" name="s" placeholder="<?php pll_e('Search', 'demografik') ?>"  value="<?php echo get_search_query(); ?>"/>
 					<input type="hidden" name="post_type" value="library" /> <!-- // hidden 'products' value -->
 					<input type="submit" alt="Search" value="<?php pll_e('Search', 'demografik') ?>" />
 				</form>
