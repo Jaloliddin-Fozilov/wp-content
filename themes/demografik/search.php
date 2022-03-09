@@ -39,15 +39,15 @@ get_header();
                   the_post();
                   ?>
                   <li class="file__list__item">
-                    <?php if (has_post_thumbnail()): ?>
+                    <?php if (has_post_thumbnail()) { ?>
                     <div class="img__content">
                       <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="placeholder" width="80px">
                     </div>
-                    <?php else : ?>
+                    <?php } else {  ?>
                       <div class="img__content">
                         <img src="<?php echo get_template_directory_uri() . '/assets/images/file__placeholder.png' ?>" alt="placeholder" width="80px">
                       </div>
-                    <?php endif; ?>
+                    <?php } ?>
                     <div class="text__content">
                       <a href="<?php echo get_permalink(); ?>" class="file__title">
                         <h3 class="fw__400">
@@ -62,6 +62,10 @@ get_header();
                 
             endwhile;
             the_posts_navigation();
+          else:
+            ?>
+            <p><?php pll_e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'demografik'); ?></p>
+            <?php
           endif;
             wp_reset_postdata();
           ?>
