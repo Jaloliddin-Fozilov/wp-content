@@ -64,35 +64,33 @@ get_header();
 				<ul class="file__list">
 					<?php if ( have_posts() ) : ?>
 						<?php
-					/* Start the Loop */
-					while ( have_posts() ) :
-						the_post();
-					?>
-						<li class="file__list__item">
-							<div class="img__content">
-								<?php if (has_post_thumbnail(  )) : ?>
-									<img src="<?php echo get_the_post_thumbnail_url() ?>" alt="placeholder" width="80px">
-									<?php else : ?>
-									<img src="<?php echo get_template_directory_uri() . '/assets/images/file__placeholder.png' ?>" alt="placeholder" width="80px">
-								<?php endif; ?>
-							</div>
-							<div class="text__content">
-								<a href="<?php the_permalink(); ?>" class="file__title">
-								<h3 class="fw__400">
-									<?php the_title(); ?>
-								</h3>
-								</a>
-								<p class="file__date fw__400"><i class="fa fa-calendar fw__400"></i><?php the_date('j.m.Y'); ?></p>
-							</div>
-						</li>
-					<?php
-					endwhile;
+							/* Start the Loop */
+							while ( have_posts() ) :
+								the_post();
+							?>
+								<li class="file__list__item">
+									<div class="img__content">
+										<?php if ( has_post_thumbnail() ) { ?>
+											<img src="<?php the_post_thumbnail_url() ?>" alt="placeholder" width="80px">
+										<?php } else {?>
+											<img src="<?php echo get_template_directory_uri() . '/assets/images/file__placeholder.png'?>" alt="placeholder" width="80px">
+										<?php } ?>
+									</div>
+									<div class="text__content">
+										<a href="<?php the_permalink(); ?>" class="file__title">
+										<h3 class="fw__400">
+											<?php the_title(); ?>
+										</h3>
+										</a>
+										<p class="file__date fw__400"><i class="fa fa-calendar fw__400"></i><?php echo get_the_date('j.m.Y'); ?></p>
+									</div>
+								</li>
+							<?php
+							endwhile;
+							the_posts_navigation();
+						else:
 
-						the_posts_navigation();
-
-					else:
-
-						get_template_part( 'template-parts/category-ads', 'none' );
+						get_template_part( 'template-parts/content', 'none' );
 
 					endif;
 					?>
