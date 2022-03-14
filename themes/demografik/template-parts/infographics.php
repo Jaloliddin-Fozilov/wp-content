@@ -1,18 +1,18 @@
 <?php
+
 $postslistinfografika = get_posts( [
 	'posts_per_page' => 100,
 	'post_type' => 'infographics',
 	'infographic-cat' => 'infografika',
-	'meta_key'			=> 'sort_post',
-	'orderby'			=> 'meta_value',
-	'order'=> 'DESC',
-	'orderby' => 'date',
-] ); 	
+	'meta_key' => 'sort_post',
+    'orderby' => 'meta_value_num',
+    'order' => 'ASC',	
+] ); 
 $postslistrasm = get_posts( [
 	'posts_per_page' => 100,
 	'post_type' => 'infographics',
 	'infographic-cat' => 'rasmlar',
-	'order'=> 'DESC',
+	'order'=> 'DESC',	
 	'orderby' => 'date',
 ] ); 
 $postslistvideo = get_posts( [
@@ -97,10 +97,9 @@ foreach( $postslistdocument as $post ){
 					<hr>
 				</div>
 				<div class="custom-grid-1-4 photo-gallery">
-					<?php 
+					<?php
 					foreach( $postslistinfografika as $post ):
 						setup_postdata($post);
-
 						if(has_post_thumbnail()):
 							?>
 							<div>
@@ -145,6 +144,9 @@ foreach( $postslistdocument as $post ){
 						endif;
 					endforeach;
 					wp_reset_postdata();
+
+				
+
 					?>
 				</div>
 			</div>
