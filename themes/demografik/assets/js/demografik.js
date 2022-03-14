@@ -6,7 +6,7 @@
 		}, );
 	});
 		jQuery('.document-slider').slick({
-		centerMode: true,
+		// centerMode: true,
 		centerPadding: '60px',
 		slidesToShow: 5,
 		autoplay: true,
