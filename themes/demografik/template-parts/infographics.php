@@ -3,9 +3,11 @@ $postslistinfografika = get_posts( [
 	'posts_per_page' => 100,
 	'post_type' => 'infographics',
 	'infographic-cat' => 'infografika',
+	'meta_key'			=> 'sort_post',
+	'orderby'			=> 'meta_value',
 	'order'=> 'DESC',
 	'orderby' => 'date',
-] ); 
+] ); 	
 $postslistrasm = get_posts( [
 	'posts_per_page' => 100,
 	'post_type' => 'infographics',
