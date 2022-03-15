@@ -52,6 +52,14 @@ foreach( $postslistinfografika as $post ){
 		}
 	}
 	wp_reset_postdata();
+foreach( $postslistinfografika_on_top as $post ){
+	setup_postdata($post);
+		
+	if(has_post_thumbnail()){
+			$countinfografika++;		
+		}
+	}
+	wp_reset_postdata();
 $countrasm = 0;
 foreach( $postslistrasm as $post ){
 	setup_postdata($post);
