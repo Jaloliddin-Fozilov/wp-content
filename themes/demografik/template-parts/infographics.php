@@ -4,8 +4,14 @@ $postslistinfografika_on_top = get_posts( [
 	'posts_per_page' => 100,
 	'post_type' => 'infographics',
 	'infographic-cat' => 'infografika',
-	'meta_key' => 'sort_post',
-	'meta_value' => true,
+	'meta_query' => array(
+		array(
+			'key' => 'post_on_top',
+			'value' => 301,
+			'type' => 'numeric',
+			'compare' => '<='
+		)
+	),
     'orderby' => 'meta_value_num',
     'order' => 'ASC',	
 ] );
