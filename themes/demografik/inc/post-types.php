@@ -181,6 +181,54 @@ function inter_custom_post_type() {
 add_action('init', 'inter_custom_post_type');
 
 
+
+// interaktiv xarita 
+
+function register_taxonomy_interactive_maps() {
+    $labels = array(
+        'name'              => _x( 'categories', 'taxonomy general name' ),
+        'singular_name'     => _x( 'category', 'taxonomy singular name' ),
+        'search_items'      => __( 'Search categories', 'demografik' ),
+        'all_items'         => __( 'All category', 'demografik' ),
+        'parent_item'       => __( 'Parent category', 'demografik' ),
+        'parent_item_colon' => __( 'Parent category', 'demografik' ),
+        'edit_item'         => __( 'Edit category', 'demografik' ),
+        'update_item'       => __( 'Update category', 'demografik' ),
+        'add_new_item'      => __( 'Add new category', 'demografik' ),
+        'new_item_name'     => __( 'New category name', 'demografik' ),
+        'menu_name'         => __( 'Category', 'demografik' ),
+    );
+    $args   = array(
+        'hierarchical'      => true, // make it hierarchical (like categories)
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => [ 'slug' => 'interactive-maps-category' ],
+    );
+    register_taxonomy( 'interactive-maps-category', [ 'interactive-maps' ], $args );
+}
+add_action( 'init', 'register_taxonomy_interactive_maps' );
+
+function interactive_maps_post_type() {
+   register_post_type('interactive-maps',
+       array(
+           'labels'      => array(
+               'name'          => __('Interactive maps', 'demografik'),
+               'singular_name' => __('Interactive maps', 'demografik'),
+           ),
+           'public'      => true,
+           'menu_icon'   => 'dashicons-welcome-write-blog',
+           'has_archive' => true,
+           'hierarchical' => true,
+           'taxonomies' => ['interactive-maps-category'],
+           'supports'   => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields' ),
+       )
+   );
+}
+add_action('init', 'interactive_maps_post_type');
+
+
 /**
  * Calls the class on the post edit screen.
  */

@@ -129,6 +129,17 @@ function demografik_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar interaktiv xarita', 'demografik' ),
+			'id'            => 'sidebar-maps',
+			'description'   => esc_html__( 'Add widgets here.', 'demografik' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h5 class="widget-title">',
+			'after_title'   => '</h5>',
+		)
+	);
 }
 add_action( 'widgets_init', 'demografik_widgets_init' );
 
@@ -150,20 +161,7 @@ function demografik_get_the_archive_title_prefix($prefix) {
   return $prefix;
 }
 
-// /**
-//  * Enqueue scripts and styles.
-//  */
-// function demografik_scripts() {
-// 	wp_enqueue_style( 'demografik-style', get_stylesheet_uri(), array(), _S_VERSION );
-// 	wp_style_add_data( 'demografik-style', 'rtl', 'replace' );
 
-// 	wp_enqueue_script( 'demografik-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
-// 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-// 		wp_enqueue_script( 'comment-reply' );
-// 	}
-// }
-// add_action( 'wp_enqueue_scripts', 'demografik_scripts' );
 
 require get_template_directory() . '/inc/BEM_Walker_Nav_Menu.php';
 
