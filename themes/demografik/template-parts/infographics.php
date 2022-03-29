@@ -272,7 +272,7 @@ foreach( $postslistdocument as $post ){
 					?>
 					<div class="video-block__item">
 						<div class="video-link">
-						<iframe src="<?php echo $src;?>" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe src="<?php echo $src;?>" width="100%" height="100%" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture sandbox" allowfullscreen ></iframe>
 						
 						
 						</div>
