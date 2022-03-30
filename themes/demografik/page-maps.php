@@ -107,8 +107,8 @@
               $query->the_post();
               ?>
                 <city 
-                  data-id="<?php echo get_field('region_id') == 'null' ? get_field('region') : get_field('region_id') ?>" 
-                  data-region="<?php echo get_field('region') ? get_field('region') : '' ?>" 
+                  data-id="<?php echo get_field('district_id') ? get_field('district_id') : get_field('region_id') ?>" 
+                  data-region="<?php echo get_field('district_id') ? get_field('region_name') : '' ?>" 
                   data-name="<?php the_title(); ?>" 
                   data-female="<?php the_field('female') ?>" 
                   data-male="<?php the_field('male') ?>" 
