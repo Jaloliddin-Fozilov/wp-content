@@ -131,15 +131,15 @@ $(function() {
             tooltip += '<table class="country-summary__content">';
             tooltip += '<tbody>';
             tooltip += '<tr>';
-            tooltip += '<td>Hududdagi umumiy aholi soni</td>';
+            tooltip += '<td>Hududdagi umumiy aholi soni(ming kishi)</td>';
             tooltip += '<td><strong data-colour="green">' + region_all + '</strong></td>';
             tooltip += '</tr>';
             tooltip += '<tr>';
-            tooltip += '<td>Hududdagi umumiy ayollar soni</td>';
+            tooltip += '<td>Hududdagi umumiy ayollar soni(ming kishi)</td>';
             tooltip += '<td><strong data-colour="green">' + region_female + '</strong></td>';
             tooltip += '</tr>';
             tooltip += '<tr>';
-            tooltip += '<td>Hududdagi umumiy erkaklar soni</td>';
+            tooltip += '<td>Hududdagi umumiy erkaklar soni(ming kishi)</td>';
             tooltip += '<td><strong data-colour="green">' + region_male + '</strong></td>';
             tooltip += '</tr></tbody></table></div></div></div>';
 

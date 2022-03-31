@@ -115,7 +115,7 @@
                     data-name="<?php the_title(); ?>" 
                     data-female="<?php the_field('female') ?>" 
                     data-male="<?php the_field('male') ?>" 
-                    data-all="<?php echo get_field('female') + get_field('male') ?>" 
+                    data-all="<?php the_field('all_human')  ?>" 
                     data-area="<?php the_field('area'); ?>" 
                     data-urban="<?php the_field('urban'); ?>" 
                     data-rural="<?php the_field('rural'); ?>" 
