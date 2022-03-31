@@ -106,19 +106,43 @@
             while($query->have_posts()):
               $query->the_post();
               ?>
-                <city 
-                  data-id="<?php echo get_field('district_id') ? get_field('district_id') : get_field('region_id') ?>" 
-                  data-region="<?php echo get_field('district_id') ? get_field('region_name') : '' ?>" 
-                  data-name="<?php the_title(); ?>" 
-                  data-female="<?php the_field('female') ?>" 
-                  data-male="<?php the_field('male') ?>" 
-                  data-all="<?php echo get_field('female') + get_field('male') ?>" 
-                  data-area="<?php the_field('area'); ?>" 
-                  data-urban="<?php the_field('urban'); ?>" 
-                  data-rural="<?php the_field('rural'); ?>" 
-                  data-page="#" 
-                  data-content="<?php the_content(); ?>">
-                </city>
+                <?php
+                if ( get_field('region_name') == 'null' ) {
+                  ?>
+                  <city 
+                    data-id="<?php the_field('region_id') ?>" 
+                    data-region="" 
+                    data-name="<?php the_title(); ?>" 
+                    data-female="<?php the_field('female') ?>" 
+                    data-male="<?php the_field('male') ?>" 
+                    data-all="<?php echo get_field('female') + get_field('male') ?>" 
+                    data-area="<?php the_field('area'); ?>" 
+                    data-urban="<?php the_field('urban'); ?>" 
+                    data-rural="<?php the_field('rural'); ?>" 
+                    data-page="#" 
+                    data-content="<?php the_content(); ?>">
+                  </city>
+                <?php
+                } else {
+                  ?>
+                  
+                  <city 
+                    data-id="<?php the_field('district_id') ?>" 
+                    data-region="<?php the_field('region_name') ?>" 
+                    data-name="<?php the_title(); ?>" 
+                    data-female="<?php the_field('female') ?>" 
+                    data-male="<?php the_field('male') ?>" 
+                    data-all="<?php echo get_field('female') + get_field('male') ?>" 
+                    data-area="<?php the_field('area'); ?>" 
+                    data-urban="<?php the_field('urban'); ?>" 
+                    data-rural="<?php the_field('rural'); ?>" 
+                    data-page="#" 
+                    data-content="<?php the_content(); ?>">
+                  </city>
+                <?php
+                }
+                ?>
+                
               <?php
             endwhile;
           endif;
