@@ -1195,23 +1195,23 @@
                                                         <td><strong class="reg_area">7%</strong></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Aholi soni</td>
+                                                        <td>Aholi soni (ming kishi)</td>
                                                         <td><strong class="reg_all">7%</strong></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Erkaklar soni</td>
+                                                        <td>Erkaklar soni (ming kishi)</td>
                                                         <td><strong class="reg_male">27%</strong></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Ayollar soni</td>
+                                                        <td>Ayollar soni (ming kishi)</td>
                                                         <td><strong class="reg_female">168</strong></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Shaharda yashovchilar</td>
+                                                        <td>Shaharda yashovchilar (ming kishi)</td>
                                                         <td><strong class="reg_urban">Yes</strong></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Qishloqda yashovchilar </td>
+                                                        <td>Qishloqda yashovchilar (ming kishi)</td>
                                                         <td><strong class="reg_rural"> Partnership</strong></td>
                                                     </tr>                                                   
                                                 </tbody>
