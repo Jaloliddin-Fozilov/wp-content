@@ -131,15 +131,15 @@ $(function() {
             tooltip += '<table class="country-summary__content">';
             tooltip += '<tbody>';
             tooltip += '<tr>';
-            tooltip += '<td>Hududdagi umumiy aholi soni(ming kishi)</td>';
+            tooltip += '<td>Hududdagi umumiy aholi soni (ming kishi)</td>';
             tooltip += '<td><strong data-colour="green">' + region_all + '</strong></td>';
             tooltip += '</tr>';
             tooltip += '<tr>';
-            tooltip += '<td>Hududdagi umumiy ayollar soni(ming kishi)</td>';
+            tooltip += '<td>Hududdagi umumiy ayollar soni (ming kishi)</td>';
             tooltip += '<td><strong data-colour="green">' + region_female + '</strong></td>';
             tooltip += '</tr>';
             tooltip += '<tr>';
-            tooltip += '<td>Hududdagi umumiy erkaklar soni(ming kishi)</td>';
+            tooltip += '<td>Hududdagi umumiy erkaklar soni (ming kishi)</td>';
             tooltip += '<td><strong data-colour="green">' + region_male + '</strong></td>';
             tooltip += '</tr></tbody></table></div></div></div>';
 
@@ -218,6 +218,11 @@ $(function() {
             var region_female = parent_id.attr('data-female');
             var region_male = parent_id.attr('data-male');
             var region_all = parent_id.attr('data-all');
+            var region_area = parent_id.attr('data-area');
+            var region_urban = parent_id.attr('data-urban');
+            var region_rural = parent_id.attr('data-rural');
+            var region_page = parent_id.attr('data-page');
+            var region_content = parent_id.attr('data-content');
         $('#uzbekistan g').removeClass('selected');
         $(regionid).addClass('selected');
         $(regionid).parent('g').addClass('selected');
@@ -229,6 +234,14 @@ $(function() {
         $('.female_stat').text(region_female);
         $('.male_stat').text(region_male);
         $('.region_name').text(region_name);
+        $('.reg_area').text(region_area);
+        $('.reg_all').text(region_all);
+        $('.reg_male').text(region_male);
+        $('.reg_female').text(region_female);
+        $('.reg_urban').text(region_urban);
+        $('.reg_rural').text(region_rural);
+        $('.open_map').attr("href",region_page);
+        $('.reg_content').html(region_content);
     });
 
     $(document).on('change', '#select-region', function(e) {
@@ -239,6 +252,11 @@ $(function() {
         var region_female = parent_id.attr('data-female');
         var region_male = parent_id.attr('data-male');
         var region_all = parent_id.attr('data-all');
+        var region_area = parent_id.attr('data-area');
+        var region_urban = parent_id.attr('data-urban');
+        var region_rural = parent_id.attr('data-rural');
+        var region_page = parent_id.attr('data-page');
+        var region_content = parent_id.attr('data-content');
         $('#uzbekistan g').removeClass('selected');
         $(regionid).addClass('selected');
         $(regionid).parent('g').addClass('selected');
@@ -250,6 +268,14 @@ $(function() {
         $('.female_stat').text(region_female);
         $('.male_stat').text(region_male);
         $('.region_name').text(region_name);
+        $('.reg_area').text(region_area);
+        $('.reg_all').text(region_all);
+        $('.reg_male').text(region_male);
+        $('.reg_female').text(region_female);
+        $('.reg_urban').text(region_urban);
+        $('.reg_rural').text(region_rural);
+        $('.open_map').attr("href",region_page);
+        $('.reg_content').html(region_content);
     });
 
     $(document).on('change', '#select-city', function(e) {
