@@ -120,7 +120,12 @@
                     data-urban="<?php the_field('urban'); ?>" 
                     data-rural="<?php the_field('rural'); ?>" 
                     data-page="#" 
-                    data-content="<?php the_content(); ?>">
+                    data-capacity="50"
+                    data-history="<?php the_field('history') ?>" 
+                    data-geography="<?php the_field('geography') ?>" 
+                    data-population_data="<?php the_field('population_data') ?>" 
+                    data-mahalla_data="<?php the_field('mahalla_data') ?>"
+                    data-source="<?php the_field('sources'); ?>">
                   </city>
                 <?php
                 } else {
@@ -137,7 +142,11 @@
                     data-urban="<?php the_field('urban'); ?>" 
                     data-rural="<?php the_field('rural'); ?>" 
                     data-page="#" 
-                    data-content="<?php the_content(); ?>">
+                    data-history="<?php the_field('history') ?>" 
+                    data-geography="<?php the_field('geography') ?>" 
+                    data-population_data="<?php the_field('population_data') ?>" 
+                    data-mahalla_data="<?php the_field('mahalla_data') ?>"
+                    data-source="<?php the_field('sources'); ?>">
                   </city>
                 <?php
                 }
@@ -1123,7 +1132,7 @@
                                   <svg>
                                     <use xlink:href="#icon-close"></use>
                                   </svg>
-                                  <span>  </span>
+                                  <span>Yopish</span>
                                 </button>
                                 <div class="tabs">
                                   <div class="ranking__section">
@@ -1221,38 +1230,20 @@
                                     </div>
                                 </div>
                                 <div class="country-content">
-
+                                <div class="country-content__toc">
+                                  <button class="button-naked active">Tarixi</button>
+                                  <button class="button-naked">Geografiyasi</button>
+                                  <button class="button-naked">Aholi haqida umumiy ma'lumotlar</button>
+                                  <button class="button-naked">Mahallalar haqida ma'lumot</button>
+                                  <button class="button-naked">Manbalar</button>
+                                </div> 
                                     <div class="country-content__main reg_content">
-                                        <div>
-                                            <p>Child marriage is driven by gender inequality and the belief that girls are somehow inferior to boys.
-                                            </p>
-                                            <p>In India, child marriage is also driven by:</p>
-                                            <ul>
-                                                <li><strong>Harmful traditional practices: </strong><a href="https://reproductiverights.org/document/ending-impunity-for-child-marriage-in-india-normative-and-implementation-gaps">Patriarchal
-                            social norms</a> consider that married women and girls belong to their husband’s family and women are generally seen as an economic burden. Girls are expected to be adaptable, docile, hardworking and talented wives. Customary
-                                                    laws based on religion are a <a href="https://www.reproductiverights.org/sites/crr.civicactions.net/files/documents/ChildMarriage_PersonalLaw_7.7.14.pdf">major
-                            barrier</a> in ending child marriage in India.</li>
-                                                <li><strong>Control over girls’ sexuality:</strong> Until a daughter is married, her chastity is considered to be a marker of her <a href="http://www.nirantar.net/uploads/files/EM%20Report%20-%20English%20%5BSummary%5D.pdf">father’s
-                            honour</a>. This motivates men to marry off their daughters <a href="https://www.unicef.org/protection/files/Final_India_Unicef_Rosa_Online.pdf">early</a>. Social pressure to marry at puberty can be enormous within certain
-                                                    castes. Some girls are <a href="https://www.dasra.org/resource/ending-child-marriage">promised</a> in marriage before they are born in order to “secure” their future. Once they reach puberty, <a href="https://www.dasra.org/resource/ending-child-marriage"><em>gauna</em></a>                                                    or “send-off” ceremonies take place and they are sent to their husband’s home to commence the married life.
-                                                </li>
-                                                <li><strong>Poverty</strong>: Child marriage is more common among <a href="http://documents.worldbank.org/curated/en/530891498511398503/pdf/116829-WP-P151842-PUBLIC-EICM-Global-Conference-Edition-June-27.pdf">poorer
-                            households</a>, with many families marrying off their daughters to reduce their perceived economic burden. Girls are often married off at a young age because <a href="http://www.nirantar.net/uploads/files/EM%20Report%20-%20English%20%5BSummary%5D.pdf">less
-                            dowry</a> is expected for younger brides.</li>
-                                                <li><strong>Level of education: </strong>Women with <a href="https://www.unicef.org/protection/files/Final_India_Unicef_Rosa_Online.pdf">no
-                            education</a> are six times more likely to get married than those with ten years education or more. Many families consider girls to be <a href="http://www.nirantar.net/uploads/files/EM%20Report%20-%20English%20%5BSummary%5D.pdf"><em>paraya
-                              dhan</em></a> (someone else’s wealth). This means that a girl’s productive capacities benefit her marital family, and educating daughters is therefore seen as <a href="http://www.nirantar.net/uploads/files/EM%20Report%20-%20English%20%5BSummary%5D.pdf">less
-                            of a priority</a> than educating sons, who are responsible for taking care of their biological parents in old age. Further, given a lack of jobs and employment opportunities, there is a low value for education especially in
-                                                    rural areas where distance and low quality of education are active barriers to girls’ education beyond middle school.</li>
-                                                <li><strong>Household labour: </strong>Girls are often married off at puberty when they are deemed most “<a href="http://www.nirantar.net/uploads/files/EM%20Report%20-%20English%20%5BSummary%5D.pdf">productive</a>”
-                                                    and can take care of children and conduct housework. The labour of young brides is central to some rural economies.</li>
-                                                <li><strong>Violence against girls</strong>: Some girls are married off due to lack of safety and fear of violence against women and girls in public spaces, with many cases of being reported every day. However,
-                                                    a 2014 <a href="https://www.dasra.org/resource/ending-child-marriage">study</a> found that child brides in India are at greater risk of sexual and physical violence within their marital home.
-                                                </li>
-                                            </ul>
-                                            <p><strong>Poor law enforcement: </strong>There are persisting legal loopholes that fuel <a href="https://reproductiverights.org/document/ending-impunity-for-child-marriage-in-india-normative-and-implementation-gaps">impunity
-                          for child marriage</a>. There is also low awareness of the law and barriers to access justice for women and girls.</p>
-                                        </div>
+                                    <div class="history country_item active"></div>
+                    <div class="geography country_item"></div>
+                    <div class="population_data country_item"></div>
+                    <div class="mahalla_data country_item"></div>
+                    <div class="source country_item"></div>
+                                       
                                     </div>
                                 </div>
                                 <!---->

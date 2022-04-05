@@ -3,7 +3,7 @@ function GetMap() {
         var e = $(this)[0].getBoundingClientRect(),
             trMapL = $('#uzbekistan-map').offset().left,
             trMapT = $('#uzbekistan-map').offset().top,
-            trL = $('#uzbekistan-map').width() / 2 - (parseInt(e.left, 0) + parseInt(e.width / 2, 0)) + trMapL,
+            trL = $('#uzbekistan-map').width() / 2 - (parseInt(e.left, 0) + parseInt(e.width, 0)) + trMapL,
             trT = $('#uzbekistan-map').height() / 2 - (parseInt(e.top, 0) + parseInt(e.height / 2, 0)) + trMapT;
         $(this).attr('data-transform-left', trL);
         $(this).attr('data-transform-top', trT);
@@ -175,14 +175,19 @@ $(function() {
             var region_urban = parent_id.attr('data-urban');
             var region_rural = parent_id.attr('data-rural');
             var region_page = parent_id.attr('data-page');
-            var region_content = parent_id.attr('data-content');
-
+            var region_capacity = parent_id.attr('data-capacity');
+            var region_history = parent_id.attr('data-history');
+            var region_geography = parent_id.attr('data-geography');
+            var region_population_data = parent_id.attr('data-population_data');
+            var region_mahalla_data = parent_id.attr('data-mahalla_data');
+            var region_source = parent_id.attr('data-source');
+            var region_scale = (500 / ($(parent_id)[0].getBoundingClientRect().width)).toFixed();
             $('#uzbekistan g').removeClass('selected');
             $(this).addClass('selected');
             $(this).parent('g').addClass('selected');
 
             $('#uzbekistan-map[data-zoom=true] svg').css({
-                'transform': 'scale(2) translate(' +( $(this).parent('g').attr('data-transform-left') - 100) + 'px, ' + $(this).parent('g').attr('data-transform-top') + 'px)',
+                'transform': 'scale('+region_scale+') translate(' +( $(this).parent('g').attr('data-transform-left') - 100) + 'px, ' + $(this).parent('g').attr('data-transform-top') + 'px)',
             }).parents('#uzbekistan-map').addClass('zoomed');
             $('body').addClass('zoomed');
             $('.female_stat').text(region_female);
@@ -195,7 +200,12 @@ $(function() {
             $('.reg_urban').text(region_urban);
             $('.reg_rural').text(region_rural);
             $('.open_map').attr("href",region_page);
-            $('.reg_content').html(region_content);
+            $('.reg_capacity').html(region_capacity);
+            $('.history').html(region_history);
+            $('.geography').html(region_geography);
+            $('.population_data').html(region_population_data);
+            $('.mahalla_data').html(region_mahalla_data);
+            $('.source').html(region_source);
             
             if($('body').hasClass('zoomed')){
                 $('#uzbekistan-map .map-title strong').text($(this).attr('id'));
@@ -222,12 +232,18 @@ $(function() {
             var region_urban = parent_id.attr('data-urban');
             var region_rural = parent_id.attr('data-rural');
             var region_page = parent_id.attr('data-page');
-            var region_content = parent_id.attr('data-content');
+            var region_capacity = parent_id.attr('data-capacity');
+            var region_history = parent_id.attr('data-history');
+            var region_geography = parent_id.attr('data-geography');
+            var region_population_data = parent_id.attr('data-population_data');
+            var region_mahalla_data = parent_id.attr('data-mahalla_data');
+            var region_source = parent_id.attr('data-source');
+            var region_scale = (500 / ($(regionid)[0].getBoundingClientRect().width)).toFixed();
         $('#uzbekistan g').removeClass('selected');
         $(regionid).addClass('selected');
         $(regionid).parent('g').addClass('selected');
         $('#uzbekistan-map[data-zoom=true] svg').css({
-            'transform': 'scale(3) translate(' + ($(regionid).attr('data-transform-left') - 50) + 'px, ' + $(regionid).attr('data-transform-top') + 'px)',
+            'transform': 'scale('+region_scale+') translate(' + ($(regionid).attr('data-transform-left') - 50) + 'px, ' + $(regionid).attr('data-transform-top') + 'px)',
         }).parents('#uzbekistan-map').addClass('zoomed');
         $('body').addClass('zoomed');
         $('#uzbekistan-map .map-title strong').text($(this).parent('g').attr('id'));
@@ -241,7 +257,14 @@ $(function() {
         $('.reg_urban').text(region_urban);
         $('.reg_rural').text(region_rural);
         $('.open_map').attr("href",region_page);
-        $('.reg_content').html(region_content);
+        $('.reg_capacity').html(region_capacity);
+        $('.history').html(region_history);
+        $('.geography').html(region_geography);
+        $('.population_data').html(region_population_data);
+        $('.mahalla_data').html(region_mahalla_data);
+        $('.source').html(region_source);
+        regions(parents);
+        
     });
 
     $(document).on('change', '#select-region', function(e) {
@@ -256,12 +279,20 @@ $(function() {
         var region_urban = parent_id.attr('data-urban');
         var region_rural = parent_id.attr('data-rural');
         var region_page = parent_id.attr('data-page');
-        var region_content = parent_id.attr('data-content');
+        var region_capacity = parent_id.attr('data-capacity');
+        var region_history = parent_id.attr('data-history');
+        var region_geography = parent_id.attr('data-geography');
+        var region_population_data = parent_id.attr('data-population_data');
+        var region_mahalla_data = parent_id.attr('data-mahalla_data');
+        var region_source = parent_id.attr('data-source');
+        var region_scale = (500 / ($(regionid)[0].getBoundingClientRect().width)).toFixed();
+
         $('#uzbekistan g').removeClass('selected');
+
         $(regionid).addClass('selected');
         $(regionid).parent('g').addClass('selected');
         $('#uzbekistan-map[data-zoom=true] svg').css({
-            'transform': 'scale(3) translate(' + ($(regionid).attr('data-transform-left') - 50) + 'px, ' + $(regionid).attr('data-transform-top') + 'px)',
+            'transform': 'scale('+region_scale+') translate(' + ($(regionid).attr('data-transform-left') - 50) + 'px, ' + $(regionid).attr('data-transform-top') + 'px)',
         }).parents('#uzbekistan-map').addClass('zoomed');
         $('body').addClass('zoomed');
         $('#uzbekistan-map .map-title strong').text($(this).parent('g').attr('id'));
@@ -275,7 +306,13 @@ $(function() {
         $('.reg_urban').text(region_urban);
         $('.reg_rural').text(region_rural);
         $('.open_map').attr("href",region_page);
-        $('.reg_content').html(region_content);
+        $('.reg_capacity').html(region_capacity);
+        $('.history').html(region_history);
+        $('.geography').html(region_geography);
+        $('.population_data').html(region_population_data);
+        $('.mahalla_data').html(region_mahalla_data);
+        $('.source').html(region_source);
+        regions(parents);
     });
 
     $(document).on('change', '#select-city', function(e) {
@@ -290,7 +327,13 @@ $(function() {
             var region_urban = parent_id.attr('data-urban');
             var region_rural = parent_id.attr('data-rural');
             var region_page = parent_id.attr('data-page');
-            var region_content = parent_id.attr('data-content');
+            var region_capacity = parent_id.attr('data-capacity');
+            var region_history = parent_id.attr('data-history');
+            var region_geography = parent_id.attr('data-geography');
+            var region_population_data = parent_id.attr('data-population_data');
+            var region_mahalla_data = parent_id.attr('data-mahalla_data');
+            var region_source = parent_id.attr('data-source');
+
         $('#uzbekistan g g').removeClass('selected');
         $(regionid).addClass('selected');       
         $('#uzbekistan-map .map-title strong').text($(this).attr('id'));
@@ -304,7 +347,12 @@ $(function() {
         $('.reg_urban').text(region_urban);
         $('.reg_rural').text(region_rural);
         $('.open_map').attr("href",region_page);
-        $('.reg_content').html(region_content);
+        $('.reg_capacity').html(region_capacity);
+        $('.history').html(region_history);
+        $('.geography').html(region_geography);
+        $('.population_data').html(region_population_data);
+        $('.mahalla_data').html(region_mahalla_data);
+        $('.source').html(region_source);
     });
 
     $(document).on('click', '#uzbekistan-map .map-title .map-close', function() {
@@ -345,6 +393,13 @@ $(function() {
         $(this).toggleClass('active');
         $('.country-search__container').toggle();
     })
-    
+
+    $('.button-naked').click(function() {     
+        $('.button-naked').removeClass('active');
+        $('.country_item').removeClass('active');
+        $('.country_item').eq( $(this).index()).addClass('active');
+        $(this).addClass('active');
+    });
+
 
 });
