@@ -145,21 +145,19 @@ foreach( $postslistdocument as $post ){
 				</div>
 				<div class="custom-grid-1-4 photo-gallery">
 					<?php
-					$terms = array(
+					$query = array(
 						'taxonomy' => 'infographic-cat',
 						'hide_empty' => false,
-						// 'child_of' => 25,							
+						'child_of' => 25,							
 					);
-
+					$terms = get_terms( $query );
 					if (!empty($terms)) :
 						foreach( $terms as $term ) :
-							var_dump($term);
 								?>
 								<div>
 										
 									<div class="video-21-9-rate-wrapepr img_url ">
-									<a class="href_img" href="<?php  ?>" data-title="<?php the_title(); ?>" data-gallery="infographics"
-										data-toggle="lightbox" data-target=".bd-example-modal-lg">
+									<a class="href_img" href="<?php echo get_term_link( $term ); ?>" >
 										<img src="<?php  echo z_taxonomy_image_url($term->term_id);   ?>" class="video-21-9-rate-images">
 									</a>
 									</div>
