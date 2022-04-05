@@ -166,3 +166,8 @@ h1.search-result-page-title {
   transform: translate3d(0, 0, 0)!important;
   margin-left: unset!important;
 }
+
+#category-breadcrumbs {
+  margin: 20px 0;
+  font-size: 15px;
+}

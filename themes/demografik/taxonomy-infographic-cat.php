@@ -14,6 +14,17 @@ $term = get_queried_object();
 			</div>
 		</div>
 	</div>
+	<div class="container">
+		<div class="stm_flex stm_flex_last stm_flex_center">
+			<div class="stm_titlebox__inner">
+			<?php
+				if ( function_exists('yoast_breadcrumb') ) {
+					yoast_breadcrumb( '<p id="category-breadcrumbs">','</p>' );
+				}
+			?>
+			</div>
+		</div>
+	</div>
 <?php
 
 $postslistinfografika_on_top = get_posts( [
@@ -66,27 +77,10 @@ foreach( $postslistinfografika_on_top as $post ){
 
 ?>
 
-<section class="grey-bg-section">
-	<div class="tabs-wrapper">
-		<div data-admiral-tabs=".tabs-content" class="media-page-tabs">
-			<div data-hash="tab_infographics" class="admiral-active">
-				<div class="tab-title">Infografika</div>
-				<div class="tab-new-label"><?php echo $countinfografika; ?></div>
-			</div>
-		</div>
-		</div>
-	</div>
-</section>
 <section class="content-section" style="padding-top: 0;">
 	<div class="container">
 		<div class="tabs-content">
 			<div class="admiral-active">
-				<div class="header-with-lines">
-					<h2 class="common-heading underline-text">
-						Infografika
-					</h2>
-					<hr>
-				</div>
 				<div class="custom-grid-1-4 photo-gallery">
 					<?php
 					if (!empty($postslistinfografika_on_top)) :
