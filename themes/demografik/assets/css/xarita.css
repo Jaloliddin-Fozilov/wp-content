@@ -72,9 +72,6 @@
     opacity: 0.3 !important;
 }
 
-#uzbekistan-map svg #uzbekistan>g text {
-    display: none;
-}
 
 #uzbekistan-map .map-tooltip {
     position: absolute;
