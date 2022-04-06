@@ -130,7 +130,6 @@
                 <?php
                 } else {
                   ?>
-                  
                   <city 
                     data-id="<?php the_field('district_id') ?>" 
                     data-region="<?php the_field('region_name') ?>" 

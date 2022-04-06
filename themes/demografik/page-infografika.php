@@ -153,13 +153,18 @@ foreach( $postslistdocument as $post ){
 					$terms = get_terms( $query );
 					if (!empty($terms)) :
 						foreach( $terms as $term ) :
+							if (empty(z_taxonomy_image_url($term->term_id))) {
+								$image_url = get_template_directory_uri() . '/assets/images/atlas-2022.jpg';
+							} else {
+								$image_url = z_taxonomy_image_url($term->term_id);
+							}
 								?>
 								<div>
 										
 									<div class="video-21-9-rate-wrapepr img_url ">
-									<a class="href_img" href="<?php echo get_term_link( $term ); ?>" >
-										<img src="<?php  echo z_taxonomy_image_url($term->term_id);   ?>" class="video-21-9-rate-images">
-									</a>
+										<a class="href_img" href="<?php echo get_term_link($term); ?>" >
+											<img src="<?php  echo $image_url;   ?>" class="video-21-9-rate-images">
+										</a>
 									</div>
 									<h5 class="custom-post-title"><?php echo $term->name; ?></h5>
 								
