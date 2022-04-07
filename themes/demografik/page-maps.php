@@ -112,19 +112,21 @@
                   <city 
                     data-id="<?php the_field('region_id') ?>" 
                     data-region="" 
-                    data-name="<?php the_title(); ?>" 
+                    data-name="<?php the_title(); ?>"  
+                    data-area="<?php the_field('area'); ?>"
+                    data-all="<?php the_field('all_human')  ?>"
                     data-female="<?php the_field('female') ?>" 
                     data-male="<?php the_field('male') ?>" 
-                    data-all="<?php the_field('all_human')  ?>" 
-                    data-area="<?php the_field('area'); ?>" 
+                    data-capacity="<?php the_field('capacity'); ?>" 
                     data-urban="<?php the_field('urban'); ?>" 
-                    data-rural="<?php the_field('rural'); ?>" 
-                    data-page="#" 
-                    data-capacity="50"
+                    data-rural="<?php the_field('rural'); ?>"
+                    data-number_of_families="<?php the_field('number_of_families') ?>"
+                    data-number_of_mahalla="<?php the_field('number_of_mahalla') ?>"
+                    data-page="#"
                     data-history="<?php the_field('history') ?>" 
                     data-geography="<?php the_field('geography') ?>" 
                     data-population_data="<?php the_field('population_data') ?>" 
-                    data-mahalla_data="<?php the_field('mahalla_data') ?>"
+                    data-families_data="<?php the_field('families_data') ?>"
                     data-source="<?php the_field('sources'); ?>">
                   </city>
                 <?php
@@ -133,19 +135,22 @@
                   <city 
                     data-id="<?php the_field('district_id') ?>" 
                     data-region="<?php the_field('region_name') ?>" 
-                    data-name="<?php the_title(); ?>" 
+                    data-name="<?php the_title(); ?>"  
+                    data-area="<?php the_field('area'); ?>"
+                    data-all="<?php the_field('all_human')  ?>"
                     data-female="<?php the_field('female') ?>" 
                     data-male="<?php the_field('male') ?>" 
-                    data-all="<?php echo get_field('female') + get_field('male') ?>" 
-                    data-area="<?php the_field('area'); ?>" 
+                    data-capacity="<?php the_field('capacity'); ?>" 
                     data-urban="<?php the_field('urban'); ?>" 
-                    data-rural="<?php the_field('rural'); ?>" 
-                    data-page="#" 
+                    data-rural="<?php the_field('rural'); ?>"
+                    data-number_of_families="<?php the_field('number_of_families') ?>"
+                    data-number_of_mahalla="<?php the_field('number_of_mahalla') ?>"
+                    data-page="#"
                     data-history="<?php the_field('history') ?>" 
                     data-geography="<?php the_field('geography') ?>" 
                     data-population_data="<?php the_field('population_data') ?>" 
-                    data-mahalla_data="<?php the_field('mahalla_data') ?>"
-                    data-source="<?php the_field('sources'); ?>">
+                    data-families_data="<?php the_field('families_data') ?>"
+                    data-source="<?php the_field('sources'); ?>"> 
                   </city>
                 <?php
                 }
@@ -1225,6 +1230,10 @@
                                                         <td><strong class="reg_area">7%</strong></td>
                                                     </tr>
                                                     <tr>
+                                                    <tr>
+                                                      <td>Aholi zichligi </td>
+                                                      <td><strong class="reg_capacity"></strong>/km2</td>
+                                                    </tr>
                                                         <td>Aholi soni (ming kishi)</td>
                                                         <td><strong class="reg_all">7%</strong></td>
                                                     </tr>
@@ -1243,7 +1252,15 @@
                                                     <tr>
                                                         <td>Qishloqda yashovchilar (ming kishi)</td>
                                                         <td><strong class="reg_rural"> Partnership</strong></td>
-                                                    </tr>                                                   
+                                                    </tr>        
+                                                    <tr>
+                                                      <td>Jami oilalar soni</td>
+                                                      <td><strong class="reg_family"></strong></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>Mahallalar soni</td>
+                                                      <td><strong class="reg_mahalla"></strong></td>
+                                                    </tr>                                           
                                                 </tbody>
                                             </table>
                                             <a class="open_map btn" href="#">Batafsil</a>
@@ -1255,15 +1272,15 @@
                                   <button class="button-naked active">Tarixi</button>
                                   <button class="button-naked">Geografiyasi</button>
                                   <button class="button-naked">Aholi haqida umumiy ma'lumotlar</button>
-                                  <button class="button-naked">Mahallalar haqida ma'lumot</button>
+                                  <button class="button-naked">Oilalar haqida ma'lumot</button>
                                   <button class="button-naked">Manbalar</button>
                                 </div> 
                                     <div class="country-content__main reg_content">
                                     <div class="history country_item active"></div>
-                    <div class="geography country_item"></div>
-                    <div class="population_data country_item"></div>
-                    <div class="mahalla_data country_item"></div>
-                    <div class="source country_item"></div>
+                                    <div class="geography country_item"></div>
+                                    <div class="population_data country_item"></div>
+                                    <div class="families_data country_item"></div>
+                                    <div class="source country_item"></div>
                                        
                                     </div>
                                 </div>

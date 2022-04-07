@@ -855,6 +855,7 @@ h2.region_name{
 .stat--donut .stat__title {
     font-size: 14px;
     text-align: center;
+    font-weight: 600;
 }
 
 .country-stats__detailed .country-stats__donuts .country-stats__donuts-heading {
@@ -1018,6 +1019,11 @@ h2.region_name{
     text-align: left;
     padding: 5px;
 }
+.country-summary__content td:first-child{
+    color: #673ab7;
+    font-weight: 600;
+
+}
 
 .country-summary__content strong {
     font-size: 20px;
@@ -1051,6 +1057,8 @@ h2.region_name{
     background: transparent;
     -webkit-appearance: none;
     cursor: pointer;
+    color: #2196f3;
+    font-weight: 600;
 }
 .country-content__toc button {
     font-size: 14px;
