@@ -346,6 +346,9 @@ $(function() {
             var region_rural = parent_id.attr('data-rural');
             var region_page = parent_id.attr('data-page');
             var region_capacity = parent_id.attr('data-capacity');
+            var region_number_of_families = parent_id.attr('data-number_of_families');
+            var region_number_of_mahalla = parent_id.attr('data-number_of_mahalla');
+        
             var region_history = parent_id.attr('data-history');
             var region_geography = parent_id.attr('data-geography');
             var region_population_data = parent_id.attr('data-population_data');
@@ -366,6 +369,9 @@ $(function() {
         $('.reg_rural').text(region_rural);
         $('.open_map').attr("href",region_page);
         $('.reg_capacity').html(region_capacity);
+        $('.reg_family').html(region_number_of_families);
+        $('.reg_mahalla').html(region_number_of_mahalla);
+
         $('.history').html(region_history);
         $('.geography').html(region_geography);
         $('.population_data').html(region_population_data);
