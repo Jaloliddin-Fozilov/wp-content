@@ -229,10 +229,13 @@
                         }
                         .fnt0 {
                           font-weight: normal;
-                          font-size: 3rem;
+                          font-size: 2rem;
                         }
                         .fil148 {
                           fill: black;
+                        }
+                        .zoomed .fnt0 {
+                          font-size: 1rem;
                         }
                         ]]>
                       </style>
