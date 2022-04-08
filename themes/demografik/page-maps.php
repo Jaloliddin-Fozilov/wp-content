@@ -1229,7 +1229,7 @@
                                             <table class="country-summary__content">
                                                 <tbody>
                                                     <tr>
-                                                        <td>Maydoni(km²)</td>
+                                                        <td>Maydoni(ming.kv.km)</td>
                                                         <td><strong class="reg_area">7%</strong></td>
                                                     </tr>
                                                     <tr>
