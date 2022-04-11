@@ -141,90 +141,44 @@ class Regions_Demographic extends Widget_Base {
 			'number'       => 0,
 			'pad_counts'   => false,
 		] );
-
-
-
-
-
-
 		?>
-<div class="moduletable sec3">
+	<div class="moduletable sec3">
+		<div class="custom sec3">
+			<div class="container mx-auto justify-center">
+				<div class="sec3 container mx-auto">
+					<h2 class="section__title font__primary--31 demographic-passport-title"><?php echo wp_kses( $settings['title'], array() ); ?></h2>
+					<div class="containerr demographic-passport-grid">
+						<?php 
+							if( $categories ){
+								foreach( $categories as $cat ){ ?>
+							<article id="post-<?php $cat->term_id; ?>" <?php post_class('col-3 category-ads'); ?>>
+								<a href="<?php echo $cat->slug ?>" class="block__img">
+									<span class="overlay">
+										<svg version="1.1" class="icon icon__plus" xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="6px" height="6px" viewBox="0 0 6 6"
+											style="enable-background:new 0 0 6 6;" xml:space="preserve">
+											<polygon points="6,2.6 3.4,2.6 3.4,0 2.6,0 2.6,2.6 0,2.6 0,3.4 2.6,3.4 2.6,6 3.4,6 3.4,3.4 6,3.4 ">
+											</polygon>
+										</svg>
+									</span>
 
-
-	<div class="custom sec3">
-
-		<div class="container mx-auto justify-center">
-
-
-			<div class="sec3 container mx-auto">
-
-
-				<h1 style="font-size: 24px;color: #1781b1;;text-align: center;margin-bottom: -50px;padding-top:40px;"><?php echo wp_kses( $settings['title'], array() ); ?></h1>
-				<div class="containerr">
-					<?php 
-						if( $categories ){
-							foreach( $categories as $cat ){ ?>
-
-
-								<div class="cardd">
-									<div class="face face1">
-										<div class="contentt text-center">
-											<img src="<?php echo z_taxonomy_image_url($cat->term_id); ?>">
-											<h3><?php echo $cat->name ?></h3>
-										</div>
-									</div>
-									<div class="face face2 shadow-xl">
-										<div class="contentt text-center">
-
-
-											<div class="h-32"><?php echo $cat->description ?></div>
-											<a href="<?php echo $cat->slug ?>"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"><?php echo wp_kses( $settings['button_name'], array() ); ?></button></a>
-
-
-										</div>
-									</div>
-								</div> <?php
-
-
-								// Данные в объекте $cat
-
-								// $cat->term_id
-								// $cat->name (Рубрика 1)
-								// $cat->slug (rubrika-1)
-								// $cat->term_group (0)
-								// $cat->term_taxonomy_id (4)
-								// $cat->taxonomy (category)
-								// $cat->description (Текст описания)
-								// $cat->parent (0)
-								// $cat->count (14)
-								// $cat->object_id (2743)
-								// $cat->cat_ID (4)
-								// $cat->category_count (14)
-								// $cat->category_description (Текст описания)
-								// $cat->cat_name (Рубрика 1)
-								// $cat->category_nicename (rubrika-1)
-								// $cat->category_parent (0)
-
+									<img width="360" height="240" src="<?php echo z_taxonomy_image_url($cat->term_id); ?>"
+										class="attachment-post-thumbnail size-post-thumbnail wp-post-image">
+								</a>
+								<div class="content">
+									<h3 class="title"><a href="<?php echo $cat->slug ?>" target="_blank"><?php echo $cat->name ?></a></h3>
+									<div></div>
+								</div>
+							</article>
+							<?php
+								}
 							}
-						}
-					?>
-					
+						?>
+					</div>
 				</div>
-
-
 			</div>
-
-
 		</div>
-
-
-
-
-
-
-		<p></p>
 	</div>
-</div>
 
 
 <?php
