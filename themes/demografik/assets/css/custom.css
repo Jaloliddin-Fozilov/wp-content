@@ -171,3 +171,127 @@ h1.search-result-page-title {
   margin: 20px 0;
   font-size: 15px;
 }
+      .sec3 {
+				background:#E0EFF5;
+			}
+
+
+			.containerr {
+				position: relative;
+				display: flex;
+				justify-content: center;
+        flex-wrap: wrap;
+			}
+
+
+
+
+
+			@media(max-width: 768px) {
+
+
+				.sec3 {
+					display: none;
+				}
+
+
+			}
+
+
+
+
+
+			.containerr .cardd {
+				position: relative;
+				cursor: pointer;
+			}
+
+
+			.containerr .cardd .face {
+				width: 14vw;
+				height: 200px;
+				transition: 0.5s;
+
+
+				margin-right: 10px;
+			}
+
+
+			.containerr .cardd .face.face1 {
+				position: relative;
+				background: #3aacec;
+				;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				z-index: 1;
+				transform: translateY(100px);
+
+
+				border-radius: 15px;
+			}
+
+
+			.containerr .cardd:hover .face.face1 {
+				background: #0382AB;
+				transform: translateY(0);
+
+
+				border-radius: 15px 15px 0 0;
+			}
+
+
+			.containerr .cardd .face.face1 .contentt {
+				transition: 0.5s;
+			}
+
+
+			.containerr .cardd:hover .face.face1 .contentt {
+				opacity: 1;
+			}
+
+
+			.containerr .cardd .face.face1 .contentt img {
+				max-width: 100px;
+			}
+
+
+			.containerr .cardd .face.face1 .contentt h3 {
+				margin: 10px 0 0;
+				padding: 0;
+				color: #fff;
+				text-align: center;
+				font-size: 1.5em;
+			}
+
+
+			.containerr .cardd .face.face2 {
+				position: relative;
+				background: #fff;
+				display: block;
+				justify-content: center;
+				align-items: center;
+				padding: 20px;
+				box-sizing: border-box;
+
+				transform: translateY(-100px);
+
+
+				text-align: center;
+
+
+				border-radius: 0 0 15px 15px;
+
+
+			}
+
+
+			.containerr .cardd:hover .face.face2 {
+				transform: translateY(0);
+			}
+
+
+			.containerr .cardd .face.face2 .contentt p {
+				margin: 0;
+				padding: 0;
+			}
