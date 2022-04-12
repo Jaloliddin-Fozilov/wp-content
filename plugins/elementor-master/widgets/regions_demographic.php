@@ -152,7 +152,7 @@ class Regions_Demographic extends Widget_Base {
 							if( $categories ){
 								foreach( $categories as $cat ){ ?>
 							<article id="post-<?php $cat->term_id; ?>" <?php post_class('col-3 category-ads'); ?>>
-								<a href="<?php echo $cat->slug ?>" class="block__img">
+								<a href="<?php echo get_term_link( $cat->term_id ) ?>" class="block__img">
 									<span class="overlay">
 										<svg version="1.1" class="icon icon__plus" xmlns="http://www.w3.org/2000/svg"
 											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="6px" height="6px" viewBox="0 0 6 6"
@@ -166,7 +166,7 @@ class Regions_Demographic extends Widget_Base {
 										class="attachment-post-thumbnail size-post-thumbnail wp-post-image">
 								</a>
 								<div class="content">
-									<h3 class="title"><a href="<?php echo $cat->slug ?>" target="_blank"><?php echo $cat->name ?></a></h3>
+									<h3 class="title"><a href="<?php echo get_term_link( $cat->term_id ) ?>" target="_blank"><?php echo $cat->name ?></a></h3>
 									<div></div>
 								</div>
 							</article>

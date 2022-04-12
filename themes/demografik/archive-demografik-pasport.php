@@ -1,0 +1,54 @@
+<?php
+/**
+ * The template for displaying archive pages
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package demografik
+ */
+
+get_header();
+?>
+ <div class="ads-wrapper-blog test">
+ 	<div class="site-main">
+
+		<?php if ( have_posts() ) : ?>
+
+			<header class="page-header center-title"> 
+				<?php
+				the_archive_title( '<h1 class="page-title">', '</h1>' );
+				?>
+			</header><!-- .page-header -->
+
+			<div class="center">
+				<div class="row">
+				<?php
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post();
+
+				/*
+				 * Include the Post-Type-specific template for the content.
+				 * If you want to override this in a child theme, then include a file
+				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+				 */
+				get_template_part( 'template-parts/category-ads', get_post_type() );
+
+			endwhile;
+
+			the_posts_navigation();
+
+		else:
+
+			get_template_part( 'template-parts/category-ads', 'none' );
+
+		endif;
+		?>
+			</div>
+
+			</div>
+	</div>
+
+</div>
+<?php 
+get_footer();

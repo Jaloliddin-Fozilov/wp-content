@@ -155,7 +155,7 @@ add_shortcode('infographics', 'infographics');
 
 add_filter('get_the_archive_title_prefix', 'demografik_get_the_archive_title_prefix');
 function demografik_get_the_archive_title_prefix($prefix) {
-  if ($prefix === 'Category:' || $prefix === 'Tag:') {
+  if ($prefix === 'Category:' || $prefix === 'Tag:'|| $prefix === 'category:') {
     $prefix = '';
   }
   return $prefix;
