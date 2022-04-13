@@ -3548,9 +3548,6 @@ pre.wp-block-verse {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
 }
 
 .category-ads {

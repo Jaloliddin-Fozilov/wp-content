@@ -1,0 +1,1 @@
+/opt/lampp/htdocs/demografiya/wp-content/plugins/query-monitor/wp-content/db.php
