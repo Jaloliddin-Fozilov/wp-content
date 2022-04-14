@@ -28,7 +28,6 @@
   <header class="section section__header">
         <div class="header--top">
             <div class="wrapper">
-
                 <div class="top-nav">
 
                     <div class="stm-header__row stm-header__row_top">
@@ -36,9 +35,7 @@
                             <div class="stm-header__element stm-header__element_">
 
                                 <div class="stm-logo lang-uz logo-uz">
-                                    <a href="/">
-                                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/demo_logo.png" class="attachment-full size-full">
-                                    </a>
+                                    <?php the_custom_logo();  ?>
                                 </div>
                             </div>
                         </div>
