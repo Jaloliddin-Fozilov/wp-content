@@ -61,10 +61,11 @@ do_action('tutor_course/single/before/wrap');
                     <?php tutor_load_template('single.course.course-entry-box'); ?>
                     <?php tutor_course_requirements_html(); ?>
                     <?php tutor_course_tags_html(); ?>
+                    
                     <?php tutor_course_target_audience_html(); ?>
                     <?php do_action('tutor_course/single/after/sidebar'); ?>
+
                     
-                    <span="lang">Kurs tili </span> <?php echo get_bloginfo("language") == 'uz-UZ' ? "O'zbekcha" : "Русский" ?></li>
                 </div>
             </div>
             <!-- end of /.tutor-course-details-page-main-right -->
