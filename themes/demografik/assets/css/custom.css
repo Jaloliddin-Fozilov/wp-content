@@ -171,3 +171,13 @@ h1.search-result-page-title {
   margin: 20px 0;
   font-size: 15px;
 }
+.demographic-passport-title{
+    width: 100% !important;
+    text-align: center;
+    margin: 30px 0;
+}
+.demographic-passport-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

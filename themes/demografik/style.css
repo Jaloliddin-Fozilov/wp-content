@@ -38,3 +38,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   width: 100%;
   height: 100%;
 }
+span.powered_by_link.d-block.m-l-10.m-t-10.m-b-10 {
+    display: none !important;
+}
