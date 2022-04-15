@@ -1449,6 +1449,7 @@
                                           <option value="toshkent">Toshkent viloyati</option>
                                           <option value="fargona">Farg‘ona viloyati</option>
                                           <option value="xorazm">Xorazm viloyati</option>
+                                          <option value="toshkent_sh">Toshkent shahri</option>
                                         </select>
                                     </div>
                                     <!---->
