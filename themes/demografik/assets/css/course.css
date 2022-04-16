@@ -1,0 +1,38 @@
+.tutor-course-details-header {
+    padding: 60px 0; 
+}
+
+.tutor-course-details-title {
+    color: #ffffff;
+    font-size: 46px;
+    margin-top: 0;
+    margin-bottom: 4px;
+    word-wrap: break-word;
+}
+.header-block {
+    display: flex;
+    justify-content: space-between;
+}
+.course-video {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+.course-video .video-button:after {
+    content: '';
+    display: block;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('../images/play-icon.png') no-repeat 50% 50%;
+}
+
+.video-modal {
+    max-width: 70%;
+    width: 100%;
+}

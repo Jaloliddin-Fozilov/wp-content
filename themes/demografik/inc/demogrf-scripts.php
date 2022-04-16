@@ -18,6 +18,7 @@ function demografik_scripts() {
     wp_enqueue_style( 'custom',  get_template_directory_uri() . '/assets/css/custom.css', array(), _S_VERSION );
     wp_enqueue_style( 'tablet',  get_template_directory_uri() . '/assets/css/tablet.css', array(), _S_VERSION );
     wp_enqueue_style( 'mobile',  get_template_directory_uri() . '/assets/css/mobile.css', array(), _S_VERSION );
+    wp_enqueue_style( 'course',  get_template_directory_uri() . '/assets/css/course.css', array(), _S_VERSION );
 	wp_enqueue_style( 'demografik-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'demografik-style', 'rtl', 'replace' );
 
