@@ -65,7 +65,9 @@ do_action('tutor_course/single/before/wrap');
                     <?php tutor_course_target_audience_html(); ?>
                     <?php do_action('tutor_course/single/after/sidebar'); ?>
 
-                    
+                    <div class="avator-block">
+                        <?php  ?>
+                    </div>
                 </div>
             </div>
             <!-- end of /.tutor-course-details-page-main-right -->
