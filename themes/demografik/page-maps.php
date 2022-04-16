@@ -1062,6 +1062,7 @@
                     <div class="map-panel__scroller">
                         <div class="map-panel__inner">
                             <a href="<?php echo home_url(); ?>" class="map-sidebar__back">
+                            
                                 <svg>
                                   <use xlink:href="#arrow-right"></use>
                                 </svg>

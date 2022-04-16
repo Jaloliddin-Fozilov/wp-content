@@ -41,3 +41,144 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 span.powered_by_link.d-block.m-l-10.m-t-10.m-b-10 {
     display: none !important;
 }
+/* First block css */
+.p-4 {
+  padding: 1rem !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.w-12 {
+    width: 3rem;
+}
+.h-12 {
+    height: 3rem;
+}
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+.justify-center {
+    justify-content: center;
+}
+.items-center {
+    align-items: center;
+}
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+.ml-2 {
+    margin-left: 0.5rem;
+}
+.flex-grow {
+    flex-grow: 1;
+}
+.flex-col {
+    flex-direction: column;
+}
+.text-blue-500 {
+    --text-opacity: 1;
+    color: #4299e1;
+    color: rgba(66, 153, 225, var(--text-opacity));
+}
+.flex-row {
+    flex-direction: row;
+}
+.bg-white {
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+}
+.rounded-t-lg {
+    border-radius: 0.5rem;  
+}
+.rounded-b-lg {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.p-2 {
+    padding: 0.5rem !important;
+}
+@media (min-width: 1200px){
+    [class*="span"] {
+        float: left;
+        min-height: 1px;
+        /* margin-left: 20px; */
+    }
+}
+.text-gray-800 {
+    --text-opacity: 1;
+    color: #2d3748;
+    color: rgba(45, 55, 72, var(--text-opacity));
+}
+
+.grid {
+    display: grid;
+}
+.gap-4 {
+    grid-gap: 1rem;
+    gap: 1rem;
+}
+.grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+.text-gray-600 {
+    --text-opacity: 1;
+    color: #718096;
+    color: rgba(113, 128, 150, var(--text-opacity));
+}
+.text-blue-400 {
+    --text-opacity: 1;
+    color: #63b3ed;
+    color: rgba(99, 179, 237, var(--text-opacity));
+}
+.w-full {
+    width: 100%;
+}
+[class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+}
+.col-span-12 {
+    grid-column: span 12 / span 12;
+}
+@media (min-width: 640px){
+    .sm\:col-span-6 {
+        grid-column: span 6 / span 6;
+    }
+}
+@media (min-width: 768px){
+    .md\:col-span-3 {
+        grid-column: span 3 / span 3;
+    }
+}
+@media (min-width: 640px){
+    .container {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px){
+    .container {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px){
+    .container {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px){
+    .container {
+        max-width: 1280px;
+    }
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.container.w-full.p-5.mx-auto {
+    padding: 3rem 0px 0px 0px !important;
+}
