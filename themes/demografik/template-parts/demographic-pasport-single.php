@@ -92,7 +92,7 @@
 			<div class="paragraph-list">
 				<section class="container paragraph--section--basic-text">
 					<?php the_content(); ?>
-												<!-- First block -->
+<!-- First block -->
 
     <div class="flex items-center  text-gray-800 justify-center">
       <div class="container w-full p-5 mx-auto">
@@ -482,7 +482,7 @@
 
     <!-- Table and diagrams -->
     <div class="container">
-    <div class="wrapper tabs-div">
+    <div class="wrapper">
       <ul class="block_list">
         <li class="block" data-uuid="1">
           <div class="block_icon" data-uuid="1">
