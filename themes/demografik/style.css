@@ -186,10 +186,10 @@ img, video {
     width: 90%;
     margin: 0 auto;
 }
-.wrapper{
+/* .wrapper{
     width: 100%;
     padding: 50px 0;
-}
+} */
 .block_list{
     display: flex;
     flex-wrap: wrap;
@@ -269,10 +269,10 @@ body{
     width: 90%;
     margin: 0 auto;
 }
-.wrapper{
+/* .wrapper{
     width: 100%;
     padding: 50px 0;
-}
+} */
 .unvisible{
     display: none;
 }
