@@ -27,7 +27,7 @@
 <?php wp_body_open(); ?>
   <header class="section section__header">
         <div class="header--top">
-            <div class="wrapper">
+            <div class="top-wrapper">
                 <div class="top-nav">
 
                     <div class="stm-header__row stm-header__row_top">
