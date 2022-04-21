@@ -40,6 +40,7 @@ get_header();
 			);?>
 			<?php $my_query = new WP_Query($args); ?>
 			<?php if( $my_query->have_posts() ) : ?>
+				
 			<section
 				class="views-element-container related-content block block-views block-views-block-news-and-stories-block-related-content">
 				<h2 class="container">Related posts</h2>
@@ -90,6 +91,8 @@ get_header();
 
 
 			</section>
+
+
 			<?php endif; ?>
 			<?php wp_reset_query();?>
 			<?php endif; ?>

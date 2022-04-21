@@ -180,5 +180,146 @@ img, video {
     margin-right: auto;
 }
 .container.w-full.p-5.mx-auto {
-    padding: 3rem 0px 0px 0px !important;
+    padding: 0px 0px 3rem 0px !important;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.wrapper{
+    width: 100%;
+    padding: 50px 0;
+}
+.block_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.tax-demografik-category .block{
+    width: 215px;
+    height: 200px;
+    background-color: #3aacec;
+    border-radius: 15px;
+    margin: 10px 0;
+    position: relative;
+}
+.tabs-div .block{
+    width: 215px;
+    height: 200px;
+    background-color: #3aacec;
+    border-radius: 15px;
+    margin: 10px 0;
+    position: relative;
+}
+.block_icon{
+    text-align: center;
+    padding-top: 50px;
+}
+.block_icon path{
+    fill: #fff;
+}
+.block_icon svg{
+    width: 36px;
+}
+.block_icon i{
+    color: #fff;
+    font-size: 36px;
+}
+.block_name{
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    position: absolue !important;
+    bottom: 10px;
+    left: 50%;
+}
+.unvisible{
+    display: none;
+}
+.content_list{
+    list-style: none;
+}
+@media screen and (min-width: 1850px) {
+ .tax-demografik-category .block {
+     width: 270px;
+  }
+  .tabs-div .block {
+     width: 270px;
+  }
+}
+.unvisible{
+    display: none;
+}
+.content_list{
+    list-style: none;
+}
+.dataTables_length label div .dropdown-menu {
+    display: block !important;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.wrapper{
+    width: 100%;
+    padding: 50px 0;
+}
+.unvisible{
+    display: none;
+}
+.content_list, .button_list{
+    list-style: none;
+}
+.button_list{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+}
+.button_icon{
+    background: #eee;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: all .3s;
+}
+.button_icon:hover{
+    background: rgb(211, 211, 211);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+img {
+    vertical-align: middle;
+}
+
+
+.tax-demografik-category .button_list li.block {
+    background: transparent !important;
+    height: auto;
+}   
+
+.block_name h4 {
+    color: #fff;
+}
+.dataTables_length label div .dropdown-menu {
+    display: none !important;
+}
+.ads-post {
+    background-color: #f2f2f2;
+}
+div#table_6_length {
+    display: none !important;
+}
+
+.dt-buttons {
+    display: none !important;
 }

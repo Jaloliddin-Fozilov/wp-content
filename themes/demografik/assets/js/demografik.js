@@ -117,3 +117,39 @@ function uzbekistan(year, month, date, hours, minutes, seconds) {
 
 }
 window.onload = maind
+
+const blocks = document.querySelectorAll(".block")
+const contents = document.querySelectorAll(".content_block")
+for(let i = 0; i < blocks.length; i++){
+    blocks[i].addEventListener('click', (e) => {
+        if(e.target.className || !e.target.className){
+            if(contents[e.target.dataset.uuid - 1].classList.contains('unvisible')){
+                for(let j = 0; j < contents.length; j++){
+                    if(!contents[j].classList.contains('unvisible')){
+                        contents[j].classList.add('unvisible')
+                    }
+                }
+                contents[e.target.dataset.uuid - 1].classList.remove('unvisible')
+            }
+        }
+    })
+}
+
+const buttons = document.querySelectorAll(".button_list")
+const inner_contents = document.querySelectorAll(".content_item")
+for(let i = 0; i < buttons.length; i++){
+    buttons[i].addEventListener('click', (e) => {
+        e.preventDefault()
+        console.log(e.target.dataset.uuid);
+        if(e.target.className || !e.target.className){
+            if(inner_contents[e.target.dataset.uuid - 1].classList.contains('unvisible')){
+                for(let j = 0; j < inner_contents.length; j++){
+                    if(!inner_contents[j].classList.contains('unvisible')){
+                        inner_contents[j].classList.add('unvisible')
+                    }
+                }
+                inner_contents[e.target.dataset.uuid - 1].classList.remove('unvisible')
+            }
+        }
+    })
+}
