@@ -64,7 +64,7 @@ $profile_url = tutor_utils()->profile_url( $authordata->ID, true );
                         <h4 class="modal-title" id="myModalLabel"><?php the_title(); ?></h4>
                     </div>
                     <div class="modal-body">
-                        <?php tutor_utils()->has_video_in_single() ? tutor_course_video() : '' ?>
+                        <?php tutor_utils()->has_video_in_single() ? tutor_course_video() : get_tutor_course_thumbnail(); ?>
                     </div>
                 </div>
             </div>
