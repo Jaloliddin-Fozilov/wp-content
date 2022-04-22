@@ -145,13 +145,13 @@ class Regions_Demographic extends Widget_Base {
 	<div class="moduletable sec3">
 		<div class="custom sec3">
 			<div class="container mx-auto justify-center">
-				<div class="sec3 container mx-auto">
+				<div class="sec3 mx-auto">
 					<h2 class="section__title font__primary--31 demographic-passport-title"><?php echo wp_kses( $settings['title'], array() ); ?></h2>
 					<div class="containerr demographic-passport-grid">
 						<?php 
 							if( $categories ){
 								foreach( $categories as $cat ){ ?>
-							<article id="post-<?php $cat->term_id; ?>" <?php post_class('col-3 category-ads'); ?>>
+							<article id="post-<?php $cat->term_id; ?>" <?php post_class('col-4 category-ads'); ?>>
 								<a href="<?php echo get_term_link( $cat->term_id ) ?>" class="block__img">
 									<span class="overlay">
 										<svg version="1.1" class="icon icon__plus" xmlns="http://www.w3.org/2000/svg"

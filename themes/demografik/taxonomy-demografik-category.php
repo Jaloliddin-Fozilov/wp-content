@@ -1040,9 +1040,8 @@ get_header();
   </div>
 
     <!-- Table and diagrams end -->
-
-    <div class="center">
-      <div class="row">
+      <div class="container">
+      <div class="row" style="justify-content: space-between;margin: 30px 0px;height: 300px;flex-direction: column;">
         <?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -1053,7 +1052,7 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/category-ads', get_post_type() );
+				get_template_part( 'template-parts/category-pasport-no-image', get_post_type() );
 
 			endwhile;
 
@@ -1061,15 +1060,14 @@ get_header();
 
 		else:
 
-			get_template_part( 'template-parts/category-ads', 'none' );
+			get_template_part( 'template-parts/category-pasport-no-image', 'none' );
 
 		endif;
 		?>
       </div>
 
     </div>
-  </div>
-
+</div>
 </div>
 <?php 
 get_footer();

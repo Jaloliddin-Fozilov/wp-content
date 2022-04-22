@@ -323,3 +323,43 @@ div#table_6_length {
 .dt-buttons {
     display: none !important;
 }
+.containerr.demographic-passport-grid .category-ads {
+    margin: 1% 0%;
+}
+
+.type-demografik-pasport .block {
+    background-color: #337ab7;
+}
+
+.tax-demografik-category .button_list li.block {
+    background: transparent !important;
+    height: auto;
+}   
+
+@media screen and (min-width: 1850px) {
+ .type-demografik-pasport .block {
+     width: 270px;
+  }
+  .type-demografik-pasport .block {
+     width: 270px;
+  }
+}
+
+.type-demografik-pasport .block{
+    width: 215px;
+    height: 200px;
+    background-color: #3aacec;
+    border-radius: 15px;
+    margin: 10px 10px;
+    position: relative;
+}
+.type-demografik-pasport .block_list {
+    justify-content: flex-start;
+}
+.category-pasport-regions {
+    margin: 5px;
+    font-size: 20px;
+}
+.block_list .block:hover{
+    cursor: pointer;
+}
