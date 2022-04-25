@@ -216,5 +216,5 @@ add_action('init', function() {
 	pll_register_string('demografik', 'Search');
 	pll_register_string('demografik', 'Categories');
 	pll_register_string('demografik', 'Search Results for:');
-
+	pll_register_string('demografik', 'About the instructor');
   });
