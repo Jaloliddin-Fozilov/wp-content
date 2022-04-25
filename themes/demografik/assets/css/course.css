@@ -42,3 +42,10 @@
 .tutor-ratings.tutor-is- {
     display: none;
 }
+.custom-instructor-block h3 {
+    display: none;
+}
+
+.avator-block {
+    margin-top: 24px;
+}
