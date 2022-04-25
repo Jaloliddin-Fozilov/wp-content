@@ -547,38 +547,38 @@ get_header();
            <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode1', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
-              <li class="inner_block" data-uuid="1">
-                <button class="button_icon" data-uuid="1">
-                  <img data-uuid="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+              <li class="inner_block" data-id="1">
+                <button class="button_icon" data-id="1">
+                  <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="2">
-                <button class="button_icon" data-uuid="2">
-                  <img data-uuid="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+              <li class="inner_block" data-id="2">
+                <button class="button_icon" data-id="2">
+                  <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="3">
-                <button class="button_icon" data-uuid="3">
-                  <img data-uuid="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+              <li class="inner_block" data-id="3">
+                <button class="button_icon" data-id="3">
+                  <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="4">
-                <button class="button_icon" data-uuid="4">
-                  <img data-uuid="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+              <li class="inner_block" data-id="4">
+                <button class="button_icon" data-id="4">
+                  <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
                 </button>
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one1', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two1', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three1', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four1', $queried_object )); ?>
               </li>
             </ul>
@@ -588,38 +588,38 @@ get_header();
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode2', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
-              <li class="inner_block" data-uuid="5">
-                <button class="button_icon" data-uuid="5">
-                  <img data-uuid="5" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+              <li class="inner_block" data-id="5">
+                <button class="button_icon" data-id="5">
+                  <img data-id="5" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="6">
-                <button class="button_icon" data-uuid="6">
-                  <img data-uuid="6" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+              <li class="inner_block" data-id="6">
+                <button class="button_icon" data-id="6">
+                  <img data-id="6" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="7">
-                <button class="button_icon" data-uuid="7">
-                  <img data-uuid="7" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+              <li class="inner_block" data-id="7">
+                <button class="button_icon" data-id="7">
+                  <img data-id="7" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="8">
-                <button class="button_icon" data-uuid="8">
-                  <img data-uuid="8" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+              <li class="inner_block" data-id="8">
+                <button class="button_icon" data-id="8">
+                  <img data-id="8" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
                 </button>
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one2', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two2', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three2', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four2', $queried_object )); ?>
               </li>
             </ul>
@@ -629,38 +629,38 @@ get_header();
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode3', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
-              <li class="inner_block" data-uuid="9">
-                <button class="button_icon" data-uuid="9">
-                  <img data-uuid="9" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+              <li class="inner_block" data-id="9">
+                <button class="button_icon" data-id="9">
+                  <img data-id="9" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="10">
-                <button class="button_icon" data-uuid="10">
-                  <img data-uuid="10" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+              <li class="inner_block" data-id="10">
+                <button class="button_icon" data-id="10">
+                  <img data-id="10" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="11">
-                <button class="button_icon" data-uuid="11">
-                  <img data-uuid="11" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+              <li class="inner_block" data-id="11">
+                <button class="button_icon" data-id="11">
+                  <img data-id="11" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="12">
-                <button class="button_icon" data-uuid="12">
-                  <img data-uuid="12" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+              <li class="inner_block" data-id="12">
+                <button class="button_icon" data-id="12">
+                  <img data-id="12" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
                 </button>
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one3', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two3', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three3', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four3', $queried_object )); ?>
               </li>
             </ul>
@@ -670,38 +670,38 @@ get_header();
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode4', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
-              <li class="inner_block" data-uuid="13">
-                <button class="button_icon" data-uuid="13">
-                  <img data-uuid="13" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+              <li class="inner_block" data-id="13">
+                <button class="button_icon" data-id="13">
+                  <img data-id="13" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="14">
-                <button class="button_icon" data-uuid="14">
-                  <img data-uuid="14" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+              <li class="inner_block" data-id="14">
+                <button class="button_icon" data-id="14">
+                  <img data-id="14" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="15">
-                <button class="button_icon" data-uuid="15">
-                  <img data-uuid="15" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+              <li class="inner_block" data-id="15">
+                <button class="button_icon" data-id="15">
+                  <img data-id="15" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="16">
-                <button class="button_icon" data-uuid="16">
-                  <img data-uuid="16" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+              <li class="inner_block" data-id="16">
+                <button class="button_icon" data-id="16">
+                  <img data-id="16" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
                 </button>
               </li>
             </ul>
            <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one4', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two4', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three4', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four4', $queried_object )); ?>
               </li>
             </ul>
@@ -711,38 +711,38 @@ get_header();
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode5', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
-              <li class="inner_block" data-uuid="17">
-                <button class="button_icon" data-uuid="17">
-                  <img data-uuid="17" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+              <li class="inner_block" data-id="17">
+                <button class="button_icon" data-id="17">
+                  <img data-id="17" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="18">
-                <button class="button_icon" data-uuid="18">
-                  <img data-uuid="18" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+              <li class="inner_block" data-id="18">
+                <button class="button_icon" data-id="18">
+                  <img data-id="18" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="19">
-                <button class="button_icon" data-uuid="19">
-                  <img data-uuid="19" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+              <li class="inner_block" data-id="19">
+                <button class="button_icon" data-id="19">
+                  <img data-id="19" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="20">
-                <button class="button_icon" data-uuid="20">
-                  <img data-uuid="20" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+              <li class="inner_block" data-id="20">
+                <button class="button_icon" data-id="20">
+                  <img data-id="20" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
                 </button>
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one5', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two5', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three5', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four5', $queried_object )); ?>
               </li>
             </ul>
@@ -752,38 +752,38 @@ get_header();
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode6', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
-              <li class="inner_block" data-uuid="21">
-                <button class="button_icon" data-uuid="21">
-                  <img data-uuid="21" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+              <li class="inner_block" data-id="21">
+                <button class="button_icon" data-id="21">
+                  <img data-id="21" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="22">
-                <button class="button_icon" data-uuid="22">
-                  <img data-uuid="22" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+              <li class="inner_block" data-id="22">
+                <button class="button_icon" data-id="22">
+                  <img data-id="22" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="23">
-                <button class="button_icon" data-uuid="23">
-                  <img data-uuid="23" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+              <li class="inner_block" data-id="23">
+                <button class="button_icon" data-id="23">
+                  <img data-id="23" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="24">
-                <button class="button_icon" data-uuid="24">
-                  <img data-uuid="24" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+              <li class="inner_block" data-id="24">
+                <button class="button_icon" data-id="24">
+                  <img data-id="24" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
                 </button>
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one6', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two6', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three6', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four6', $queried_object )); ?>
               </li>
             </ul>
@@ -793,38 +793,38 @@ get_header();
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode7', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
-              <li class="inner_block" data-uuid="25">
-                <button class="button_icon" data-uuid="25">
-                  <img data-uuid="25" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+              <li class="inner_block" data-id="25">
+                <button class="button_icon" data-id="25">
+                  <img data-id="25" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="26">
-                <button class="button_icon" data-uuid="26">
-                  <img data-uuid="26" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+              <li class="inner_block" data-id="26">
+                <button class="button_icon" data-id="26">
+                  <img data-id="26" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="27">
-                <button class="button_icon" data-uuid="27">
-                  <img data-uuid="27" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+              <li class="inner_block" data-id="27">
+                <button class="button_icon" data-id="27">
+                  <img data-id="27" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="28">
-                <button class="button_icon" data-uuid="28">
-                  <img data-uuid="28" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+              <li class="inner_block" data-id="28">
+                <button class="button_icon" data-id="28">
+                  <img data-id="28" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
                 </button>
               </li>
             </ul>
            <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one7', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two7', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three7', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four7', $queried_object )); ?>
               </li>
             </ul>
@@ -834,38 +834,38 @@ get_header();
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode8', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
-              <li class="inner_block" data-uuid="29">
-                <button class="button_icon" data-uuid="29">
-                  <img data-uuid="29" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+              <li class="inner_block" data-id="29">
+                <button class="button_icon" data-id="29">
+                  <img data-id="29" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="30">
-                <button class="button_icon" data-uuid="30">
-                  <img data-uuid="30" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+              <li class="inner_block" data-id="30">
+                <button class="button_icon" data-id="30">
+                  <img data-id="30" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="31">
-                <button class="button_icon" data-uuid="31">
-                  <img data-uuid="31" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+              <li class="inner_block" data-id="31">
+                <button class="button_icon" data-id="31">
+                  <img data-id="31" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="32">
-                <button class="button_icon" data-uuid="32">
-                  <img data-uuid="32" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+              <li class="inner_block" data-id="32">
+                <button class="button_icon" data-id="32">
+                  <img data-id="32" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
                 </button>
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one8', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two8', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three8', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four8', $queried_object )); ?>
               </li>
             </ul>
@@ -875,38 +875,38 @@ get_header();
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode9', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
-              <li class="inner_block" data-uuid="33">
-                <button class="button_icon" data-uuid="33">
-                  <img data-uuid="33" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+              <li class="inner_block" data-id="33">
+                <button class="button_icon" data-id="33">
+                  <img data-id="33" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="34">
-                <button class="button_icon" data-uuid="34">
-                  <img data-uuid="34" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+              <li class="inner_block" data-id="34">
+                <button class="button_icon" data-id="34">
+                  <img data-id="34" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="35">
-                <button class="button_icon" data-uuid="35">
-                  <img data-uuid="35" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+              <li class="inner_block" data-id="35">
+                <button class="button_icon" data-id="35">
+                  <img data-id="35" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="36">
-                <button class="button_icon" data-uuid="36">
-                  <img data-uuid="36" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+              <li class="inner_block" data-id="36">
+                <button class="button_icon" data-id="36">
+                  <img data-id="36" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
                 </button>
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one9', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two9', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three9', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four9', $queried_object )); ?>
               </li>
             </ul>
@@ -916,38 +916,38 @@ get_header();
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode10', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
-              <li class="inner_block" data-uuid="37">
-                <button class="button_icon" data-uuid="37">
-                  <img data-uuid="37" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+              <li class="inner_block" data-id="37">
+                <button class="button_icon" data-id="37">
+                  <img data-id="37" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="38">
-                <button class="button_icon" data-uuid="38">
-                  <img data-uuid="38" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+              <li class="inner_block" data-id="38">
+                <button class="button_icon" data-id="38">
+                  <img data-id="38" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="39">
-                <button class="button_icon" data-uuid="39">
-                  <img data-uuid="39" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+              <li class="inner_block" data-id="39">
+                <button class="button_icon" data-id="39">
+                  <img data-id="39" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="40">
-                <button class="button_icon" data-uuid="40">
-                  <img data-uuid="40" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+              <li class="inner_block" data-id="40">
+                <button class="button_icon" data-id="40">
+                  <img data-id="40" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
                 </button>
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one10', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two10', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three10', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four10', $queried_object )); ?>
               </li>
             </ul>
@@ -957,38 +957,38 @@ get_header();
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode11', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
-              <li class="inner_block" data-uuid="41">
-                <button class="button_icon" data-uuid="41">
-                  <img data-uuid="41" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+              <li class="inner_block" data-id="41">
+                <button class="button_icon" data-id="41">
+                  <img data-id="41" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="42">
-                <button class="button_icon" data-uuid="42">
-                  <img data-uuid="42" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+              <li class="inner_block" data-id="42">
+                <button class="button_icon" data-id="42">
+                  <img data-id="42" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="43">
-                <button class="button_icon" data-uuid="43">
-                  <img data-uuid="43" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+              <li class="inner_block" data-id="43">
+                <button class="button_icon" data-id="43">
+                  <img data-id="43" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="44">
-                <button class="button_icon" data-uuid="44">
-                  <img data-uuid="44" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+              <li class="inner_block" data-id="44">
+                <button class="button_icon" data-id="44">
+                  <img data-id="44" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
                 </button>
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one11', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two11', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three11', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four11', $queried_object )); ?>
               </li>
             </ul>
@@ -998,38 +998,38 @@ get_header();
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode12', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
-              <li class="inner_block" data-uuid="45">
-                <button class="button_icon" data-uuid="45">
-                  <img data-uuid="45" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+              <li class="inner_block" data-id="45">
+                <button class="button_icon" data-id="45">
+                  <img data-id="45" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="46">
-                <button class="button_icon" data-uuid="46">
-                  <img data-uuid="46" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+              <li class="inner_block" data-id="46">
+                <button class="button_icon" data-id="46">
+                  <img data-id="46" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="47">
-                <button class="button_icon" data-uuid="47">
-                  <img data-uuid="47" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+              <li class="inner_block" data-id="47">
+                <button class="button_icon" data-id="47">
+                  <img data-id="47" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
                 </button>
               </li>
-              <li class="inner_block" data-uuid="48">
-                <button class="button_icon" data-uuid="48">
-                  <img data-uuid="48" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+              <li class="inner_block" data-id="48">
+                <button class="button_icon" data-id="48">
+                  <img data-id="48" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
                 </button>
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one12', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two12', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three12', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four12', $queried_object )); ?>
               </li>
             </ul>

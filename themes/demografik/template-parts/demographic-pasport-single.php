@@ -641,16 +641,16 @@
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one1', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two1', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three1', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four1', $queried_object )); ?>
               </li>
             </ul>
@@ -682,16 +682,16 @@
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one2', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two2', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three2', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four2', $queried_object )); ?>
               </li>
             </ul>
@@ -723,16 +723,16 @@
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one3', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two3', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three3', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four3', $queried_object )); ?>
               </li>
             </ul>
@@ -764,16 +764,16 @@
               </li>
             </ul>
            <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one4', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two4', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three4', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four4', $queried_object )); ?>
               </li>
             </ul>
@@ -805,16 +805,16 @@
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one5', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two5', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three5', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four5', $queried_object )); ?>
               </li>
             </ul>
@@ -846,16 +846,16 @@
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one6', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two6', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three6', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four6', $queried_object )); ?>
               </li>
             </ul>
@@ -887,16 +887,16 @@
               </li>
             </ul>
            <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one7', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two7', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three7', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four7', $queried_object )); ?>
               </li>
             </ul>
@@ -928,16 +928,16 @@
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one8', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two8', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three8', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four8', $queried_object )); ?>
               </li>
             </ul>
@@ -969,16 +969,16 @@
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one9', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two9', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three9', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four9', $queried_object )); ?>
               </li>
             </ul>
@@ -1010,16 +1010,16 @@
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one10', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two10', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three10', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four10', $queried_object )); ?>
               </li>
             </ul>
@@ -1051,16 +1051,16 @@
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one11', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two11', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three11', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four11', $queried_object )); ?>
               </li>
             </ul>
@@ -1092,16 +1092,16 @@
               </li>
             </ul>
             <ul class="contents">
-              <li class="content_item">
+              <li class="inner_content">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one12', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                  <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two12', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three12', $queried_object )); ?>
               </li>
-              <li class="content_item unvisible">
+              <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four12', $queried_object )); ?>
               </li>
             </ul>
