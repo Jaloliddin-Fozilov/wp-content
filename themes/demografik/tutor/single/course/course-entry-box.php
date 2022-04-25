@@ -54,7 +54,7 @@
 	<!-- Course Entry -->
 	<div class="tutor-course-sidebar-card-body tutor-p-32">
 		<?php
-		if ( $is_enrolled || $is_privileged_user) {
+		if ( $is_enrolled || $is_privileged_user || $is_public ) {
 			ob_start();
 
 			// Course Info
