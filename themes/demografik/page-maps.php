@@ -1593,7 +1593,7 @@
                                                     </tr>                                           
                                                 </tbody>
                                             </table>
-                                            <p>*2022 yil 1 yanvardagi statistik ma'lumotlarga asosan tuzilgan.</p>
+                                            <p class="stat-date">*2022 yil 1 yanvardagi statistik ma'lumotlarga asosan tuzilgan.</p>
                                             <a class="open_map btn" href="#">Batafsil</a>
                                         </div>
                                     </div>

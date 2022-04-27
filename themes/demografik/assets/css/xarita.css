@@ -1143,3 +1143,8 @@ display: none;
         border-bottom: 1px solid #EDEDED;
     }
 }
+.stat-date {
+    font-size: 14px;
+    line-height: 1;
+    padding: 10px 10px 0;
+}
