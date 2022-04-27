@@ -200,7 +200,7 @@ class Post_Sliders_Category extends Widget_Base {
                     // $cat->category_parent (0)
                     ?>
                     <div class="carousel-cell carousel-cell--resource carousel-cell--image">
-                        <a href="#" target="_blank" class="block__img">
+                        <a href="<?php echo get_term_link($cat->cat_ID) ?>" target="_blank" class="block__img">
                             <span class="overlay">
                                 <svg version="1.1" class="icon icon__plus" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="6px" height="6px"
