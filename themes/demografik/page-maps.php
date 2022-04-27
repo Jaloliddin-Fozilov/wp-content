@@ -1425,7 +1425,7 @@
                                             <div class="ranking__container">
                                             </div>
                                             <div class="ranking__footer">
-                                                <p>*2021 yildagi statistik ma'lumotlarga asosan tuzilgan.</p>
+                                                <p>*2022 yil 1 yanvardagi statistik ma'lumotlarga asosan tuzilgan.</p>
                                             </div>
                                         </div>
                                         <!---->
