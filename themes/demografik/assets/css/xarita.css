@@ -1048,6 +1048,10 @@ h2.region_name{
     flex: 0 0 250px;
     margin-right: 32px;
 }
+.sidebar-group .textwidget p {
+    text-align: justify;
+}
+
 
 .country-content .button-naked, .country-content  .v-step__button {
     display: inline-block;
