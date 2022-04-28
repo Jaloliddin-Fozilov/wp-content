@@ -1042,7 +1042,7 @@ h2.region_name{
     display: block;
 }
 .sidebar-group .widget-title {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 .country-content__toc {
     flex: 0 0 250px;
