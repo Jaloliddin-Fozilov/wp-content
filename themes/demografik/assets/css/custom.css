@@ -181,3 +181,7 @@ h1.search-result-page-title {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+div#table_16_length {display: none !important;}
+
+div#table_16_filter {display: none !important;}
