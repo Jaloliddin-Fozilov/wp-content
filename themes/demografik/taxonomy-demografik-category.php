@@ -46,35 +46,7 @@ get_header();
             </div>
 
 
-            <div class="flex flex-row bg-white shadow-sm p-2 rounded-b-lg">
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row ">
-                  <div class="col-end">
-                    <div class="flex flex-row ">
-                      <div class="flex flex-col font-bold text-md text-blue-400 pl-8 woman"
-                        style="font-family:Antic Didone;">
-                        <?php $queried_object = get_queried_object(); the_field( 'permanent_population_woman', $queried_object );?>
-                      </div>
-                      <div class="flex flex-col text-sm text-gray-600 px-1 pl-2"><img
-                          src='<?php echo get_template_directory_uri() . '/assets/images/womann.png'?>' width="20">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row">
-                  <img src='<?php echo get_template_directory_uri() . '/assets/images/mann.png'?>' width="20">
-                  <div class="flex flex-col text-sm text-gray-600 px-1"></div>
-                  <div class="flex flex-col font-bold text-md text-blue-400 man" span=""
-                    style="font-family:Antic Didone;">
-                    <?php $queried_object = get_queried_object(); the_field( 'permanent_population_man', $queried_object );?>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
 
 
           </div>
@@ -97,35 +69,7 @@ get_header();
 
             </div>
 
-            <div class="flex flex-row bg-white shadow-sm rounded-b-lg p-2">
-
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row ">
-                  <div class="col-end">
-                    <div class="flex flex-row ">
-                      <div class="flex flex-col font-bold text-md text-blue-400 pl-8"><span
-                          style="font-family:Antic Didone;"><?php $queried_object = get_queried_object(); the_field( 'children_in_preschool_institutions_woman', $queried_object );?></span>
-                      </div>
-                      <div class="flex flex-col text-sm text-gray-600 px-1 pl-2"><img
-                          src='<?php echo get_template_directory_uri() . '/assets/images/womann.png'?>' width="20">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row">
-                  <img src='<?php echo get_template_directory_uri() . '/assets/images/mann.png'?>' width="20">
-                  <div class="flex flex-col text-sm text-gray-600 px-1"></div>
-                  <div class="flex flex-col font-bold text-md text-blue-400"><span
-                      style="font-family:Antic Didone;"><?php $queried_object = get_queried_object(); the_field( 'children_in_preschool_institutions_man', $queried_object );?></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
 
           </div>
 
@@ -144,35 +88,7 @@ get_header();
               </div>
             </div>
 
-            <div class="flex flex-row bg-white shadow-sm rounded-b-lg p-2">
-
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row ">
-                  <div class="col-end">
-                    <div class="flex flex-row ">
-                      <div class="flex flex-col font-bold text-md text-blue-400 pl-8"><span
-                          style="font-family:Antic Didone;"><?php $queried_object = get_queried_object(); the_field( 'students_in_secondary_schools_woman', $queried_object );?></span>
-                      </div>
-                      <div class="flex flex-col text-sm text-gray-600 px-1 pl-2"><img
-                          src='<?php echo get_template_directory_uri() . '/assets/images/womann.png'?>' width="20">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row">
-                  <img src='<?php echo get_template_directory_uri() . '/assets/images/mann.png'?>' width="20">
-                  <div class="flex flex-col text-sm text-gray-600 px-1"></div>
-                  <div class="flex flex-col font-bold text-md text-blue-400"><span
-                      style="font-family:Antic Didone;"><?php $queried_object = get_queried_object(); the_field( 'students_in_secondary_schools_man', $queried_object );?></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
 
           </div>
           <div class="col-span-12 sm:col-span-6 md:col-span-3">
@@ -189,35 +105,7 @@ get_header();
               </div>
             </div>
 
-            <div class="flex flex-row bg-white shadow-sm rounded-b-lg p-2">
-
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row ">
-                  <div class="col-end">
-                    <div class="flex flex-row ">
-                      <div class="flex flex-col font-bold text-md text-blue-400 pl-8"><span
-                          style="font-family:Antic Didone;"><?php $queried_object = get_queried_object(); the_field( 'students_in_higher_education_woman', $queried_object );?></span>
-                      </div>
-                      <div class="flex flex-col text-sm text-gray-600 px-1 pl-2"><img
-                          src='<?php echo get_template_directory_uri() . '/assets/images/womann.png'?>' width="20">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row">
-                  <img src='<?php echo get_template_directory_uri() . '/assets/images/mann.png'?>' width="20">
-                  <div class="flex flex-col text-sm text-gray-600 px-1"></div>
-                  <div class="flex flex-col font-bold text-md text-blue-400"><span
-                      style="font-family:Antic Didone;"><?php $queried_object = get_queried_object(); the_field( 'students_in_higher_education_man', $queried_object );?></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
 
           </div>
 
@@ -235,35 +123,7 @@ get_header();
               </div>
             </div>
 
-            <div class="flex flex-row bg-white shadow-sm rounded-b-lg p-2">
-
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row ">
-                  <div class="col-end">
-                    <div class="flex flex-row ">
-                      <div class="flex flex-col font-bold text-md text-blue-400 pl-8"><span
-                          style="font-family:Antic Didone;"><?php $queried_object = get_queried_object(); the_field( 'economically_occupied_population_woman', $queried_object );?></span>
-                      </div>
-                      <div class="flex flex-col text-sm text-gray-600 px-1 pl-2"><img
-                          src='<?php echo get_template_directory_uri() . '/assets/images/womann.png'?>' width="20">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row">
-                  <img src='<?php echo get_template_directory_uri() . '/assets/images/mann.png'?>' width="20">
-                  <div class="flex flex-col text-sm text-gray-600 px-1"></div>
-                  <div class="flex flex-col font-bold text-md text-blue-400"><span
-                      style="font-family:Antic Didone;"><?php $queried_object = get_queried_object(); the_field( 'economically_occupied_population_man', $queried_object );?></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
 
           </div>
           <div class="col-span-12 sm:col-span-6 md:col-span-3">
@@ -280,35 +140,7 @@ get_header();
               </div>
             </div>
 
-            <div class="flex flex-row bg-white shadow-sm rounded-b-lg p-2">
-
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row ">
-                  <div class="col-end">
-                    <div class="flex flex-row ">
-                      <div class="flex flex-col font-bold text-md text-blue-400 pl-8"><span
-                          style="font-family:Antic Didone;"><?php $queried_object = get_queried_object(); the_field( 'number_of_sportsmen_woman', $queried_object );?></span>
-                      </div>
-                      <div class="flex flex-col text-sm text-gray-600 px-1 pl-2"><img
-                          src='<?php echo get_template_directory_uri() . '/assets/images/womann.png'?>' width="20">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row">
-                  <img src='<?php echo get_template_directory_uri() . '/assets/images/mann.png'?>' width="20">
-                  <div class="flex flex-col text-sm text-gray-600 px-1"></div>
-                  <div class="flex flex-col font-bold text-md text-blue-400"><span
-                      style="font-family:Antic Didone;"><?php $queried_object = get_queried_object(); the_field( 'number_of_sportsmen_man', $queried_object );?></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
 
           </div>
           <div class="col-span-12 sm:col-span-6 md:col-span-3">
@@ -325,35 +157,7 @@ get_header();
               </div>
             </div>
 
-            <div class="flex flex-row bg-white shadow-sm rounded-b-lg p-2">
-
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row ">
-                  <div class="col-end">
-                    <div class="flex flex-row ">
-                      <div class="flex flex-col font-bold text-md text-blue-400 pl-8"><span
-                          style="font-family:Antic Didone;"><?php $queried_object = get_queried_object(); the_field( 'number_of_travelers_woman', $queried_object );?></span>
-                      </div>
-                      <div class="flex flex-col text-sm text-gray-600 px-1 pl-2"><img
-                          src='<?php echo get_template_directory_uri() . '/assets/images/womann.png'?>' width="20">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row">
-                  <img src='<?php echo get_template_directory_uri() . '/assets/images/mann.png'?>' width="20">
-                  <div class="flex flex-col text-sm text-gray-600 px-1"></div>
-                  <div class="flex flex-col font-bold text-md text-blue-400"><span
-                      style="font-family:Antic Didone;"><?php $queried_object = get_queried_object(); the_field( 'number_of_travelers_man', $queried_object );?></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
 
           </div>
           <div class="col-span-12 sm:col-span-6 md:col-span-3">
@@ -371,33 +175,7 @@ get_header();
               </div>
             </div>
 
-            <div class="flex flex-row bg-white shadow-sm rounded-b-lg p-2">
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row ">
-                  <div class="col-end">
-                    <div class="flex flex-row ">
-                      <div class="flex flex-col font-bold text-md text-blue-400 pl-8"><span
-                          style="font-family:Antic Didone;"><?php $queried_object = get_queried_object(); the_field( 'number_of_pensioners_and_beneficiaries_woman', $queried_object );?></span>
-                      </div>
-                      <div class="flex flex-col text-sm text-gray-600 px-1 pl-2"><img
-                          src='<?php echo get_template_directory_uri() . '/assets/images/womann.png'?>' width="20">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="flex flex-col flex-grow ml-2">
-                <div class="flex flex-row">
-                  <img src='<?php echo get_template_directory_uri() . '/assets/images/mann.png'?>' width="20">
-                  <div class="flex flex-col text-sm text-gray-600 px-1"></div>
-                  <div class="flex flex-col font-bold text-md text-blue-400"><span
-                      style="font-family:Antic Didone;"><?php $queried_object = get_queried_object(); the_field( 'number_of_pensioners_and_beneficiaries_man', $queried_object );?></span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
 
 
           </div>
