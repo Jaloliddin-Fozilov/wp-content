@@ -417,7 +417,7 @@ get_header();
             <i data-uuid="1" class="fa fa-line-chart"></i>
           </div>
           <div data-uuid="1" class="block_name">
-            <h4 data-uuid="1">Aholining o'rtacha yillik soni, ming kishi</h4>
+            <h4 data-uuid="1">1 Yoshgacha o'lim koeffitsiyenti</h4>
           </div>
         </li>
         <li class="block" data-uuid="2">
@@ -428,7 +428,7 @@ get_header();
               </svg>
           </div>
           <div data-uuid="2" class="block_name">
-            <h4 data-uuid="2">Ajralishlar soni, birliklar</h4>
+            <h4 data-uuid="2">Oila</h4>
           </div>
         </li>
         <li class="block" data-uuid="3">
@@ -439,7 +439,7 @@ get_header();
               </svg>
           </div>
           <div data-uuid="3" class="block_name">
-            <h4 data-uuid="3">Nikohlar soni, birliklar</h4>
+            <h4 data-uuid="3">100 ta nikohga ajrim</h4>
           </div>
         </li>
         <li class="block" data-uuid="4">
@@ -450,7 +450,7 @@ get_header();
               </svg>
           </div>
           <div data-uuid="4" class="block_name">
-            <h4 data-uuid="4">Qishloq va oʻrmon xoʻjaligida band boʻlganlar soni, ming kishi</h4>
+            <h4 data-uuid="4">2009-2022 Tumantar ming</h4>
           </div>
         </li>
         <li class="block" data-uuid="5">
@@ -461,7 +461,7 @@ get_header();
               </svg>
           </div>
           <div data-uuid="5" class="block_name">
-            <h4 data-uuid="5">Xizmat ko'rsatish sohasida band bo'lganlar soni, ming kishi</h4>
+            <h4 data-uuid="5">2011-2022 yil Аxoli mexnatga layok tuman</h4>
           </div>
         </li>
         <li class="block" data-uuid="6">
@@ -472,7 +472,7 @@ get_header();
               </svg>
           </div>
           <div data-uuid="6" class="block_name">
-            <h4 data-uuid="6">Kichik biznesda band bo'lganlar soni, ming kishi</h4>
+            <h4 data-uuid="6">Аjrim koeffitsienti</h4>
           </div>
         </li>
         <li class="block" data-uuid="7">
@@ -483,7 +483,7 @@ get_header();
               </svg>
           </div>
           <div data-uuid="7" class="block_name">
-            <h4 data-uuid="7">Iqtisodiyotda band bo'lganlar soni, jami, ming kishi</h4>
+            <h4 data-uuid="7">Аjrim</h4>
           </div>
         </li>
         <li class="block" data-uuid="8">
@@ -494,7 +494,7 @@ get_header();
               </svg>
           </div>
           <div data-uuid="8" class="block_name">
-            <h4 data-uuid="8">Yil oxiriga mehnat yoshidagi doimiy aholi soni, ming kishi</h4>
+            <h4 data-uuid="8">Аholining tabiiy xarakati</h4>
           </div>
         </li>
         <li class="block" data-uuid="9">
@@ -505,7 +505,7 @@ get_header();
               </svg>
           </div>
           <div data-uuid="9" class="block_name">
-            <h4 data-uuid="9">Yil oxiridagi doimiy aholi soni, ming kishi</h4>
+            <h4 data-uuid="9">Yosh guruhlari boʼyicha doimiy aholi soni</h4>
           </div>
         </li>
         <li class="block" data-uuid="10">
@@ -516,7 +516,7 @@ get_header();
               </svg>
           </div>
           <div data-uuid="10" class="block_name">
-            <h4 data-uuid="10">Mehnat organlarida ro'yxatga olingan ishsizlar soni, ming kishi</h4>
+            <h4 data-uuid="10">Zichlik</h4>
           </div>
         </li>
         <li class="block" data-uuid="11">
@@ -527,7 +527,7 @@ get_header();
               </svg>
           </div>
           <div class="block_name" data-uuid="11">
-            <h4 data-uuid="11">Ishsizlar soni, ming kishi</h4>
+            <h4 data-uuid="11">Ko‘chib kelganlar</h4>
           </div>
         </li>
         <li class="block" data-uuid="12">
@@ -538,7 +538,139 @@ get_header();
               </svg>
           </div>
           <div data-uuid="12" class="block_name">
-            <h4 data-uuid="12">Iqtisodiyotda band bo'lgan ayollarning ulushi, foiz</h4>
+            <h4 data-uuid="12">Ko‘chib ketganlar soni</h4>
+          </div>
+        </li>
+        <li class="block" data-uuid="13">
+          <div class="block_icon" data-uuid="13">
+            <svg data-uuid="13" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path data-uuid="13"
+                d="M374.6 73.39c-12.5-12.5-32.75-12.5-45.25 0l-320 320c-12.5 12.5-12.5 32.75 0 45.25C15.63 444.9 23.81 448 32 448s16.38-3.125 22.62-9.375l320-320C387.1 106.1 387.1 85.89 374.6 73.39zM64 192c35.3 0 64-28.72 64-64S99.3 64.01 64 64.01S0 92.73 0 128S28.7 192 64 192zM320 320c-35.3 0-64 28.72-64 64s28.7 64 64 64s64-28.72 64-64S355.3 320 320 320z" />
+              </svg>
+          </div>
+          <div data-uuid="13" class="block_name">
+            <h4 data-uuid="13">Migrasion xarakat</h4>
+          </div>
+        </li>
+        <li class="block" data-uuid="14">
+          <div class="block_icon" data-uuid="14">
+            <svg data-uuid="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path data-uuid="14"
+                d="M374.6 73.39c-12.5-12.5-32.75-12.5-45.25 0l-320 320c-12.5 12.5-12.5 32.75 0 45.25C15.63 444.9 23.81 448 32 448s16.38-3.125 22.62-9.375l320-320C387.1 106.1 387.1 85.89 374.6 73.39zM64 192c35.3 0 64-28.72 64-64S99.3 64.01 64 64.01S0 92.73 0 128S28.7 192 64 192zM320 320c-35.3 0-64 28.72-64 64s28.7 64 64 64s64-28.72 64-64S355.3 320 320 320z" />
+              </svg>
+          </div>
+          <div data-uuid="14" class="block_name">
+            <h4 data-uuid="14">Nikoh koeffisienti</h4>
+          </div>
+        </li>
+        <li class="block" data-uuid="15">
+          <div class="block_icon" data-uuid="15">
+            <svg data-uuid="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path data-uuid="15"
+                d="M374.6 73.39c-12.5-12.5-32.75-12.5-45.25 0l-320 320c-12.5 12.5-12.5 32.75 0 45.25C15.63 444.9 23.81 448 32 448s16.38-3.125 22.62-9.375l320-320C387.1 106.1 387.1 85.89 374.6 73.39zM64 192c35.3 0 64-28.72 64-64S99.3 64.01 64 64.01S0 92.73 0 128S28.7 192 64 192zM320 320c-35.3 0-64 28.72-64 64s28.7 64 64 64s64-28.72 64-64S355.3 320 320 320z" />
+              </svg>
+          </div>
+          <div data-uuid="15" class="block_name">
+            <h4 data-uuid="15">Nikoh</h4>
+          </div>
+        </li>
+        <li class="block" data-uuid="16">
+          <div class="block_icon" data-uuid="16">
+            <svg data-uuid="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path data-uuid="16"
+                d="M374.6 73.39c-12.5-12.5-32.75-12.5-45.25 0l-320 320c-12.5 12.5-12.5 32.75 0 45.25C15.63 444.9 23.81 448 32 448s16.38-3.125 22.62-9.375l320-320C387.1 106.1 387.1 85.89 374.6 73.39zM64 192c35.3 0 64-28.72 64-64S99.3 64.01 64 64.01S0 92.73 0 128S28.7 192 64 192zM320 320c-35.3 0-64 28.72-64 64s28.7 64 64 64s64-28.72 64-64S355.3 320 320 320z" />
+              </svg>
+          </div>
+          <div data-uuid="16" class="block_name">
+            <h4 data-uuid="16">Reproduktiv yoshdagi (15-49) ayollar soni</h4>
+          </div>
+        </li>
+        <li class="block" data-uuid="17">
+          <div class="block_icon" data-uuid="17">
+            <svg data-uuid="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path data-uuid="17"
+                d="M374.6 73.39c-12.5-12.5-32.75-12.5-45.25 0l-320 320c-12.5 12.5-12.5 32.75 0 45.25C15.63 444.9 23.81 448 32 448s16.38-3.125 22.62-9.375l320-320C387.1 106.1 387.1 85.89 374.6 73.39zM64 192c35.3 0 64-28.72 64-64S99.3 64.01 64 64.01S0 92.73 0 128S28.7 192 64 192zM320 320c-35.3 0-64 28.72-64 64s28.7 64 64 64s64-28.72 64-64S355.3 320 320 320z" />
+              </svg>
+          </div>
+          <div data-uuid="17" class="block_name">
+            <h4 data-uuid="17">Tug‘ilish</h4>
+          </div>
+        </li>
+        <li class="block" data-uuid="18">
+          <div class="block_icon" data-uuid="18">
+            <svg data-uuid="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path data-uuid="18"
+                d="M374.6 73.39c-12.5-12.5-32.75-12.5-45.25 0l-320 320c-12.5 12.5-12.5 32.75 0 45.25C15.63 444.9 23.81 448 32 448s16.38-3.125 22.62-9.375l320-320C387.1 106.1 387.1 85.89 374.6 73.39zM64 192c35.3 0 64-28.72 64-64S99.3 64.01 64 64.01S0 92.73 0 128S28.7 192 64 192zM320 320c-35.3 0-64 28.72-64 64s28.7 64 64 64s64-28.72 64-64S355.3 320 320 320z" />
+              </svg>
+          </div>
+          <div data-uuid="18" class="block_name">
+            <h4 data-uuid="18">Tug‘ilishning umumiy koeffisienti</h4>
+          </div>
+        </li>
+        <li class="block" data-uuid="19">
+          <div class="block_icon" data-uuid="19">
+            <svg data-uuid="19" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path data-uuid="19"
+                d="M374.6 73.39c-12.5-12.5-32.75-12.5-45.25 0l-320 320c-12.5 12.5-12.5 32.75 0 45.25C15.63 444.9 23.81 448 32 448s16.38-3.125 22.62-9.375l320-320C387.1 106.1 387.1 85.89 374.6 73.39zM64 192c35.3 0 64-28.72 64-64S99.3 64.01 64 64.01S0 92.73 0 128S28.7 192 64 192zM320 320c-35.3 0-64 28.72-64 64s28.7 64 64 64s64-28.72 64-64S355.3 320 320 320z" />
+              </svg>
+          </div>
+          <div data-uuid="19" class="block_name">
+            <h4 data-uuid="19">O‘lganlar soni</h4>
+          </div>
+        </li>
+        <li class="block" data-uuid="20">
+          <div class="block_icon" data-uuid="20">
+            <svg data-uuid="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path data-uuid="20"
+                d="M374.6 73.39c-12.5-12.5-32.75-12.5-45.25 0l-320 320c-12.5 12.5-12.5 32.75 0 45.25C15.63 444.9 23.81 448 32 448s16.38-3.125 22.62-9.375l320-320C387.1 106.1 387.1 85.89 374.6 73.39zM64 192c35.3 0 64-28.72 64-64S99.3 64.01 64 64.01S0 92.73 0 128S28.7 192 64 192zM320 320c-35.3 0-64 28.72-64 64s28.7 64 64 64s64-28.72 64-64S355.3 320 320 320z" />
+              </svg>
+          </div>
+          <div data-uuid="20" class="block_name">
+            <h4 data-uuid="20">O‘lim koeffisienti</h4>
+          </div>
+        </li>
+        <li class="block" data-uuid="21">
+          <div class="block_icon" data-uuid="21">
+            <svg data-uuid="21" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path data-uuid="21"
+                d="M374.6 73.39c-12.5-12.5-32.75-12.5-45.25 0l-320 320c-12.5 12.5-12.5 32.75 0 45.25C15.63 444.9 23.81 448 32 448s16.38-3.125 22.62-9.375l320-320C387.1 106.1 387.1 85.89 374.6 73.39zM64 192c35.3 0 64-28.72 64-64S99.3 64.01 64 64.01S0 92.73 0 128S28.7 192 64 192zM320 320c-35.3 0-64 28.72-64 64s28.7 64 64 64s64-28.72 64-64S355.3 320 320 320z" />
+              </svg>
+          </div>
+          <div data-uuid="21" class="block_name">
+            <h4 data-uuid="21">O‘lim sabablari</h4>
+          </div>
+        </li>
+        <li class="block" data-uuid="22">
+          <div class="block_icon" data-uuid="22">
+            <svg data-uuid="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path data-uuid="22"
+                d="M374.6 73.39c-12.5-12.5-32.75-12.5-45.25 0l-320 320c-12.5 12.5-12.5 32.75 0 45.25C15.63 444.9 23.81 448 32 448s16.38-3.125 22.62-9.375l320-320C387.1 106.1 387.1 85.89 374.6 73.39zM64 192c35.3 0 64-28.72 64-64S99.3 64.01 64 64.01S0 92.73 0 128S28.7 192 64 192zM320 320c-35.3 0-64 28.72-64 64s28.7 64 64 64s64-28.72 64-64S355.3 320 320 320z" />
+              </svg>
+          </div>
+          <div data-uuid="22" class="block_name">
+            <h4 data-uuid="22">O‘rtacha aholi</h4>
+          </div>
+        </li>
+        <li class="block" data-uuid="23">
+          <div class="block_icon" data-uuid="23">
+            <svg data-uuid="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path data-uuid="23"
+                d="M374.6 73.39c-12.5-12.5-32.75-12.5-45.25 0l-320 320c-12.5 12.5-12.5 32.75 0 45.25C15.63 444.9 23.81 448 32 448s16.38-3.125 22.62-9.375l320-320C387.1 106.1 387.1 85.89 374.6 73.39zM64 192c35.3 0 64-28.72 64-64S99.3 64.01 64 64.01S0 92.73 0 128S28.7 192 64 192zM320 320c-35.3 0-64 28.72-64 64s28.7 64 64 64s64-28.72 64-64S355.3 320 320 320z" />
+              </svg>
+          </div>
+          <div data-uuid="23" class="block_name">
+            <h4 data-uuid="23">Hudud maydoni</h4>
+          </div>
+        </li>
+        <li class="block" data-uuid="24">
+          <div class="block_icon" data-uuid="24">
+            <svg data-uuid="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path data-uuid="24"
+                d="M374.6 73.39c-12.5-12.5-32.75-12.5-45.25 0l-320 320c-12.5 12.5-12.5 32.75 0 45.25C15.63 444.9 23.81 448 32 448s16.38-3.125 22.62-9.375l320-320C387.1 106.1 387.1 85.89 374.6 73.39zM64 192c35.3 0 64-28.72 64-64S99.3 64.01 64 64.01S0 92.73 0 128S28.7 192 64 192zM320 320c-35.3 0-64 28.72-64 64s28.7 64 64 64s64-28.72 64-64S355.3 320 320 320z" />
+              </svg>
+          </div>
+          <div data-uuid="24" class="block_name">
+            <h4 data-uuid="24">Ma'muriy hududiy birliklar</h4>
           </div>
         </li>
       </ul>
@@ -1031,6 +1163,499 @@ get_header();
               </li>
               <li class="inner_content unvisible">
                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four12', $queried_object )); ?>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="content_block unvisible">
+          <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode13', $queried_object )); ?>
+          <div class="wrapper">
+            <ul class="button_list">
+              <li class="inner_block" data-id="45">
+                <button class="button_icon" data-id="45">
+                  <img data-id="45" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                </button>
+              </li>
+              <li class="inner_block" data-id="46">
+                <button class="button_icon" data-id="46">
+                  <img data-id="46" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="47">
+                <button class="button_icon" data-id="47">
+                  <img data-id="47" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="48">
+                <button class="button_icon" data-id="48">
+                  <img data-id="48" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                </button>
+              </li>
+            </ul>
+            <ul class="contents">
+              <li class="inner_content">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one13', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two13', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three13', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four13', $queried_object )); ?>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="content_block unvisible">
+          <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode14', $queried_object )); ?>
+          <div class="wrapper">
+            <ul class="button_list">
+              <li class="inner_block" data-id="45">
+                <button class="button_icon" data-id="45">
+                  <img data-id="45" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                </button>
+              </li>
+              <li class="inner_block" data-id="46">
+                <button class="button_icon" data-id="46">
+                  <img data-id="46" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="47">
+                <button class="button_icon" data-id="47">
+                  <img data-id="47" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="48">
+                <button class="button_icon" data-id="48">
+                  <img data-id="48" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                </button>
+              </li>
+            </ul>
+            <ul class="contents">
+              <li class="inner_content">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one14', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two14', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three14', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four14', $queried_object )); ?>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="content_block unvisible">
+          <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode15', $queried_object )); ?>
+          <div class="wrapper">
+            <ul class="button_list">
+              <li class="inner_block" data-id="49">
+                <button class="button_icon" data-id="49">
+                  <img data-id="49" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                </button>
+              </li>
+              <li class="inner_block" data-id="50">
+                <button class="button_icon" data-id="50">
+                  <img data-id="50" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="51">
+                <button class="button_icon" data-id="51">
+                  <img data-id="51" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="52">
+                <button class="button_icon" data-id="52">
+                  <img data-id="52" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                </button>
+              </li>
+            </ul>
+            <ul class="contents">
+              <li class="inner_content">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one15', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two15', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three15', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four15', $queried_object )); ?>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="content_block unvisible">
+          <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode16', $queried_object )); ?>
+          <div class="wrapper">
+            <ul class="button_list">
+              <li class="inner_block" data-id="53">
+                <button class="button_icon" data-id="53">
+                  <img data-id="53" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                </button>
+              </li>
+              <li class="inner_block" data-id="54">
+                <button class="button_icon" data-id="54">
+                  <img data-id="54" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="55">
+                <button class="button_icon" data-id="55">
+                  <img data-id="55" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="56">
+                <button class="button_icon" data-id="56">
+                  <img data-id="56" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                </button>
+              </li>
+            </ul>
+            <ul class="contents">
+              <li class="inner_content">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one16', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two16', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three16', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four16', $queried_object )); ?>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="content_block unvisible">
+          <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode17', $queried_object )); ?>
+          <div class="wrapper">
+            <ul class="button_list">
+              <li class="inner_block" data-id="57">
+                <button class="button_icon" data-id="57">
+                  <img data-id="57" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                </button>
+              </li>
+              <li class="inner_block" data-id="58">
+                <button class="button_icon" data-id="58">
+                  <img data-id="58" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="59">
+                <button class="button_icon" data-id="59">
+                  <img data-id="59" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="60">
+                <button class="button_icon" data-id="60">
+                  <img data-id="60" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                </button>
+              </li>
+            </ul>
+            <ul class="contents">
+              <li class="inner_content">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one17', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two17', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three17', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four17', $queried_object )); ?>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="content_block unvisible">
+          <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode18', $queried_object )); ?>
+          <div class="wrapper">
+            <ul class="button_list">
+              <li class="inner_block" data-id="61">
+                <button class="button_icon" data-id="61">
+                  <img data-id="61" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                </button>
+              </li>
+              <li class="inner_block" data-id="62">
+                <button class="button_icon" data-id="62">
+                  <img data-id="62" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="63">
+                <button class="button_icon" data-id="63">
+                  <img data-id="63" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="64">
+                <button class="button_icon" data-id="64">
+                  <img data-id="64" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                </button>
+              </li>
+            </ul>
+            <ul class="contents">
+              <li class="inner_content">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one18', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two18', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three18', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four18', $queried_object )); ?>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="content_block unvisible">
+          <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode19', $queried_object )); ?>
+          <div class="wrapper">
+            <ul class="button_list">
+              <li class="inner_block" data-id="65">
+                <button class="button_icon" data-id="65">
+                  <img data-id="65" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                </button>
+              </li>
+              <li class="inner_block" data-id="66">
+                <button class="button_icon" data-id="66">
+                  <img data-id="66" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="67">
+                <button class="button_icon" data-id="67">
+                  <img data-id="67" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="68">
+                <button class="button_icon" data-id="68">
+                  <img data-id="68" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                </button>
+              </li>
+            </ul>
+            <ul class="contents">
+              <li class="inner_content">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one19', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two19', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three19', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four19', $queried_object )); ?>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="content_block unvisible">
+          <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode20', $queried_object )); ?>
+          <div class="wrapper">
+            <ul class="button_list">
+              <li class="inner_block" data-id="69">
+                <button class="button_icon" data-id="69">
+                  <img data-id="69" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                </button>
+              </li>
+              <li class="inner_block" data-id="70">
+                <button class="button_icon" data-id="70">
+                  <img data-id="70" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="71">
+                <button class="button_icon" data-id="71">
+                  <img data-id="71" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="72">
+                <button class="button_icon" data-id="72">
+                  <img data-id="72" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                </button>
+              </li>
+            </ul>
+            <ul class="contents">
+              <li class="inner_content">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one20', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two20', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three20', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four20', $queried_object )); ?>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="content_block unvisible">
+          <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode21', $queried_object )); ?>
+          <div class="wrapper">
+            <ul class="button_list">
+              <li class="inner_block" data-id="73">
+                <button class="button_icon" data-id="73">
+                  <img data-id="73" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                </button>
+              </li>
+              <li class="inner_block" data-id="74">
+                <button class="button_icon" data-id="74">
+                  <img data-id="74" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="75">
+                <button class="button_icon" data-id="75">
+                  <img data-id="75" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="76">
+                <button class="button_icon" data-id="76">
+                  <img data-id="76" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                </button>
+              </li>
+            </ul>
+            <ul class="contents">
+              <li class="inner_content">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one21', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two21', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three21', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four21', $queried_object )); ?>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="content_block unvisible">
+          <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode22', $queried_object )); ?>
+          <div class="wrapper">
+            <ul class="button_list">
+              <li class="inner_block" data-id="77">
+                <button class="button_icon" data-id="77">
+                  <img data-id="77" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                </button>
+              </li>
+              <li class="inner_block" data-id="78">
+                <button class="button_icon" data-id="78">
+                  <img data-id="78" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="79">
+                <button class="button_icon" data-id="79">
+                  <img data-id="79" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="80">
+                <button class="button_icon" data-id="80">
+                  <img data-id="80" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                </button>
+              </li>
+            </ul>
+            <ul class="contents">
+              <li class="inner_content">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one22', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two22', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three22', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four22', $queried_object )); ?>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="content_block unvisible">
+          <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode23', $queried_object )); ?>
+          <div class="wrapper">
+            <ul class="button_list">
+              <li class="inner_block" data-id="81">
+                <button class="button_icon" data-id="81">
+                  <img data-id="81" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                </button>
+              </li>
+              <li class="inner_block" data-id="82">
+                <button class="button_icon" data-id="82">
+                  <img data-id="82" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="83">
+                <button class="button_icon" data-id="83">
+                  <img data-id="83" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="84">
+                <button class="button_icon" data-id="84">
+                  <img data-id="84" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                </button>
+              </li>
+            </ul>
+            <ul class="contents">
+              <li class="inner_content">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one23', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two23', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three23', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four23', $queried_object )); ?>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="content_block unvisible">
+          <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode24', $queried_object )); ?>
+          <div class="wrapper">
+            <ul class="button_list">
+              <li class="inner_block" data-id="85">
+                <button class="button_icon" data-id="85">
+                  <img data-id="85" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                </button>
+              </li>
+              <li class="inner_block" data-id="86">
+                <button class="button_icon" data-id="86">
+                  <img data-id="86" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="87">
+                <button class="button_icon" data-id="87">
+                  <img data-id="87" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                </button>
+              </li>
+              <li class="inner_block" data-id="88">
+                <button class="button_icon" data-id="88">
+                  <img data-id="88" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                </button>
+              </li>
+            </ul>
+            <ul class="contents">
+              <li class="inner_content">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_one24', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                 <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_two24', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_three24', $queried_object )); ?>
+              </li>
+              <li class="inner_content unvisible">
+                <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'diagram_four24', $queried_object )); ?>
               </li>
             </ul>
           </div>
