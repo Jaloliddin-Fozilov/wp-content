@@ -182,6 +182,5 @@ h1.search-result-page-title {
     justify-content: space-between;
 }
 
-div#table_16_length {display: none !important;}
-
-div#table_16_filter {display: none !important;}
+.dataTables_filter {display: none !important;}
+.dataTables_length {display: none !important;}
