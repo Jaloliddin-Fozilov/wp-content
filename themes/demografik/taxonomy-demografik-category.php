@@ -34,8 +34,7 @@ get_header();
                 <div class="text-xl text-gray-600 py-1 people num " style="font-weight:600;font-size:24px;">
                   <?php $queried_object = get_queried_object(); the_field( 'permanent_population', $queried_object );?>
                 </div>
-                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Doimiy
-                  aholi soni</div>
+                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Doimiy aholi soni</div>
 
               </div>
               <div class="flex flex-col flex-grow ml-2">
@@ -63,7 +62,7 @@ get_header();
                     style="font-weight:600;font-size:24px;"><?php $queried_object = get_queried_object(); the_field( 'children_in_preschool_institutions', $queried_object );?></span>
                 </div>
                 <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">
-                  Maktabgacha ta’lim tashkilotlaridagi bolalar soni</div>
+                  Oilalar soni</div>
               </div>
 
 
@@ -83,8 +82,7 @@ get_header();
                 <div class="text-xl text-gray-600 py-1"><span
                     style="font-weight:600;font-size:24px;"><?php $queried_object = get_queried_object(); the_field( 'students_in_secondary_schools', $queried_object );?></span>
                 </div>
-                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">O‘rta
-                  ta’lim maktablaridagi o‘quvchilar soni</div>
+                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Tug'ilish soni</div>
               </div>
             </div>
 
@@ -100,8 +98,7 @@ get_header();
                 <div class="text-xl text-gray-600 py-1"><span
                     style="font-weight:600;font-size:24px;"><?php $queried_object = get_queried_object(); the_field( 'students_in_higher_education', $queried_object );?></span>
                 </div>
-                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Oliy
-                  ta’lim muassasalari talabalari soni</div>
+                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">O'lganlar soni</div>
               </div>
             </div>
 
@@ -118,8 +115,7 @@ get_header();
                 <div class="text-xl text-gray-600 py-1"><span
                     style="font-weight:600;font-size:24px;"><?php $queried_object = get_queried_object(); the_field( 'economically_occupied_population', $queried_object );?></span>
                 </div>
-                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">
-                  Iqtisodiyotda band aholi soni<br>&nbsp;</div>
+                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Nikohlar<br>&nbsp;</div>
               </div>
             </div>
 
@@ -135,8 +131,7 @@ get_header();
                 <div class="text-xl text-gray-600 py-1"><span
                     style="font-weight:600;font-size:24px;"><?php $queried_object = get_queried_object(); the_field( 'number_of_sportsmen', $queried_object );?></span>
                 </div>
-                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Sport
-                  bilan shug'ullanuvchilar soni<br>&nbsp;</div>
+                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Ajrim<br>&nbsp;</div>
               </div>
             </div>
 
@@ -152,8 +147,7 @@ get_header();
                 <div class="text-xl text-gray-600 py-1"><span
                     style="font-weight:600;font-size:24px;"><?php $queried_object = get_queried_object(); the_field( 'number_of_travelers', $queried_object );?></span>
                 </div>
-                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Safarga
-                  ketganlar soni<br>&nbsp;</div>
+                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Ko'chib kelganlar<br>&nbsp;</div>
               </div>
             </div>
 
@@ -169,9 +163,7 @@ get_header();
                 <div class="text-xl text-gray-600 py-1"><span
                     style="font-weight:600;font-size:24px;"><?php $queried_object = get_queried_object(); the_field( 'number_of_pensioners_and_beneficiaries', $queried_object );?></span>
                 </div>
-                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Pensiya
-                  va
-                  nafaqa oluvchilar soni<br>&nbsp;</div>
+                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Ko'chib ketganlar<br>&nbsp;</div>
               </div>
             </div>
 
