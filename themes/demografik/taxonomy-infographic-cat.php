@@ -17,11 +17,9 @@ $term = get_queried_object();
 	<div class="container">
 		<div class="stm_flex stm_flex_last stm_flex_center">
 			<div class="stm_titlebox__inner">
-			<?php
-				if ( function_exists('yoast_breadcrumb') ) {
-					yoast_breadcrumb( '<p id="category-breadcrumbs">','</p>' );
-				}
-			?>
+				<p id="category-breadcrumbs">
+				  <a href="https://demografiya.uz/infografika/">infografika</a>
+				</p>
 			</div>
 		</div>
 	</div>
