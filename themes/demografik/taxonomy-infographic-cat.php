@@ -2,7 +2,7 @@
 
 get_header();
 $term = get_queried_object();
-var_dump($term);
+
 ?>
 
 	<div class="stm_titlebox stm_titlebox_style_2 stm_titlebox_text-center">
