@@ -27,10 +27,15 @@ $term = get_queried_object();
 	</div>
 <?php
 
-$postslistinfografika_on_top = get_posts( [
-	'posts_per_page' => 100,
+$query = new WP_Query(array(
 	'post_type' => 'infographics',
-	'infographic-cat' => $term->name,
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'infographic-cat',
+			'field' => 'id',
+			'terms' => $term->term_id,
+		)
+		),
 	'meta_query' => array(
 		array(
 			'key' => 'post_on_top',
@@ -39,41 +44,54 @@ $postslistinfografika_on_top = get_posts( [
 			'compare' => '<='
 		)
 	),
-    'orderby' => 'meta_value_num',
-    'order' => 'ASC',	
-] );
+	'orderby' => 'meta_value_num',
+	'order' => 'ASC',
+));
+
+
 $exlude_infografika = [];
-foreach( $postslistinfografika_on_top as $pst ) :
-	setup_postdata($pst);
-	array_push($exlude_infografika, $pst->ID);
-endforeach;
+if ($query->have_posts()) {
+	while ($query->have_posts()) {
+		$query->the_post();
+		array_push($exlude_infografika, get_the_ID());
+		
+	}
+}
 wp_reset_postdata();
-$postslistinfografika = get_posts( [
-	'posts_per_page' => 100,
+
+
+$query_2 = new WP_Query(array(
 	'post_type' => 'infographics',
-	'infographic-cat' => $term->name,
-	'exclude' => $exlude_infografika,
-    'orderby' => 'date',
-    'order' => 'DESC',	
-] ); 
+	'post__not_in' => $exlude_infografika,
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'infographic-cat',
+			'field' => 'id',
+			'terms' => $term->term_id,
+			)
+		),
+	
+));
 
 $countinfografika = 0;
-foreach( $postslistinfografika as $post ){
-	setup_postdata($post);
-		
-	if(has_post_thumbnail()){
+if ($query->have_posts()) {
+	while ($query->have_posts()) {
+		$query->the_post();
+		if(has_post_thumbnail()){
 			$countinfografika++;		
 		}
 	}
-	wp_reset_postdata();
-foreach( $postslistinfografika_on_top as $post ){
-	setup_postdata($post);
-		
-	if(has_post_thumbnail()){
+}
+wp_reset_postdata();
+if ($query_2->have_posts()) {
+	while ($query_2->have_posts()) {
+		$query_2->the_post();
+		if(has_post_thumbnail()){
 			$countinfografika++;		
 		}
 	}
-	wp_reset_postdata();
+}
+wp_reset_postdata();
 
 ?>
 
@@ -83,9 +101,9 @@ foreach( $postslistinfografika_on_top as $post ){
 			<div class="admiral-active">
 				<div class="custom-grid-1-4 photo-gallery">
 					<?php
-					if (!empty($postslistinfografika_on_top)) :
-						foreach( $postslistinfografika_on_top as $post ):
-							setup_postdata($post);
+					if ($query->have_posts()) :
+						while ($query->have_posts()) :
+							$query->the_post();
 							if(has_post_thumbnail()):
 								?>
 								<div>
@@ -128,12 +146,12 @@ foreach( $postslistinfografika_on_top as $post ){
 								</div>
 							<?php
 							endif;
-						endforeach;
+						endwhile;
 						wp_reset_postdata();
 					endif;
-					if (!empty($postslistinfografika)):
-						foreach( $postslistinfografika as $post ):
-							setup_postdata($post);
+					if ($query_2->have_posts()) :
+						while ($query_2->have_posts()) :
+							$query_2->the_post();
 							if(has_post_thumbnail()):
 								?>
 								<div>
@@ -176,7 +194,7 @@ foreach( $postslistinfografika_on_top as $post ){
 								</div>
 							<?php
 							endif;
-						endforeach;
+						endwhile;
 						wp_reset_postdata();
 					endif;
 					
