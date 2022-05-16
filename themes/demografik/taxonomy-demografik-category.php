@@ -12,7 +12,6 @@ get_header();
 <div class="ads-wrapper-blog">
   <div class="site-main">
 
-    <?php if ( have_posts() ) : ?>
 
     <header class="page-header center-title">
       <?php
@@ -1535,11 +1534,7 @@ get_header();
 
 			the_posts_navigation();
 
-		else:
-
-			get_template_part( 'template-parts/category-pasport-no-image', 'none' );
-
-		endif;
+	
 		?>
       </div>
 
