@@ -140,11 +140,11 @@ img, video {
 .w-full {
     width: 100%;
 }
-[class*="span"] {
+/* [class*="span"] {
     float: left;
     min-height: 1px;
     margin-left: 20px;
-}
+} */
 .col-span-12 {
     grid-column: span 12 / span 12;
 }

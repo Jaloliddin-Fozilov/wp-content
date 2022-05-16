@@ -23,7 +23,14 @@
 
 <?php $image_url = get_the_post_thumbnail_url() ?>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?>>  
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-wrapper">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <!-- Preloader-end -->
 <?php wp_body_open(); ?>
   <header class="section section__header">
         <div class="header--top">
