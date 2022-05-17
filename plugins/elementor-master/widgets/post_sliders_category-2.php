@@ -8,7 +8,7 @@ use Elementor\Controls_Manager;
 defined( 'ABSPATH' ) || die();
 
 
-class Widget_Interactive_Maps extends Widget_Base {
+class Post_Sliders_Category_2 extends Widget_Base {
 
 	/**
 	 * Get widget name.
@@ -21,7 +21,7 @@ class Widget_Interactive_Maps extends Widget_Base {
 	 * @return string Widget name.
 	 */
 	public function get_name() {
-		return 'Interaktive Xarita';
+		return 'post_sliders_category 2';
 	}
 
 	/**
@@ -35,7 +35,7 @@ class Widget_Interactive_Maps extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Interaktive Xarita', 'elementor-master' );
+		return esc_html__( 'Demographics Passport Categories Sliders', 'elementor' );
 	}
 
 	/**
@@ -84,7 +84,10 @@ class Widget_Interactive_Maps extends Widget_Base {
 	 * @since 3.1.0
 	 * @access protected
 	 */
+
+	
 	protected function _register_controls() {
+
 		$this->start_controls_section(
 			'section_content',
 			array(
@@ -92,46 +95,50 @@ class Widget_Interactive_Maps extends Widget_Base {
 			)
 		);
 
+        
+        $this->add_control(
+			'post_type',
+			[
+				'label' => esc_html__( 'Query', 'elementor-master' ),
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'default' => 'solid',
+				'options' => [
+					'demografik-pasport' => esc_html__( 'Dempgraphic passport', 'elementor-master' ),
+				],
+			]
+		);
+
 		$this->add_control(
 			'title',
 			array(
 				'label'   => __( 'Title', 'elementor-master' ),
 				'type'    => Controls_Manager::TEXT,
-				'default' => __( 'Title', 'elementor-master' ),
 			)
 		);
 
 		$this->add_control(
-			'description',
-			array(
-				'label'   => __( 'Description', 'elementor-master' ),
-				'type'    => Controls_Manager::TEXTAREA,
-				'default' => __( 'Description', 'elementor-master' ),
-			)
-		);
-
-
-		$this->add_control(
-			'button_text',
+			'button_name',
 			array(
 				'label'   => __( 'Button text', 'elementor-master' ),
 				'type'    => Controls_Manager::TEXT,
 			)
 		);
-		$this->add_control(
-			'button_url',
-			array(
-				'label'   => __( 'Button url', 'elementor-master' ),
-				'type'    => Controls_Manager::URL,
-			)
-		);
 
 		$this->add_control(
-			'image', [
-				'label' => __( 'Image', 'elementor-master' ),
-				'type' => \Elementor\Controls_Manager::MEDIA,
+			'button_link',
+			[
+				'label' => esc_html__( 'Button Link', 'plugin-name' ),
+				'type' => \Elementor\Controls_Manager::URL,
+				'placeholder' => esc_html__( 'https://your-link.com', 'plugin-name' ),
+				'default' => [
+					'url' => '',
+					'is_external' => true,
+					'nofollow' => true,
+					'custom_attributes' => '',
+				],
 			]
 		);
+
 
 		$this->end_controls_section();
 	}
@@ -148,20 +155,32 @@ class Widget_Interactive_Maps extends Widget_Base {
 		$settings = $this->get_settings_for_display();
 
 		$this->add_inline_editing_attributes( 'title', 'none' );
-		$this->add_inline_editing_attributes( 'description', 'basic' );
+		$this->add_inline_editing_attributes( 'button_name', 'none' );
 		?>
-		<div class="section__creators mt-100">
-			<div class="container">
-				<div class="space-y-30 relative">
-					<div class="nc-CardLarge1 relative flex flex-col-reverse md:flex-row justify-end ">
-						<div class="md:absolute z-10 md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:mt-0 px-3 sm:px-6 md:px-0 md:w-3/5 lg:w-1/2 xl:w-2/5">
-							<div class="p-4 sm:p-8 xl:py-14 md:px-10 bg-white bg-opacity-40 backdrop-filter backdrop-blur-lg shadow-lg rounded-3xl space-y-3 sm:space-y-5 !border-opacity-0 -- nc-dark-box-bg">
-								<h2 class="section__title font__primary--31">
-									<?php echo wp_kses( $settings['title'], array() ); ?>
-								</h2> 
-								<p><?php echo wp_kses( $settings['description'], array() ); ?></p>
-								<a class="cta" href="<?php echo wp_kses( $settings['button_url'], array() ); ?>">
-									<span><?php echo wp_kses( $settings['button_text'], array() ); ?></span>
+
+        <?php
+			
+            $categories = get_categories( [
+            'taxonomy'     => 'demografik-category',
+            'type'         => 'demografik-pasport',
+            'child_of'     => 0,
+            'orderby'      => 'name',
+            'order'        => 'ASC',
+            'hide_empty'   => false,
+            'pad_counts'   => false,
+        ] );
+
+        ?>
+		
+		<div class="section section__content-slider section__content-slider--pl section__content-slider--carousel section__bg--off-white">
+			<div class="wrapper">
+				<div class="row">
+					<div class="col-md-7">
+						<h2 class="section__title font__primary--31"><?php echo wp_kses( $settings['title'], array() ); ?></h2>
+					</div>    
+					<div class="col-md-5 float-right">
+							<a class="cta" href="<?php echo $settings['button_link']['url'] ?>">
+									<span><?php echo wp_kses( $settings['button_name'], array() ); ?></span>
 									<span>
 										<svg width="33px" height="20px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 										<g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -172,22 +191,31 @@ class Widget_Interactive_Maps extends Widget_Base {
 										</svg>
 									</span> 
 								</a>
+					</div>  
+				</div> 
+				<div class="passport-carousel owl-carousel">
+					<?php foreach( $categories as $cat ): ?>
+						<div class="card__item one is__hero">
+							<div class="card_body">
+								<div class="card_head">
+									<a href="<?php echo get_term_link($cat->cat_ID) ?>">
+										<img src="<?php echo z_taxonomy_image_url($cat->term_id); ?>">
+									</a>
+									<div class="details space-x-0">
+										<div class="text-center">
+											<h5><?php echo $cat->name; ?></h5>
+										</div>
+										<div class="fire-icon">
+											<i class="fa fa-map-marker"></i>
+										</div>
+									</div>
+								</div>
 							</div>
-							
 						</div>
-						<?php if(!empty($settings['image'])): ?>
-						<div class="md:w-4/5 lg:w-2/3">                               
-							<div class="nc-NcImage aspect-w-16 aspect-h-12 sm:aspect-h-9 md:aspect-h-14 lg:aspect-h-10 2xl:aspect-h-9 relative">
-								<img src="<?php echo $settings['image']['url'];?>" class="absolute inset-0 object-cover rounded-3xl">
-							</div>
-						</div>
-						<?php endif; ?>
-					</div>
-
+					<?php endforeach; ?>
 				</div>
 			</div>
-		</div>
-		
+		</div>		
 		<?php
 	}
 
@@ -200,38 +228,5 @@ class Widget_Interactive_Maps extends Widget_Base {
 	 *
 	 * @access protected
 	 */
-	protected function _content_template() {
-		?>
-		<#
-		view.addInlineEditingAttributes( 'title', 'none' );
-		view.addInlineEditingAttributes( 'description', 'basic' );
-		#>
-		<div class="container mb-6">
-			<div class="flex items-center flex-wrap -mx-3">
-				<div class="w-full md_w-1/2 px-3">
-					<h2 class="text-3xl sm_text-4xl xl_text-5xl xl_text-titlemin font-extrabold mb-4 text-indigo">{{{ settings.title }}}</h2>
-					<p class="text-lg lg_text-xl text-indigo font-semibold mb-6"><?php echo wp_kses( $settings['description'], array() ); ?></p>
-					<a class="bg-indigo hover_bg-purple mb-12 inline-flex items-center px-8 md_px-10 py-3 rounded-xl duration-300 text-white" href="{{{ settings.link.url }}}">
-						<span class="font-semibold mr-3"><?php echo __("Read more", "elementor-master");?></span>
-						<span class="triangle-to-right triangle-to-right__big inline-block"></span>
-					</a>
-				</div>
-				<div class="w-full md_w-1/2 px-3">
-					<div class="flex items-center mb-6">
-						<h5 class="text-indigo text-4xl sm_text-5xl font-extrabold mr-4 sm_w-28 sm_min-w-28 w-20 min-w-20">+{{{ settings.team_amont }}}</h5>
-						<p class="text-indigo font-bold text-xl">{{{ settings.team }}}</p>
-					</div>
-					<div class="flex items-center mb-6">
-						<h5 class="text-indigo text-4xl sm_text-5xl font-extrabold mr-4 sm_w-28 sm_min-w-28 w-20 min-w-20">+{{{ settings.teacher_amount}}}</h5>
-						<p class="text-indigo font-bold text-xl">{{{ settings.teacher}}}</p>
-					</div>
-					<div class="flex items-center mb-6">
-						<h5 class="text-indigo text-4xl sm_text-5xl font-extrabold mr-4 sm_w-28 sm_min-w-28 w-20 min-w-20">+{{{ settings.project_amount}}}</h5>
-						<p class="text-indigo font-bold text-xl">{{{ settings.project}}}></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<?php
-	}
+	
 }

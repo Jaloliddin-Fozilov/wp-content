@@ -78,6 +78,7 @@ class Widgets {
 		require_once 'widgets/partner_sliders.php';
 		require_once 'widgets/post_sliders.php';
 		require_once 'widgets/post_sliders_category.php';
+		require_once 'widgets/post_sliders_category-2.php';
 
 		require_once 'widgets/interactive-maps.php';
 	}
@@ -106,6 +107,7 @@ class Widgets {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Partner_Sliders() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Post_Sliders() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Post_Sliders_Category() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Post_Sliders_Category_2() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Widget_Interactive_Maps() );
 	}
 
