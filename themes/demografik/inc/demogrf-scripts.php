@@ -8,7 +8,6 @@ function demografik_scripts() {
     wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/css/style.min.css', array(), _S_VERSION );
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), _S_VERSION );
     wp_enqueue_style( 'b4', get_template_directory_uri() . '/assets/css/b4.css', array(), _S_VERSION );
-    wp_enqueue_style( 'owl-carousel', get_template_directory_uri() . '/assets/css/owl.carousel.css', array(), _S_VERSION );
     wp_enqueue_style( 'flickity', get_template_directory_uri() . '/assets/css/flickity.css', array(), _S_VERSION );
     wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.min.css', array(), _S_VERSION );
     // wp_enqueue_style( 'redisgn', get_template_directory_uri() . '/assets/css/redesign.css', array(), _S_VERSION );
@@ -39,7 +38,7 @@ function demografik_scripts() {
     wp_enqueue_script( 'jquery-ui', get_template_directory_uri() . '/assets/js/jquery-ui.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'admiral', get_template_directory_uri() . '/assets/js/admiral-tabs.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), _S_VERSION, true );
-    wp_enqueue_script( 'slickjs',  get_template_directory_uri() . '/assets/js/slick.js', array(), _S_VERSION, true );
+    // wp_enqueue_script( 'slickjs',  get_template_directory_uri() . '/assets/js/slick.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'ekko-lightbox', get_template_directory_uri() . '/assets/js/ekko-lightbox.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'demografik', get_template_directory_uri() . '/assets/js/demografik.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array(), _S_VERSION, true );
@@ -54,7 +53,7 @@ function demografik_scripts() {
     wp_enqueue_script( 'macaw-tabs', get_template_directory_uri() . '/assets/js/js/macaw-tabs.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/assets/js/js/modernizr-3.8.0.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'popper.min', get_template_directory_uri() . '/assets/js/js/popper.min.js', array(), _S_VERSION, true );
-    wp_enqueue_script( 'slick.mim', get_template_directory_uri() . '/assets/js/js/slick.min.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'slick.min', get_template_directory_uri() . '/assets/js/js/slick.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'wow', get_template_directory_uri() . '/assets/js/js/wow.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'gsap.min', get_template_directory_uri() . '/assets/js/js/gsap.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'ScrollTrigger.min', get_template_directory_uri() . '/assets/js/js/ScrollTrigger.min.js', array(), _S_VERSION, true );

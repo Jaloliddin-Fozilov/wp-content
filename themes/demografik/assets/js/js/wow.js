@@ -537,7 +537,7 @@
 
 
 //WOW JS
-
+(function ($) {
 $(".wow").each(function() {
  if ($(window).width() > 767) {
    var wow = new WOW({
@@ -550,6 +550,8 @@ $(".wow").each(function() {
   new WOW().init();
  }
 });
+})(jQuery);
+  
 	
 	
 	

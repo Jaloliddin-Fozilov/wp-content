@@ -78,9 +78,12 @@ class Widgets {
 		require_once 'widgets/partner_sliders.php';
 		require_once 'widgets/post_sliders.php';
 		require_once 'widgets/post_sliders_category.php';
-		require_once 'widgets/post_sliders_category-2.php';
 
 		require_once 'widgets/interactive-maps.php';
+		require_once 'widgets/post_sliders_category-2.php';
+		require_once 'widgets/media-resource.php';
+		require_once 'widgets/online-course.php';
+		require_once 'widgets/digital-library.php';
 	}
 
 	/**
@@ -109,6 +112,9 @@ class Widgets {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Post_Sliders_Category() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Post_Sliders_Category_2() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Widget_Interactive_Maps() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Media_Resource() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Widget_Online_Course() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Widget_Digital_Library() );
 	}
 
 	/**

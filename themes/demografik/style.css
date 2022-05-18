@@ -101,13 +101,7 @@ img, video {
 .p-2 {
     padding: 0.5rem !important;
 }
-@media (min-width: 1200px){
-    [class*="span"] {
-        float: left;
-        min-height: 1px;
-        /* margin-left: 20px; */
-    }
-}
+
 .text-gray-800 {
     --text-opacity: 1;
     color: #2d3748;

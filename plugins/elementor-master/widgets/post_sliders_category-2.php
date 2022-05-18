@@ -9,6 +9,11 @@ defined( 'ABSPATH' ) || die();
 
 
 class Post_Sliders_Category_2 extends Widget_Base {
+	
+	public function __construct( $data = array(), $args = null ) {
+		parent::__construct( $data, $args );
+		wp_register_script('owl', plugins_url( '/assets/js/owl.carousel.min.js', ELEMENTOR_MASTER ), array(), '1.0.0');
+	}
 
 	/**
 	 * Get widget name.
