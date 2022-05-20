@@ -341,30 +341,5 @@ $('.category-slider.owl-carousel').owlCarousel({
 
 	}());
 
-	$("#owl-partners").owlCarousel({
-
-		autoPlay: 15000,
-		loop:true,
-		margin:10,
-		dots:false,				
-		responsiveClass:true,                    	
-		responsive:{
-			0:{
-				items:1,
-				nav:true
-			},
-			768:{
-				items:3,
-				nav:true
-			},
-			1200:{
-				items:3,
-				loop:true,
-				nav:true	
-			}
-		}
-
-	});
-
 
 })(jQuery)	

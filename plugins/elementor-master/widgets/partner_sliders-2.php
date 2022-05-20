@@ -10,6 +10,13 @@ defined( 'ABSPATH' ) || die();
 
 class Partner_Sliders_2 extends Widget_Base {
 
+
+	public function __construct( $data = array(), $args = null ) {
+		parent::__construct( $data, $args );
+		wp_register_script('owl.carousel.min.js', plugins_url( '/assets/js/owl.carousel.min.js', ELEMENTOR_MASTER ), array(), '1.0.0');
+		wp_register_script('plugin-script', plugins_url( '/assets/js/script.js', ELEMENTOR_MASTER ), array(), '1.0.0');
+	}
+
 	/**
 	 * Get widget name.
 	 *
@@ -208,7 +215,7 @@ class Partner_Sliders_2 extends Widget_Base {
 							<div class="col-md-7">
 								<div class="section_intro wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
 									<h2 class="section_heading">
-										
+									<?php echo wp_kses( $settings['title'], array() ); ?>
 									</h2>
 								</div>
 							</div>
@@ -229,7 +236,7 @@ class Partner_Sliders_2 extends Widget_Base {
 						</div><!-- end row -->
 					</div>
 					<div class="container new-proslider-homepage">
-						<div id="owl-demo" class="owl-carousel">
+						<div id="owl-partners" class="owl-carousel">
 							<?php 
 								if ( $settings['list'] ) {
 									
