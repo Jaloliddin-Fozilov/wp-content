@@ -48,17 +48,8 @@
 								</a>
 							</div>
 						</div>
-
-						<div class="col-md-3">
-							<h3 class="subtitle font__secondary--15">Asosiy havolalar</h6>
-								<ul class="footer_nav">
-									<li><a href="#">Aholini ro'yhatga olish</a></li>
-									<li><a href="#">Demografik passport</a></li>
-									<li><a href="#">Interaktiv xarita</a></li>
-									<li><a href="#">Raqamli kutubxona</a></li>
-									<li><a href="#">Xalqaro demografiya jurnali</a></li>
-									<li><a href="#">Onlayn kurslar</a></li>
-								</ul>
+						<div class="col-md-3 footer-menu">
+							<?php dynamic_sidebar( 'footer-widget-two' ); ?>
 						</div>
 
 						<div class="col-md-3">

@@ -64,6 +64,8 @@ class BEM_Walker_Nav_Menu extends Walker_Nav_Menu {
       if ($class == 'dropdown') {
         $atts['data-toggle'] = 'dropdown';
         $link_class = 'dropdown-toggle';
+      } else {
+        $link_class = ''; 
       }
     }
     if ( is_single() ) {
