@@ -1462,7 +1462,7 @@ a.share-icon6 {
 
 .nft-product-area {
     position: relative;
-    background: var(--body-bgcolor);
+    background: #cfd8dc;
     padding-bottom: 4.5rem;
 }
 .new_nft_product {
@@ -3160,7 +3160,7 @@ ul.share-icon-list.social-list li {
 
 ul.footer_nav {
     margin: 0;
-    padding-left: 4px;
+    padding-left: 0;
 }
 .footer_logo {
     margin-bottom: 20px;
