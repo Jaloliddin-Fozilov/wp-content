@@ -92,7 +92,7 @@
 			<div class="paragraph-list">
 				<section class="container paragraph--section--basic-text">
 					<?php the_content(); ?>
-           <!-- First block -->
+          <!-- First block -->
 
     <div class="flex items-center  text-gray-800 justify-center">
       <div class="container w-full p-5 mx-auto">
@@ -103,8 +103,8 @@
                 <img src='<?php echo get_template_directory_uri() . '/assets/images/aholi.png'?>' width="50">
               </div>
               <div class="flex flex-col flex-grow ml-2">
-                <div class="text-xl text-gray-600 py-1 people num " style="font-weight:600;font-size:24px;">
-                  <?php $queried_object = get_queried_object(); the_field( 'permanent_population', $queried_object );?>
+                <div class="text-xl text-gray-600 py-1 people num " style="font-weight:600;font-size:18px;">
+                  <?php $queried_object = get_queried_object(); $number = get_field( 'permanent_population', $queried_object ); echo number_format($number, 0, '', ' '); ?>
                 </div>
                 <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Doimiy aholi soni</div>
 
@@ -131,7 +131,7 @@
               </div>
               <div class="flex flex-col flex-grow ml-2">
                 <div class="text-xl text-gray-600 py-1"><span
-                    style="font-weight:600;font-size:24px;"><?php $queried_object = get_queried_object(); the_field( 'children_in_preschool_institutions', $queried_object );?></span>
+                    style="font-weight:600;font-size:18px;"><?php $queried_object = get_queried_object(); $number = get_field( 'children_in_preschool_institutions', $queried_object ); echo number_format($number, 0, '', ' '); ?></span>
                 </div>
                 <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">
                   Oilalar soni</div>
@@ -152,7 +152,7 @@
               </div>
               <div class="flex flex-col flex-grow ml-2">
                 <div class="text-xl text-gray-600 py-1"><span
-                    style="font-weight:600;font-size:24px;"><?php $queried_object = get_queried_object(); the_field( 'students_in_secondary_schools', $queried_object );?></span>
+                    style="font-weight:600;font-size:18px;"><?php $queried_object = get_queried_object(); $number = get_field( 'students_in_secondary_schools', $queried_object ); echo number_format($number, 0, '', ' '); ?></span>
                 </div>
                 <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Tug'ilish soni</div>
               </div>
@@ -168,7 +168,7 @@
               </div>
               <div class="flex flex-col flex-grow ml-2">
                 <div class="text-xl text-gray-600 py-1"><span
-                    style="font-weight:600;font-size:24px;"><?php $queried_object = get_queried_object(); the_field( 'students_in_higher_education', $queried_object );?></span>
+                    style="font-weight:600;font-size:18px;"><?php $queried_object = get_queried_object(); $number = get_field( 'students_in_higher_education', $queried_object ); echo number_format($number, 0, '', ' '); ?></span>
                 </div>
                 <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">O'lganlar soni</div>
               </div>
@@ -185,9 +185,9 @@
               </div>
               <div class="flex flex-col flex-grow ml-2">
                 <div class="text-xl text-gray-600 py-1"><span
-                    style="font-weight:600;font-size:24px;"><?php $queried_object = get_queried_object(); the_field( 'economically_occupied_population', $queried_object );?></span>
+                    style="font-weight:600;font-size:18px;"><?php $queried_object = get_queried_object(); $number = get_field( 'economically_occupied_population', $queried_object ); echo number_format($number, 0, '', ' '); ?></span>
                 </div>
-                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Nikohlar<br>&nbsp;</div>
+                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Nikohlar soni</div>
               </div>
             </div>
 
@@ -201,9 +201,9 @@
               </div>
               <div class="flex flex-col flex-grow ml-2">
                 <div class="text-xl text-gray-600 py-1"><span
-                    style="font-weight:600;font-size:24px;"><?php $queried_object = get_queried_object(); the_field( 'number_of_sportsmen', $queried_object );?></span>
+                    style="font-weight:600;font-size:18px;"><?php $queried_object = get_queried_object(); $number = get_field( 'number_of_sportsmen', $queried_object ); echo number_format($number, 0, '', ' '); ?></span>
                 </div>
-                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Ajrim<br>&nbsp;</div>
+                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Ajrim soni<br>&nbsp;<br>&nbsp;</div>
               </div>
             </div>
 
@@ -217,9 +217,9 @@
               </div>
               <div class="flex flex-col flex-grow ml-2">
                 <div class="text-xl text-gray-600 py-1"><span
-                    style="font-weight:600;font-size:24px;"><?php $queried_object = get_queried_object(); the_field( 'number_of_travelers', $queried_object );?></span>
+                    style="font-weight:600;font-size:18px;"><?php $queried_object = get_queried_object(); $number = get_field( 'number_of_travelers', $queried_object ); echo number_format($number, 0, '', ' '); ?></span>
                 </div>
-                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Ko'chib kelganlar<br>&nbsp;</div>
+                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Ko'chib kelganlar soni<br>&nbsp;</div>
               </div>
             </div>
 
@@ -233,9 +233,43 @@
               </div>
               <div class="flex flex-col flex-grow ml-2">
                 <div class="text-xl text-gray-600 py-1"><span
-                    style="font-weight:600;font-size:24px;"><?php $queried_object = get_queried_object(); the_field( 'number_of_pensioners_and_beneficiaries', $queried_object );?></span>
+                    style="font-weight:600;font-size:18px;"><?php $queried_object = get_queried_object(); $number = get_field( 'number_of_pensioners_and_beneficiaries', $queried_object ); echo number_format($number, 0, '', ' '); ?></span>
                 </div>
-                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Ko'chib ketganlar<br>&nbsp;</div>
+                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Ko'chib ketganlar soni<br>&nbsp;</div>
+              </div>
+            </div>
+
+            
+
+
+          </div>
+           <div class="col-span-12 sm:col-span-6 md:col-span-3">
+            <div class="flex flex-row bg-white shadow-sm rounded-t-lg p-4">
+              <div class="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-xl">
+                <img src='<?php echo get_template_directory_uri() . '/assets/images/qarilar.png'?>' width="50">
+              </div>
+              <div class="flex flex-col flex-grow ml-2">
+                <div class="text-xl text-gray-600 py-1"><span
+                    style="font-weight:600;font-size:18px;"><?php $queried_object = get_queried_object(); $number = get_field( 'migratsion_harakat', $queried_object ); echo number_format($number, 0, '', ' '); ?></span>
+                </div>
+                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">Migrasion harakat soni<br>&nbsp;</div>
+              </div>
+            </div>
+
+            
+
+
+          </div>
+           <div class="col-span-12 sm:col-span-6 md:col-span-3">
+            <div class="flex flex-row bg-white shadow-sm rounded-t-lg p-4">
+              <div class="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-xl">
+                <img src='<?php echo get_template_directory_uri() . '/assets/images/qarilar.png'?>' width="50">
+              </div>
+              <div class="flex flex-col flex-grow ml-2">
+                <div class="text-xl text-gray-600 py-1"><span
+                    style="font-weight:600;font-size:18px;"><?php $queried_object = get_queried_object(); $number = get_field( 'ortacha_aholi_soni', $queried_object ); echo number_format($number, 0, '', ' '); ?></span>
+                </div>
+                <div class="text-md text-blue-500" style="font-size:12.4px;line-height: initial;margin-top:6px">O'rtacha aholi soni soni<br>&nbsp;</div>
               </div>
             </div>
 
@@ -255,15 +289,18 @@
     <div class="wrapper">
       <ul class="block_list">
         <li class="block" data-uuid="1">
-          <div class="block_icon" data-uuid="1">
-            <i data-uuid="1" class="fa fa-line-chart"></i>
-          </div>
-          <div data-uuid="1" class="block_name">
-            <h4 data-uuid="1">1 Yoshgacha o'lim koeffitsiyenti</h4>
-          </div>
+          <a href="#table_content_1">
+            <div class="block_icon" data-uuid="1">
+              <i data-uuid="1" class="fa fa-line-chart"></i>
+            </div>
+            <div data-uuid="1" class="block_name">
+              <h4 data-uuid="1">1 Yoshgacha o'lim koeffitsiyenti</h4>
+            </div>
+          </a>
         </li>
         <li class="block" data-uuid="2">
-          <div class="block_icon" data-uuid="2">
+          <a href="#table_content_2">
+            <div class="block_icon" data-uuid="2">
             <svg data-uuid="2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path data-uuid="2"
                 d="M119.4 44.1C142.7 40.22 166.2 42.2 187.1 49.43L237.8 126.9L162.3 202.3C160.8 203.9 159.1 205.1 160 208.2C160 210.3 160.1 212.4 162.6 213.9L274.6 317.9C277.5 320.6 281.1 320.7 285.1 318.2C288.2 315.6 288.9 311.2 286.8 307.8L226.4 209.7L317.1 134.1C319.7 131.1 320.7 128.5 319.5 125.3L296.8 61.74C325.4 45.03 359.2 38.53 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.09V44.1z" />
@@ -272,9 +309,11 @@
           <div data-uuid="2" class="block_name">
             <h4 data-uuid="2">Oila</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="3">
-          <div class="block_icon" data-uuid="3">
+          <a href="#table_content_3">
+            <div class="block_icon" data-uuid="3">
             <svg data-uuid="3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path data-uuid="3"
                 d="M256 64C109.1 64 0 125.9 0 208v98.13C0 384.5 114.6 448 256 448s256-63.5 256-141.9V208C512 125.9 401.1 64 256 64zM256 288C203.1 288 155.1 279.1 120.4 264.6C155 249.9 201.6 240 256 240s101 9.875 135.6 24.62C356.9 279.1 308.9 288 256 288zM437.1 234.4C392.1 208.3 328.3 192 256 192S119.9 208.3 74.88 234.4C68 226.1 64 217.3 64 208C64 163.9 149.1 128 256 128c105.1 0 192 35.88 192 80C448 217.3 444 226.1 437.1 234.4z" />
@@ -283,9 +322,11 @@
           <div data-uuid="3" class="block_name">
             <h4 data-uuid="3">100 ta nikohga ajrim</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="4">
-          <div class="block_icon" data-uuid="4">
+          <a href="#table_content_4">
+            <div class="block_icon" data-uuid="4">
             <svg data-uuid="4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
               <path data-uuid="4"
                 d="M272 95.93c26.5 0 47.99-21.47 47.99-47.97S298.5 0 272 0C245.5 0 224 21.47 224 47.97S245.5 95.93 272 95.93zM209.7 357.3c-25.75-17.25-52.25-33.24-79.5-48.11L58.62 270.2L1.246 471.1c-4.875 16.1 4.1 34.74 22 39.62s34.63-4.998 39.5-21.99l36.63-128.1l60.63 40.37v78.86c0 17.62 14.38 31.99 32 31.99s32-14.37 32-31.99l.0022-95.93C224 373.2 218.6 363.2 209.7 357.3zM311.1 416c-13.88 0-25.95 8.863-30.33 21.86l-24.75 74.07h419.9l-101.9-206.3c-11.38-22.49-43.1-23.63-56.1-2.01l-31.89 54.21l-65.26-35.64l-24-121.2C288.1 161.3 263.2 127.7 227.1 109.7c-1-.4999-2.125-.625-3.125-1.125c-2.25-1.125-4.752-1.1-7.252-2.625C201.5 99.85 185.2 95.98 168.7 95.98H95.1c-9.25 0-18.05 4.061-24.18 10.93l-55.95 63.92c-.75 .9998-1.5 2.124-2.25 3.249c-8.875 13.1-3 32.87 11.63 40.74l336.6 184.3l-9.837 16.87h411.1zM105.9 204.1l-23.5-12.87l28.13-32.12h44.38L105.9 204.1zM199.5 256.1l34.9-41.28l13.5 67.61L199.5 256.1z" />
@@ -294,8 +335,10 @@
           <div data-uuid="4" class="block_name">
             <h4 data-uuid="4">2009-2022 Tumantar ming</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="5">
+          <a href="#table_content_5">
           <div class="block_icon" data-uuid="5">
             <svg data-uuid="5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path data-uuid="5"
@@ -305,8 +348,10 @@
           <div data-uuid="5" class="block_name">
             <h4 data-uuid="5">2011-2022 yil Аxoli mexnatga layok tuman</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="6">
+          <a href="#table_content_6">
           <div class="block_icon" data-uuid="6">
             <svg data-uuid="6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path data-uuid="6"
@@ -316,8 +361,10 @@
           <div data-uuid="6" class="block_name">
             <h4 data-uuid="6">Аjrim koeffitsienti</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="7">
+          <a href="#table_content_7">
           <div data-uuid="7" class="block_icon" data-uuid="7">
             <svg data-uuid="7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path data-uuid="7"
@@ -327,8 +374,10 @@
           <div data-uuid="7" class="block_name">
             <h4 data-uuid="7">Аjrim</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="8">
+          <a href="#table_content_8">
           <div class="block_icon" data-uuid="8">
             <svg data-uuid="8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
               <path data-uuid="8"
@@ -338,8 +387,10 @@
           <div data-uuid="8" class="block_name">
             <h4 data-uuid="8">Аholining tabiiy xarakati</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="9">
+          <a href="#table_content_9">
           <div class="block_icon" data-uuid="9">
             <svg data-uuid="9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
               <path data-uuid="9"
@@ -349,8 +400,10 @@
           <div data-uuid="9" class="block_name">
             <h4 data-uuid="9">Yosh guruhlari boʼyicha doimiy aholi soni</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="10">
+          <a href="#table_content_10">
           <div data-uuid="10" class="block_icon" data-uuid="10">
             <svg data-uuid="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path data-uuid="10"
@@ -360,8 +413,10 @@
           <div data-uuid="10" class="block_name">
             <h4 data-uuid="10">Zichlik</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="11">
+          <a href="#table_content_11">
           <div class="block_icon" data-uuid="11">
             <svg data-uuid="11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
               <path data-uuid="11"
@@ -371,8 +426,10 @@
           <div class="block_name" data-uuid="11">
             <h4 data-uuid="11">Ko‘chib kelganlar</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="12">
+          <a href="#table_content_12">
           <div class="block_icon" data-uuid="12">
             <svg data-uuid="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path data-uuid="12"
@@ -382,8 +439,10 @@
           <div data-uuid="12" class="block_name">
             <h4 data-uuid="12">Ko‘chib ketganlar soni</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="13">
+          <a href="#table_content_13">
           <div class="block_icon" data-uuid="13">
             <svg data-uuid="13" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path data-uuid="13"
@@ -393,8 +452,10 @@
           <div data-uuid="13" class="block_name">
             <h4 data-uuid="13">Migrasion xarakat</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="14">
+          <a href="#table_content_14">
           <div class="block_icon" data-uuid="14">
             <svg data-uuid="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path data-uuid="14"
@@ -404,8 +465,10 @@
           <div data-uuid="14" class="block_name">
             <h4 data-uuid="14">Nikoh koeffisienti</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="15">
+          <a href="#table_content_15">
           <div class="block_icon" data-uuid="15">
             <svg data-uuid="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path data-uuid="15"
@@ -415,8 +478,10 @@
           <div data-uuid="15" class="block_name">
             <h4 data-uuid="15">Nikoh</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="16">
+          <a href="#table_content_16">
           <div class="block_icon" data-uuid="16">
             <svg data-uuid="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path data-uuid="16"
@@ -426,8 +491,10 @@
           <div data-uuid="16" class="block_name">
             <h4 data-uuid="16">Reproduktiv yoshdagi (15-49) ayollar soni</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="17">
+          <a href="#table_content_17">
           <div class="block_icon" data-uuid="17">
             <svg data-uuid="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path data-uuid="17"
@@ -437,8 +504,10 @@
           <div data-uuid="17" class="block_name">
             <h4 data-uuid="17">Tug‘ilish</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="18">
+          <a href="#table_content_18">
           <div class="block_icon" data-uuid="18">
             <svg data-uuid="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path data-uuid="18"
@@ -448,8 +517,10 @@
           <div data-uuid="18" class="block_name">
             <h4 data-uuid="18">Tug‘ilishning umumiy koeffisienti</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="19">
+          <a href="#table_content_19">
           <div class="block_icon" data-uuid="19">
             <svg data-uuid="19" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path data-uuid="19"
@@ -459,8 +530,10 @@
           <div data-uuid="19" class="block_name">
             <h4 data-uuid="19">O‘lganlar soni</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="20">
+          <a href="#table_content_20">
           <div class="block_icon" data-uuid="20">
             <svg data-uuid="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path data-uuid="20"
@@ -470,8 +543,10 @@
           <div data-uuid="20" class="block_name">
             <h4 data-uuid="20">O‘lim koeffisienti</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="21">
+          <a href="#table_content_21">
           <div class="block_icon" data-uuid="21">
             <svg data-uuid="21" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path data-uuid="21"
@@ -481,8 +556,10 @@
           <div data-uuid="21" class="block_name">
             <h4 data-uuid="21">O‘lim sabablari</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="22">
+          <a href="#table_content_22">
           <div class="block_icon" data-uuid="22">
             <svg data-uuid="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path data-uuid="22"
@@ -492,8 +569,10 @@
           <div data-uuid="22" class="block_name">
             <h4 data-uuid="22">O‘rtacha aholi</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="23">
+          <a href="#table_content_23">
           <div class="block_icon" data-uuid="23">
             <svg data-uuid="23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path data-uuid="23"
@@ -503,8 +582,10 @@
           <div data-uuid="23" class="block_name">
             <h4 data-uuid="23">Hudud maydoni</h4>
           </div>
+          </a>
         </li>
         <li class="block" data-uuid="24">
+          <a href="#table_content_24">
           <div class="block_icon" data-uuid="24">
             <svg data-uuid="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <path data-uuid="24"
@@ -514,10 +595,11 @@
           <div data-uuid="24" class="block_name">
             <h4 data-uuid="24">Ma'muriy hududiy birliklar</h4>
           </div>
+          </a>
         </li>
       </ul>
       <ul class="content_list">
-        <li class="content_block unvisible">
+        <li id="table_content_1" class="content_block unvisible">
            <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode1', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -558,7 +640,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_2" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode2', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -599,7 +681,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_3" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode3', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -640,7 +722,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_4" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode4', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -681,7 +763,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_5" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode5', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -722,7 +804,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_6" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode6', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -763,7 +845,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_7" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode7', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -804,7 +886,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_8" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode8', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -845,7 +927,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_9" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode9', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -886,7 +968,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_10" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode10', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -927,7 +1009,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_11" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode11', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -968,7 +1050,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_12" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode12', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -1009,7 +1091,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_13" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode13', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -1050,7 +1132,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_14" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode14', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -1092,7 +1174,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_15" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode15', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -1133,7 +1215,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_16" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode16', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -1174,7 +1256,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_17" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode17', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -1215,7 +1297,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_18" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode18', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -1256,7 +1338,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_19" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode19', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -1297,7 +1379,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_20" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode20', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -1338,7 +1420,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_21" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode21', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -1379,7 +1461,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_22" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode22', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -1420,7 +1502,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_23" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode23', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -1461,7 +1543,7 @@
             </ul>
           </div>
         </li>
-        <li class="content_block unvisible">
+        <li id="table_content_24" class="content_block unvisible">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode24', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
