@@ -2719,7 +2719,7 @@ h1{
         padding: 5px 0;
     }
     .nav-main li {
-        display: inline-block;
+        display: block;
         padding: 0 5px;
     }
     
