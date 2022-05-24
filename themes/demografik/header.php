@@ -88,7 +88,7 @@
                                 <div class="stm-logo ">
                                     <a href="https://moiti.uz/">
                                         <img src="<?php echo get_template_directory_uri();?>/assets/images/moiti_logo.svg" class="attachment-full size-full">
-                                        <span>“Mahalla va oila” ilmiy-tadqiqot instituti</span>
+                                        <span>O‘zbekiston Respublikasi Oila va xotin-qizlar davlat qo‘mitasi huzuridagi «Oila va xotin-qizlar» ilmiy-tadqiqot instituti</span>
                                     </a>
                                 </div>
                             </div>
