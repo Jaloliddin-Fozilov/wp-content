@@ -35,10 +35,11 @@
   <header class="section section__header">
         <div class="header--top">
             <div class="wrapper">
+
                 <div class="top-nav">
 
                     <div class="stm-header__row stm-header__row_top">
-                        <div class="stm-header__cell stm-header__cell_left">
+                        <div class="stm-header__cell stm-header__cell_left col-md-3">
                             <div class="stm-header__element stm-header__element_">
 
                                 <div class="stm-logo lang-uz logo-uz">
@@ -46,12 +47,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="stm-header__cell stm-header__cell_center">
+                        <div class="stm-header__cell stm-header__cell_center col-md-4">
                             <div class="stm-header__element stm-header__element_">
                                 <div class="stm-icontext ">
                                     <div class="languages">
                                         <ul>
-                                            <li><a href="#" class="link top-bar__help top-bar__link">Oʻz</a></li>
+                                            <li><a href="#" class="link top-bar__help top-bar__link">Oʻz</a>
+                                            </li>
                                             <li><a href="#" class="link top-bar__help top-bar__link">Ўз</a></li>
                                             <li><a href="#" class="link top-bar__help top-bar__link">Ру</a></li>
                                         </ul>
@@ -61,16 +63,20 @@
 
                             <div class="stm-header__element stm-header__element_icon_only">
                                 <div class="stm-socials">
-                                    <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only" target="_blank">
+                                    <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only"
+                                        target="_blank">
                                         <i class="fa fa-facebook"></i>
                                     </a>
-                                    <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only" target="_blank">
+                                    <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only"
+                                        target="_blank">
                                         <i class="fa fa-youtube-play"></i>
                                     </a>
-                                    <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only" target="_blank">
+                                    <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only"
+                                        target="_blank">
                                         <i class="fa fa-instagram"></i>
                                     </a>
-                                    <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only" target="_blank">
+                                    <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only"
+                                        target="_blank">
                                         <i class="fa fa-paper-plane"></i>
                                     </a>
                                 </div>
@@ -83,19 +89,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="stm-header__cell stm-header__cell_right">
+                        <div class="stm-header__cell stm-header__cell_right col-md-5">
                             <div class="stm-header__element stm-header__element_">
                                 <div class="stm-logo ">
                                     <a href="https://moiti.uz/">
-                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/moiti_logo.svg" class="attachment-full size-full">
-                                        <span>O‘zbekiston Respublikasi Oila va xotin-qizlar davlat qo‘mitasi huzuridagi «Oila va xotin-qizlar» ilmiy-tadqiqot instituti</span>
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/moiti_logo.svg" class="attachment-full size-full">
+                                        <span>O‘zbekiston Respublikasi Oila va xotin-qizlar davlat qo‘mitasi
+                                            huzuridagi «Oila va xotin-qizlar» ilmiy-tadqiqot instituti</span>
                                     </a>
                                 </div>
                             </div>
-                            <div class="stm-header__element stm-header__element_">
-                                <div class="stm-logo">
+                            <div class="stm-header__element stm-header__element_ unfpa-wrap">
+                                <div class="unfpa-logo">
                                     <a href="https://www.unfpa.org/">
-                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/unfpa_logo.png" class="attachment-full size-full">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/unfpa_logo.png" class="attachment-full size-full">
                                     </a>
                                 </div>
 

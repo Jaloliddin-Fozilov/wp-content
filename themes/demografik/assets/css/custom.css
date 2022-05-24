@@ -174,3 +174,15 @@ h1.search-result-page-title {
 
 .dataTables_filter {display: none !important;}
 .dataTables_length {display: none !important;}
+
+.unfpa-logo {
+  max-height: 60px;
+}
+
+.unfpa-logo img {
+  max-height: 100%;
+}
+
+.unfpa-wrap {
+  width: 65%;
+}

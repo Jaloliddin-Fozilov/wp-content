@@ -279,7 +279,6 @@ table {
 .stm-header__cell_right .stm-header__element .stm-logo a {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
 }
 
 .stm-header__cell_right .stm-header__element .stm-logo span {
