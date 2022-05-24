@@ -31,6 +31,7 @@
         </div>
     </div>
     <!-- Preloader-end -->
+<div class="mim_tm_all_wrap" data-magic-cursor="" data-color="crimson">
 <?php wp_body_open(); ?>
   <header class="section section__header">
         <div class="header--top">

@@ -10,6 +10,7 @@
  */
 
 ?>
+</div><!-- /.mim_tm_all_wrap -->
 
 	<footer class="section section__footer ">
 		<div class="footer_area_bg">

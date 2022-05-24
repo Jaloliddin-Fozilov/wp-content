@@ -4,18 +4,6 @@
  *
  */
 get_header();
-?>
-
-		<div class="stm_titlebox stm_titlebox_style_2 stm_titlebox_text-center">
-			<div class="container">
-				<div class="stm_flex stm_flex_last stm_flex_center">
-					<div class="stm_titlebox__inner">
-						<h1 class="h1 stm_titlebox__title no_line text-transform stm_mgb_2"><?php echo get_the_title();?></h1>					
-					</div>
-				</div>
-			</div>
-		</div>
-<?php
 
 
 $postslistinfografika_on_top = get_posts( [
@@ -111,28 +99,121 @@ foreach( $postslistdocument as $post ){
 	wp_reset_postdata();
 ?>
 
-<section class="grey-bg-section">
-	<div class="tabs-wrapper">
-		<div data-admiral-tabs=".tabs-content" class="media-page-tabs">
-			<div data-hash="tab_infographics" class="admiral-active">
-				<div class="tab-title">Infografika</div>
-				<div class="tab-new-label"><?php echo $countinfografika; ?></div>
-			</div>
-			<div data-hash="tab_images">
-				<div class="tab-title">Rasm</div>
-				<div class="tab-new-label"><?php echo $countrasm; ?></div>
-			</div>
-			<div data-hash="tab_video">
-				<div class="tab-title">Video</div>
-				<div class="tab-new-label"><?php echo $countvideo; ?></div>
-			</div>
-			<div data-hash="tab_document">
-				<div class="tab-title">Hisobot va hujjatlar</div>
-				<div class="tab-new-label"><?php echo $countdocument; ?></div>
-			</div>
+	<main id="main">
+		<div id="hero-slider-area" class="header-hero-area site-breadcrumb-header fix">
+			<div class="site-breadcrumb pb-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center pt-100 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">
+							<h1 class="breadcrumb-title"><?php echo get_the_title();?></h1>                                    				
+						</div>
+					</div>
+				</div>
+			</div>			
 		</div>
-	</div>
-</section>
+
+		
+		<div class="nft-product-area product_explores pt-50 pb-50">
+			<div class="container pt-50 mb-20">                   
+				<div class="d-flex-between flex-wrap">
+					<div class="section-title">
+						<h2 class="section__title font__primary--31">Infografika</h2>
+					</div>                    
+					<div data-admiral-tabs=".tabs-content" class="media-page-tabs  button-group flex-wrap filters-button-group d-flex justify-content-start justify-content-lg-end mb-6">
+						<div data-hash="tab_infographics" class="admiral-active default-tab-list">
+							<div class="filter-text">Infografika</div>
+						</div>
+						<div data-hash="tab_images" class="default-tab-list">
+							<div class="filter-text">Rasm</div>
+						</div>
+						<div data-hash="tab_video" class="default-tab-list">
+							<div class="filter-text">Video</div>
+						</div>
+						<div data-hash="tab_document" class="default-tab-list">
+							<div class="filter-text">Hisobot va hujjatlar</div>
+						</div>
+					</div>
+				</div>                    
+			</div>
+			<div class="container">
+				<div class="tabs-content">
+					<div id="home" class="tab-pane fade in active">
+						<div class="row block">                       
+							<div class="col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+								<div class="explore-style-one media_block media-resourses">
+									<div class="thumb">
+											<a href="#"><img src="images/media.jpg"></a>                                                      
+									</div>                             
+									<div class="content">
+										<div class="header d-flex-between pt-4 pb-3">
+											<h3 class="title"><a href="#">18 ёшдан кичик болали оилалар</a></h3>
+										</div>
+									</div>                               
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+								<div class="explore-style-one media_block media-resourses">
+										<div class="thumb">
+												<a href="#"><img src="images/media.jpg"></a>                                                      
+										</div>                             
+										<div class="content">
+											<div class="header d-flex-between pt-4 pb-3">
+												<h3 class="title"><a href="#">18 ёшдан кичик болали оилалар</a></h3>
+											</div>
+										</div>                               
+									</div>
+							</div>
+							<div class="col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+										<div class="explore-style-one media_block media-resourses">
+											<div class="thumb">
+													<a href="#"><img src="images/media.jpg"></a>                                                      
+											</div>                             
+											<div class="content">
+												<div class="header d-flex-between pt-4 pb-3">
+													<h3 class="title"><a href="#">18 ёшдан кичик болали оилалар</a></h3>
+												</div>
+											</div>                               
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+											<div class="explore-style-one media_block media-resourses">
+												<div class="thumb">
+														<a href="#"><img src="images/media.jpg"></a>                                                      
+												</div>                             
+												<div class="content">
+													<div class="header d-flex-between pt-4 pb-3">
+														<h3 class="title"><a href="#">18 ёшдан кичик болали оилалар</a></h3>
+													</div>
+												</div>                               
+											</div>
+										</div>
+									<div class="col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+											<div class="explore-style-one media_block media-resourses">
+												<div class="thumb">
+														<a href="#"><img src="images/media.jpg"></a>                                                      
+												</div>                             
+												<div class="content">
+													<div class="header d-flex-between pt-4 pb-3">
+														<h3 class="title"><a href="#">18 ёшдан кичик болали оилалар</a></h3>
+													</div>
+												</div>                               
+											</div>
+								</div>
+								
+										
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+
+
+
 <section class="content-section" style="padding-top: 0;">
 	<div class="container">
 		<div class="tabs-content">
