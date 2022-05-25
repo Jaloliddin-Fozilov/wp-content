@@ -117,9 +117,7 @@ foreach( $postslistdocument as $post ){
 			<div class="container pt-50 mb-20">                   
 				<div class="d-flex-between flex-wrap">
 					<div class="section-title">
-						<h2 class="section__title font__primary--31">
-							
-						</h2>
+						<h2 class="section__title font__primary--31">Infografika</h2>
 					</div>                    
 					<div data-admiral-tabs=".tabs-content" class="media-page-tabs  button-group flex-wrap filters-button-group d-flex justify-content-start justify-content-lg-end mb-6">
 						<div data-hash="tab_infographics" class="admiral-active default-tab-list">
@@ -140,11 +138,8 @@ foreach( $postslistdocument as $post ){
 			<div class="container">
 				<div class="tabs-content">
 					<div  class="fade in admiral-active">
-						<div class="section-title">
-							<h2 class="section__title font__primary--31">Infografika</h2>
-						</div>
 						<div class="row block">
-							<?php
+						<?php
 							$query = array(
 								'taxonomy' => 'infographic-cat',
 								'hide_empty' => false,
@@ -186,29 +181,24 @@ foreach( $postslistdocument as $post ){
 						</div>
 					</div>
 					<div>
-						<div class="section-title">
-							<h2 class="section__title font__primary--31">Rasmlar</h2>
+						<div class="header-with-lines">
+							<h2 class="common-heading underline-text">Rasmlar</h2>
+							<hr>
 						</div>
-						<div class="row block">
+						<div class="custom-grid-1-4 photo-gallery">
 							<?php  
 							foreach( $postslistrasm as $post ):
 								setup_postdata($post);
 								if(has_post_thumbnail()):
 									?>
-									<div class="col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-										<div class="video-21-9-rate-wrapepr img_url explore-style-one media_block media-resourses">
-											<div class="thumb">
-												<a class="href_img" href="<?php echo get_the_post_thumbnail_url(); ?>" data-title="<?php the_title(); ?>" data-gallery="images"
-													data-toggle="lightbox" data-target=".bd-example-modal-lg">
-													<img src="<?php echo the_post_thumbnail_url() ?>" class="video-21-9-rate-images">
-												</a>
-											</div>
-											<div class="content">
-												<div class="header d-flex-between pt-4 pb-3">
-													<h3 class="title"><?php the_title(); ?>	</h3>
-												</div>
-											</div>  
+									<div>
+										<div class="video-21-9-rate-wrapepr img_url ">
+											<a class="href_img" href="<?php echo get_the_post_thumbnail_url(); ?>" data-title="<?php the_title(); ?>" data-gallery="images"
+												data-toggle="lightbox" data-target=".bd-example-modal-lg">
+												<img src="<?php echo the_post_thumbnail_url() ?>" class="video-21-9-rate-images">
+											</a>
 										</div>
+										<h5 class="custom-post-title"><?php the_title(); ?></h5>
 									</div>
 									<?php
 								endif;
@@ -218,43 +208,39 @@ foreach( $postslistdocument as $post ){
 						</div>
 					</div>
 					<div>
-						<div class="section-title">
-							<h2 class="section__title font__primary--31">Video</h2>
+						<div class="header-with-lines">
+							<h2 class="common-heading underline-text">Video</h2>
+							<hr>
 						</div>
 
-						<div class="row row__video">
-							<?php
-							foreach( $postslistvideo as $post ):
-								setup_postdata($post);
-								// Load value.
-								$iframe = get_field('video_link');
-								// Use preg_match to find iframe src.
-								preg_match('/src="(.+?)"/', $iframe, $matches);
-								$src = $matches[1];
-								?>
-								<div class="video-block__item col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-									<div class="explore-style-one media_block media-resourses">
-										<div class="video-link">
-											<iframe src="<?php echo $src;?>" width="100%" height="100%" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture sandbox" allowfullscreen ></iframe>
-										</div>
-									
-										<div class="content">
-											<div class="header d-flex-between pt-4 pb-3">
-												<h3 class="title"><?php the_title(); ?>	</h3>
-											</div>
-										</div>
-									</div>
-								</div>
-								<?php
-							endforeach;
-							wp_reset_postdata();
+								<div class="custom-grid-1-3 photo-gallery">
+						<?php
+						foreach( $postslistvideo as $post ):
+							setup_postdata($post);
+							// Load value.
+							$iframe = get_field('video_link');
+							// Use preg_match to find iframe src.
+							preg_match('/src="(.+?)"/', $iframe, $matches);
+							$src = $matches[1];
 							?>
+							<div class="video-block__item">
+								<div class="video-link">
+									<iframe src="<?php echo $src;?>" width="100%" height="100%" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture sandbox" allowfullscreen ></iframe>
+								
+								</div>
+								<h5 class="custom-post-title"><?php the_title(); ?></h5>
+							</div>
+							<?php
+						endforeach;
+						wp_reset_postdata();
+						?>
 						</div>
 					</div>
 					<!-- Hisobot va hujjatlar -->
 					<div>
-						<div class="section-title">
-							<h2 class="section__title font__primary--31">Hisobot va hujjatlar</h2>
+						<div class="header-with-lines">
+							<h2 class="common-heading underline-text">Hisobot va hujjatlar</h2>
+							<hr>
 						</div>
 						<div class="document-slider slick-slider">
 							<?php  
