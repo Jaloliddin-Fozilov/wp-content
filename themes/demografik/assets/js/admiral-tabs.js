@@ -12,9 +12,9 @@ alltTabsOnPage.forEach(tabs => {
     const tabsChildrens = [...tabs.children]
 
     const handleActiveTab = () => {
-        if (window.location.pathname != '/site/media.html') {
-            return;
-        }
+        // if (window.location.pathname != '/site/media.html') {
+        //     return;
+        // }
 
         let hash = window.location.hash.substr(1);
         let index = 0;
@@ -33,13 +33,19 @@ alltTabsOnPage.forEach(tabs => {
         tab.addEventListener('click', () => {
             tabsChildrens.forEach((tab, index) => {
                 tab.classList.remove('admiral-active')
+                tab.classList.remove('fade')
+                tab.classList.remove('in')
                  jQuery('.document-slider').slick('refresh');
             });
 
             tab.classList.add('admiral-active')
+            tab.classList.add('fade')
+            tab.classList.add('in')
 
             connectedTabsContentChildrens.forEach(tabContent => {
                 tabContent.classList.remove('admiral-active')
+                tabContent.classList.remove('fade')
+                tabContent.classList.remove('in')
             })
 
             connectedTabsContentChildrens[index].classList.add('admiral-active')

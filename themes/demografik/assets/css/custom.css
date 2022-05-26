@@ -186,3 +186,13 @@ h1.search-result-page-title {
 .unfpa-wrap {
   width: 65%;
 }
+.tabs-content>* {
+  display: none;
+}
+
+.tabs-content>*.admiral-active {
+  display: block;
+}
+.tabs-content .row__video {
+  flex-wrap: wrap;
+}
