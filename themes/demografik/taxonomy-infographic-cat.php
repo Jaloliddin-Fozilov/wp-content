@@ -134,7 +134,7 @@ wp_reset_postdata();
 	<div class="container">
 		<div class="tabs-content">
 			<div class="admiral-active">
-				<div class="custom-grid-1-4 photo-gallery">
+				<div class="row block">
 					<?php
 					if ($query->have_posts()) :
 						while ($query->have_posts()) :
@@ -144,22 +144,31 @@ wp_reset_postdata();
 								<div>
 								 <?php 
 										if( '' !== $post->post_content ) { ?>
-											<div class="video-21-9-rate-wrapepr img_url ">
+											<div class="video-21-9-rate-wrapepr img_url col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
 												<a data-toggle="modal" data-target="#modal-<?php the_ID() ?>" style="display: flex;justify-content: center; position: relative;">
 													<img src="<?php echo get_template_directory_uri() . '/assets/images/play_icon.png' ?>" class="play_icon">
 													<img src="<?php echo get_the_post_thumbnail_url(); ?>" class="img-fluid">
 												</a>
 												<?php the_field('video_link'); ?>
+												<div class="content">
+													<div class="header d-flex-between pt-4 pb-3">
+														<h3 class="title"><?php the_title(); ?>	</h3>
+													</div>
+												</div>  
 											</div>
-											<h5 class="custom-post-title"><?php the_title(); ?></h5>
+											
 										<?php }else{ ?>
-											<div class="video-21-9-rate-wrapepr img_url ">
-											<a class="href_img" href="<?php echo get_the_post_thumbnail_url(); ?>" data-title="<?php the_title(); ?>" data-gallery="infographics"
-												data-toggle="lightbox" data-target=".bd-example-modal-lg">
-												<img src="<?php echo the_post_thumbnail_url() ?>" class="video-21-9-rate-images">
-											</a>
+											<div class="video-21-9-rate-wrapepr img_url col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+												<a class="href_img" href="<?php echo get_the_post_thumbnail_url(); ?>" data-title="<?php the_title(); ?>" data-gallery="infographics"
+													data-toggle="lightbox" data-target=".bd-example-modal-lg">
+													<img src="<?php echo the_post_thumbnail_url() ?>" class="video-21-9-rate-images">
+												</a>
+												<div class="content">
+													<div class="header d-flex-between pt-4 pb-3">
+														<h3 class="title"><?php the_title(); ?>	</h3>
+													</div>
+												</div>
 											</div>
-											<h5 class="custom-post-title"><?php the_title(); ?></h5>
 									<?php	}
 									?>
 								</div>
@@ -192,22 +201,31 @@ wp_reset_postdata();
 								<div>
 								 <?php 
 										if( '' !== $post->post_content ) { ?>
-											<div class="video-21-9-rate-wrapepr img_url ">
+											<div class="video-21-9-rate-wrapepr img_url col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
 												<a data-toggle="modal" data-target="#modal-<?php the_ID() ?>" style="display: flex;justify-content: center; position: relative;">
 													<img src="<?php echo get_template_directory_uri() . '/assets/images/play_icon.png' ?>" class="play_icon">
 													<img src="<?php echo get_the_post_thumbnail_url(); ?>" class="img-fluid">
 												</a>
 												<?php the_field('video_link'); ?>
+												<div class="content">
+													<div class="header d-flex-between pt-4 pb-3">
+														<h3 class="title"><?php the_title(); ?>	</h3>
+													</div>
+												</div>
 											</div>
-											<h5 class="custom-post-title"><?php the_title(); ?></h5>
 										<?php }else{ ?>
-											<div class="video-21-9-rate-wrapepr img_url ">
-											<a class="href_img" href="<?php echo get_the_post_thumbnail_url(); ?>" data-title="<?php the_title(); ?>" data-gallery="infographics"
-												data-toggle="lightbox" data-target=".bd-example-modal-lg">
-												<img src="<?php echo the_post_thumbnail_url() ?>" class="video-21-9-rate-images">
-											</a>
+											<div class="video-21-9-rate-wrapepr img_url col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+												<a class="href_img" href="<?php echo get_the_post_thumbnail_url(); ?>" data-title="<?php the_title(); ?>" data-gallery="infographics"
+													data-toggle="lightbox" data-target=".bd-example-modal-lg">
+													<img src="<?php echo the_post_thumbnail_url() ?>" class="video-21-9-rate-images">
+												</a>
+												<div class="content">
+													<div class="header d-flex-between pt-4 pb-3">
+														<h3 class="title"><?php the_title(); ?>	</h3>
+													</div>
+												</div>
 											</div>
-											<h5 class="custom-post-title"><?php the_title(); ?></h5>
+											
 									<?php	}
 									?>
 								</div>
