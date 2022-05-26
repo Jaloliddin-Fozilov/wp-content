@@ -154,7 +154,7 @@ class Widget_Interactive_Maps extends Widget_Base {
 			<div class="container">
 				<div class="space-y-30 relative">
 					<div class="nc-CardLarge1 relative flex flex-col-reverse md:flex-row justify-end ">
-						<div class="md:absolute z-10 md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:mt-0 px-3 sm:px-6 md:px-0 md:w-3/5 lg:w-1/2 xl:w-2/5">
+						<div class="md:absolute z-9 md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:mt-0 px-3 sm:px-6 md:px-0 md:w-3/5 lg:w-1/2 xl:w-2/5">
 							<div class="p-4 sm:p-8 xl:py-14 md:px-10 bg-white bg-opacity-40 backdrop-filter backdrop-blur-lg shadow-lg rounded-3xl space-y-3 sm:space-y-5 !border-opacity-0 -- nc-dark-box-bg">
 								<h2 class="section__title font__primary--31">
 									<?php echo wp_kses( $settings['title'], array() ); ?>
