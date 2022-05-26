@@ -194,6 +194,9 @@ class Media_Resource extends Widget_Base {
 
 		$this->add_inline_editing_attributes( 'title', 'none' );
 		$this->add_inline_editing_attributes( 'button_name', 'none' );
+		if ( ! empty( $settings['link']['url'] ) ) {
+			$this->add_link_attributes( 'website_link', $settings['link'] );
+		}
 		?>
 
 
@@ -206,7 +209,7 @@ class Media_Resource extends Widget_Base {
 						</h2>
 					</div>    
 					<div class="col-md-5 float-right">
-						<a class="cta" href="<?php echo $item['link']['url'];?>">
+						<a class="cta" <?php echo $this->get_render_attribute_string( 'website_link' ); ?>>
 							<span><?php echo wp_kses( $settings['button_name'], array() ); ?></span>
 							<span>
 								<svg width="33px" height="20px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
