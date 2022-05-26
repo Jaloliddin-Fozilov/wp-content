@@ -90,172 +90,148 @@ wp_reset_postdata();
 
 			<div class="container">
 				<div class="tabs-content">
-					<div>
-						<div class="section-title">
-							<h2 class="section__title font__primary--31">Rasmlar</h2>
-						</div>
+					<div class="admiral-active">
 						<div class="row block">
-							<?php  
-							foreach( $postslistrasm as $post ):
-								setup_postdata($post);
-								if(has_post_thumbnail()):
-									?>
-									<div class="col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-										<div class="video-21-9-rate-wrapepr img_url explore-style-one media_block media-resourses">
-											<div class="thumb">
-												<a class="href_img" href="<?php echo get_the_post_thumbnail_url(); ?>" data-title="<?php the_title(); ?>" data-gallery="images"
-													data-toggle="lightbox" data-target=".bd-example-modal-lg">
-													<img src="<?php echo the_post_thumbnail_url() ?>" class="video-21-9-rate-images">
-												</a>
-											</div>
-											<div class="content">
-												<div class="header d-flex-between pt-4 pb-3">
-													<h3 class="title"><?php the_title(); ?>	</h3>
-												</div>
-											</div>  
+							<?php
+							if ($query->have_posts()) :
+								while ($query->have_posts()) :
+									$query->the_post();
+									if(has_post_thumbnail()):
+										?>
+										<div>
+										<?php 
+												if( '' !== $post->post_content ) { ?>
+													<div class="video-21-9-rate-wrapepr img_url col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+														<div class="explore-style-one media_block media-resourses">
+															<div class="thumb">
+																<a data-toggle="modal" data-target="#modal-<?php the_ID() ?>" style="display: flex;justify-content: center; position: relative;">
+																	<img src="<?php echo get_template_directory_uri() . '/assets/images/play_icon.png' ?>" class="play_icon">
+																	<img src="<?php echo get_the_post_thumbnail_url(); ?>" class="img-fluid">
+																</a>
+															</div>
+															<?php the_field('video_link'); ?>
+															<div class="content">
+																<div class="header d-flex-between pt-4 pb-3">
+																	<h3 class="title"><?php the_title(); ?>	</h3>
+																</div>
+															</div> 
+														</div>
+													</div>
+													
+												<?php }else{ ?>
+													<div class="video-21-9-rate-wrapepr img_url col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+														<div class="explore-style-one media_block media-resourses">
+															<div class="thumb">		
+																<a class="href_img" href="<?php echo get_the_post_thumbnail_url(); ?>" data-title="<?php the_title(); ?>" data-gallery="infographics"
+																	data-toggle="lightbox" data-target=".bd-example-modal-lg">
+																	<img src="<?php echo the_post_thumbnail_url() ?>" class="video-21-9-rate-images">
+																</a>
+															</div>
+															<div class="content">
+																<div class="header d-flex-between pt-4 pb-3">
+																	<h3 class="title"><?php the_title(); ?>	</h3>
+																</div>
+															</div>
+														</div>
+													</div>
+											<?php	}
+											?>
 										</div>
-									</div>
+											<div class="modal fade custom-modal" id="modal-<?php the_ID() ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+														</button>
+														<h5 class="modal-title" id="exampleModalLongTitle"><?php the_title(); ?></h5>
+													</div>
+													<div class="modal-body">
+														<?php the_content(); ?>
+													</div>
+												</div>
+											</div>
+										</div>
 									<?php
-								endif;
-							endforeach;
-							wp_reset_postdata();
+									endif;
+								endwhile;
+								wp_reset_postdata();
+							endif;
+							if ($query_2->have_posts()) :
+								while ($query_2->have_posts()) :
+									$query_2->the_post();
+									if(has_post_thumbnail()):
+										?>
+										<div>
+										<?php 
+												if( '' !== $post->post_content ) { ?>
+													<div class="video-21-9-rate-wrapepr img_url col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+														<div class="explore-style-one media_block media-resourses">
+															<div class="thumb">	
+																<a data-toggle="modal" data-target="#modal-<?php the_ID() ?>" style="display: flex;justify-content: center; position: relative;">
+																	<img src="<?php echo get_template_directory_uri() . '/assets/images/play_icon.png' ?>" class="play_icon">
+																	<img src="<?php echo get_the_post_thumbnail_url(); ?>" class="img-fluid">
+																</a>
+															</div>
+															<?php the_field('video_link'); ?>
+															<div class="content">
+																<div class="header d-flex-between pt-4 pb-3">
+																	<h3 class="title"><?php the_title(); ?>	</h3>
+																</div>
+															</div>
+														</div>
+														
+													</div>
+												<?php }else{ ?>
+													<div class="video-21-9-rate-wrapepr img_url col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+														<div class="explore-style-one media_block media-resourses">
+															<div class="thumb">		
+																<a class="href_img" href="<?php echo get_the_post_thumbnail_url(); ?>" data-title="<?php the_title(); ?>" data-gallery="infographics"
+																	data-toggle="lightbox" data-target=".bd-example-modal-lg">
+																	<img src="<?php echo the_post_thumbnail_url() ?>" class="video-21-9-rate-images">
+																</a>
+															</div>
+															<div class="content">
+																<div class="header d-flex-between pt-4 pb-3">
+																	<h3 class="title"><?php the_title(); ?>	</h3>
+																</div>
+															</div>
+														</div>
+													</div>
+													
+											<?php	}
+											?>
+										</div>
+											<div class="modal fade custom-modal" id="modal-<?php the_ID() ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+														</button>
+														<h5 class="modal-title" id="exampleModalLongTitle"><?php the_title(); ?></h5>
+													</div>
+													<div class="modal-body">
+														<?php the_content(); ?>
+													</div>
+												</div>
+											</div>
+										</div>
+									<?php
+									endif;
+								endwhile;
+								wp_reset_postdata();
+							endif;
+							
 							?>
 						</div>
 					</div>
-
-				</div><!-- /.tabs-content -->
+				</div>
 			</div>
 		</div>
 
 	</main>
-
-
-<section class="content-section" style="padding-top: 0;">
-	<div class="container">
-		<div class="tabs-content">
-			<div class="admiral-active">
-				<div class="row block">
-					<?php
-					if ($query->have_posts()) :
-						while ($query->have_posts()) :
-							$query->the_post();
-							if(has_post_thumbnail()):
-								?>
-								<div>
-								 <?php 
-										if( '' !== $post->post_content ) { ?>
-											<div class="video-21-9-rate-wrapepr img_url col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-												<a data-toggle="modal" data-target="#modal-<?php the_ID() ?>" style="display: flex;justify-content: center; position: relative;">
-													<img src="<?php echo get_template_directory_uri() . '/assets/images/play_icon.png' ?>" class="play_icon">
-													<img src="<?php echo get_the_post_thumbnail_url(); ?>" class="img-fluid">
-												</a>
-												<?php the_field('video_link'); ?>
-												<div class="content">
-													<div class="header d-flex-between pt-4 pb-3">
-														<h3 class="title"><?php the_title(); ?>	</h3>
-													</div>
-												</div>  
-											</div>
-											
-										<?php }else{ ?>
-											<div class="video-21-9-rate-wrapepr img_url col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-												<a class="href_img" href="<?php echo get_the_post_thumbnail_url(); ?>" data-title="<?php the_title(); ?>" data-gallery="infographics"
-													data-toggle="lightbox" data-target=".bd-example-modal-lg">
-													<img src="<?php echo the_post_thumbnail_url() ?>" class="video-21-9-rate-images">
-												</a>
-												<div class="content">
-													<div class="header d-flex-between pt-4 pb-3">
-														<h3 class="title"><?php the_title(); ?>	</h3>
-													</div>
-												</div>
-											</div>
-									<?php	}
-									?>
-								</div>
-									<div class="modal fade custom-modal" id="modal-<?php the_ID() ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-									 <div class="modal-dialog modal-dialog-centered" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-												</button>
-												<h5 class="modal-title" id="exampleModalLongTitle"><?php the_title(); ?></h5>
-											</div>
-											<div class="modal-body">
-												<?php the_content(); ?>
-											</div>
-										</div>
-									</div>
-								</div>
-							<?php
-							endif;
-						endwhile;
-						wp_reset_postdata();
-					endif;
-					if ($query_2->have_posts()) :
-						while ($query_2->have_posts()) :
-							$query_2->the_post();
-							if(has_post_thumbnail()):
-								?>
-								<div>
-								 <?php 
-										if( '' !== $post->post_content ) { ?>
-											<div class="video-21-9-rate-wrapepr img_url col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-												<a data-toggle="modal" data-target="#modal-<?php the_ID() ?>" style="display: flex;justify-content: center; position: relative;">
-													<img src="<?php echo get_template_directory_uri() . '/assets/images/play_icon.png' ?>" class="play_icon">
-													<img src="<?php echo get_the_post_thumbnail_url(); ?>" class="img-fluid">
-												</a>
-												<?php the_field('video_link'); ?>
-												<div class="content">
-													<div class="header d-flex-between pt-4 pb-3">
-														<h3 class="title"><?php the_title(); ?>	</h3>
-													</div>
-												</div>
-											</div>
-										<?php }else{ ?>
-											<div class="video-21-9-rate-wrapepr img_url col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-												<a class="href_img" href="<?php echo get_the_post_thumbnail_url(); ?>" data-title="<?php the_title(); ?>" data-gallery="infographics"
-													data-toggle="lightbox" data-target=".bd-example-modal-lg">
-													<img src="<?php echo the_post_thumbnail_url() ?>" class="video-21-9-rate-images">
-												</a>
-												<div class="content">
-													<div class="header d-flex-between pt-4 pb-3">
-														<h3 class="title"><?php the_title(); ?>	</h3>
-													</div>
-												</div>
-											</div>
-											
-									<?php	}
-									?>
-								</div>
-									<div class="modal fade custom-modal" id="modal-<?php the_ID() ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-									 <div class="modal-dialog modal-dialog-centered" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-												</button>
-												<h5 class="modal-title" id="exampleModalLongTitle"><?php the_title(); ?></h5>
-											</div>
-											<div class="modal-body">
-												<?php the_content(); ?>
-											</div>
-										</div>
-									</div>
-								</div>
-							<?php
-							endif;
-						endwhile;
-						wp_reset_postdata();
-					endif;
-					
-					?>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> 
 <?php
 get_footer();
