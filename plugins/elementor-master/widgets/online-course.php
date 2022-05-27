@@ -149,6 +149,9 @@ class Widget_Online_Course extends Widget_Base {
 
 		$this->add_inline_editing_attributes( 'title', 'none' );
 		$this->add_inline_editing_attributes( 'description', 'basic' );
+		if ( ! empty( $settings['button_url']['url'] ) ) { 
+			$this->add_link_attributes( 'website_link', $settings['button_url'] );
+		}
 		?>
             <div
                 class="section section__content-slider section__content-slider--pl section__content-slider--carousel section__bg--off-white">
@@ -162,7 +165,7 @@ class Widget_Online_Course extends Widget_Base {
                             <p class="cds-7 css-p0ww4y cds-9">
 								<?php echo wp_kses( $settings['description'], array() ); ?>
                             </p>
-                            <a class="cta" href="<?php echo wp_kses( $settings['button_url'], array() ); ?>">
+                            <a class="cta" <?php echo $this->get_render_attribute_string( 'website_link' ); ?>>
                                 <span><?php echo wp_kses( $settings['button_text'], array() ); ?></span>
                                 <span>
                                   <svg width="33px" height="20px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

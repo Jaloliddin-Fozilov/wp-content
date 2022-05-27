@@ -194,8 +194,8 @@ class Media_Resource extends Widget_Base {
 
 		$this->add_inline_editing_attributes( 'title', 'none' );
 		$this->add_inline_editing_attributes( 'button_name', 'none' );
-		if ( ! empty( $settings['link']['url'] ) ) {
-			$this->add_link_attributes( 'website_link', $settings['link'] );
+		if ( ! empty( $settings['button_link']['url'] ) ) {
+			$this->add_link_attributes( 'website_link', $settings['button_link'] );
 		}
 		?>
 

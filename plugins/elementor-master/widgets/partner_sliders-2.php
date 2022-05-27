@@ -200,6 +200,10 @@ class Partner_Sliders_2 extends Widget_Base {
 
 		$this->add_inline_editing_attributes( 'title', 'none' );
 		$this->add_inline_editing_attributes( 'button_name', 'none' );
+
+		if ( ! empty( $settings['button_link']['url'] ) ) {
+			$this->add_link_attributes( 'website_link', $settings['button_link'] );
+		}
 		?>
 
 
@@ -220,7 +224,7 @@ class Partner_Sliders_2 extends Widget_Base {
 								</div>
 							</div>
 							<div class="col-md-5 float-right col-sm-12">
-								<a class="cta" href="<?php echo $settings['button_link']['url'] ?>">
+								<a class="cta" <?php echo $this->get_render_attribute_string( 'website_link' ); ?>>
 									<span><?php echo wp_kses( $settings['button_name'], array() ); ?></span>
 									<span>
 									<svg width="33px" height="20px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
