@@ -11697,7 +11697,7 @@ button.slide-arrow.prev-arrow {
     margin: 0 7.5px;
     border: 2px solid #384267;
 }
-.default-tab-list.active, .default-tab-list:hover{   
+.default-tab-list.admiral-active, .default-tab-list:hover{   
     color: white;
     background: #384267;
 }
