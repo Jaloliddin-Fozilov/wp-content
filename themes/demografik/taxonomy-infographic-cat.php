@@ -109,7 +109,7 @@ wp_reset_postdata();
 																	<img src="<?php echo get_the_post_thumbnail_url(); ?>" class="img-fluid">
 																</a>
 															</div>
-															<?php the_field('video_link'); ?>
+															
 															<div class="content">
 																<div class="header d-flex-between pt-4 pb-3">
 																	<h3 class="title"><?php the_title(); ?>	</h3>
@@ -148,7 +148,8 @@ wp_reset_postdata();
 														<h5 class="modal-title" id="exampleModalLongTitle"><?php the_title(); ?></h5>
 													</div>
 													<div class="modal-body">
-														<?php the_content(); ?>
+														<?php the_field('video_link'); ?>
+														<?php // the_content(); ?>
 													</div>
 												</div>
 											</div>

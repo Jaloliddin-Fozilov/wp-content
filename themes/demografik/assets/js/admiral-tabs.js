@@ -35,7 +35,8 @@ alltTabsOnPage.forEach(tabs => {
                 tab.classList.remove('admiral-active')
                 tab.classList.remove('fade')
                 tab.classList.remove('in')
-                 jQuery('.document-slider').slick('refresh');
+                jQuery('.document-slider').slick('refresh');
+                console.log(window.location.pathname)
             });
 
             tab.classList.add('admiral-active')
