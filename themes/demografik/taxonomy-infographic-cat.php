@@ -148,8 +148,8 @@ wp_reset_postdata();
 														<h5 class="modal-title" id="exampleModalLongTitle"><?php the_title(); ?></h5>
 													</div>
 													<div class="modal-body">
-														<?php the_field('video_link'); ?>
-														<?php // the_content(); ?>
+														<?php // the_field('video_link'); ?>
+														<?php the_content(); ?>
 													</div>
 												</div>
 											</div>
