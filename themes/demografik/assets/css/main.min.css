@@ -11644,6 +11644,10 @@ button.slide-arrow.prev-arrow {
 .explore-style-one.media-resourses .thumb img{
     height: 250px;
 }
+.explore-style-one.media-resourses .thumb img.play_icon {
+    width: unset;
+    object-fit: unset;
+}
 .explore-style-one.media-resourses .content .title{
     height: auto;
 }
