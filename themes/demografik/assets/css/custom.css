@@ -196,6 +196,84 @@ h1.search-result-page-title {
 .tabs-content .row__video {
   flex-wrap: wrap;
 }
-.modal-dialog.modal-dialog-centered {
-  height: 100vh!important;
+
+
+.rating__content{font-weight: 900;}
+
+.country-summary__content td:first-child {
+    color: #673ab7;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+}
+
+.country-summary__content td {
+border: 2px solid #e6e6e6;
+    padding: 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.country-summary__content strong[data-colour=green] {
+    color: #e91e63;
+}
+
+.country-stats__detailed .country-stats__table .country-stats__table-heading {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.country-summary__content strong {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    color: #e91e63;
+    text-align: center;
+}
+
+
+.stat--donut .stat__title {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.country-content__main .country_item {
+    display: none;
+    text-align: justify;
+}
+
+.fnt0 {
+  font-size: 24rem;
+}
+
+.header--bottom {
+    background-color: #363a44d9;
+    backdrop-filter: blur(5px);
+}
+
+.big-counter .counter-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin: 0;
+    color:#384267;
+}
+
+.big-counter .counter {
+    color: #f9553e;
+    font-weight: 600;
+    font-size: 4.5em;
+    margin-bottom: -15px;
+    font-family: FuturaPT;
+}
+
+.button.is-white.is-outlined {
+    background-color: #384267;
+    border-color: #fff;
+    color: #fff;
+}
+
+.button.is-white.is-outlined.active {
+  background-color: #f9553e;
 }
