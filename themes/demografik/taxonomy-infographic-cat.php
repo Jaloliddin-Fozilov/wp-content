@@ -137,8 +137,8 @@ wp_reset_postdata();
 											<?php	}
 											?>
 										</div>
-											<div class="modal fade custom-modal" id="modal-<?php the_ID() ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-											<div class="modal-dialog modal-dialog-centered" role="document">
+											<div class="modal fade custom-modal" id="modal-<?php the_ID() ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+											<div class="modal-dialog modal-dialog-centered" role="video" style="width: 800px">
 												<div class="modal-content">
 													<div class="modal-header">
 														
