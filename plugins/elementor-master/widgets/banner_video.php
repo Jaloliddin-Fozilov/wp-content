@@ -185,8 +185,8 @@ class Banner_Video extends Widget_Base {
                             <div class="counter-main">
 
                                 <div class="counter is-size-2-mobile">
-                                    <div id="worldpop" class="active"></div>
-                                    <div id="uzbekistan"></div>
+                                    <div id="uzbekistan" class="active"></div>
+									<div id="worldpop"></div>
                                 </div>
 
                                 <h2 class="counter-title is-size-3-mobile"><?php echo wp_kses( $settings['title'], array() ); ?></h2>
@@ -196,9 +196,9 @@ class Banner_Video extends Widget_Base {
                                     <div class="column">
 
                                         <div>
+											<button data-desc="<?php echo wp_kses( $settings['desc_uz'], array() ); ?>" class="button is-outlined is-white is-small is-rounded border-25 active ng-star-inserted"><?php echo wp_kses( $settings['uzbekistan'], array() ); ?></button>
                                             <button data-desc="<?php echo wp_kses( $settings['desc_global'], array() ); ?>" class="button is-outlined is-white is-small is-rounded border-25 space-right-10 ng-star-inserted"><?php echo wp_kses( $settings['global'], array() ); ?></button>
-                                            <button data-desc="<?php echo wp_kses( $settings['desc_uz'], array() ); ?>" class="button is-outlined is-white is-small is-rounded border-25 active ng-star-inserted"><?php echo wp_kses( $settings['uzbekistan'], array() ); ?></button>
-
+                                        
                                         </div>
 
                                     </div>
