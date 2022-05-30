@@ -5,7 +5,8 @@
 			alwaysShowClose: true
 		}, );
 	});
-		jQuery('.document-slider').slick({
+(function ($) {
+    $('.document-slider').slick({
 		// centerMode: true,
 		centerPadding: '60px',
 		slidesToShow: 5,
@@ -32,6 +33,9 @@
 			}
 		]
     });
+})(jQuery);
+
+
 function maind() {
     startdate = new Date();
     now(startdate.getYear(), startdate.getMonth(), startdate.getDate(), startdate.getHours(), startdate

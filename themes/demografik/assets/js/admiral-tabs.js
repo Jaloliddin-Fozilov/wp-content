@@ -5,6 +5,7 @@ alltTabsOnPage.forEach(tabs => {
 
     const init = () => {
         handleActiveTab();
+        console.log(window.location.pathname)
     }
 
     const connectedTabsContent = document.querySelector(tabs.getAttribute('data-admiral-tabs'))
@@ -22,6 +23,10 @@ alltTabsOnPage.forEach(tabs => {
             for (const key in tabsChildrens) {
                 if (hash === tabsChildrens[key].getAttribute('data-hash')) {
                     index = key;
+                    tabsChildrens[key].classList.add('admiral-active');
+                    tabsChildrens[key].classList.add('fade');
+                    tabsChildrens[key].classList.add('in');
+
                 }
             }
         }
@@ -35,8 +40,8 @@ alltTabsOnPage.forEach(tabs => {
                 tab.classList.remove('admiral-active')
                 tab.classList.remove('fade')
                 tab.classList.remove('in')
-                jQuery('.document-slider').slick('refresh');
-                console.log(window.location.pathname)
+                jQuery('.document-slider').not('.slick-initialized').slick();
+                
             });
 
             tab.classList.add('admiral-active')
