@@ -35,7 +35,7 @@ class Banner_Video_Two extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Banner with video', 'elementor' );
+		return esc_html__( 'Banner with video 2', 'elementor' );
 	}
 
 	/**

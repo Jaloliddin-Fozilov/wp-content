@@ -6,6 +6,7 @@ $term = get_queried_object();
 
 $query = new WP_Query(array(
 	'post_type' => 'infographics',
+	'posts_per_page' => -1,
 	'tax_query' => array(
 		array(
 			'taxonomy' => 'infographic-cat',
@@ -40,6 +41,7 @@ wp_reset_postdata();
 $query_2 = new WP_Query(array(
 	'post_type' => 'infographics',
 	'post__not_in' => $exlude_infografika,
+	'posts_per_page' => -1,
 	'tax_query' => array(
 		array(
 			'taxonomy' => 'infographic-cat',
