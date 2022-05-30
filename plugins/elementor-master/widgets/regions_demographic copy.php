@@ -142,57 +142,46 @@ class Regions_Demographic extends Widget_Base {
 			'pad_counts'   => false,
 		] );
 		?>
+	<div class="moduletable sec3">
+		<div class="custom sec3">
+			<div class="container mx-auto justify-center">
+				<div class="sec3 mx-auto">
+					<h2 class="section__title font__primary--31 demographic-passport-title"><?php echo wp_kses( $settings['title'], array() ); ?></h2>
+					<div class="containerr demographic-passport-grid">
+						<?php 
+							if( $categories ){
+								foreach( $categories as $cat ){ ?>
+								<article id="post-<?php $cat->term_id; ?>" <?php post_class('col-4 category-ads'); ?>>
+									<a href="<?php echo get_term_link( $cat->term_id ) ?>" class="block__img">
+										<span class="overlay">
+											<svg version="1.1" class="icon icon__plus" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="6px" height="6px" viewBox="0 0 6 6"
+												style="enable-background:new 0 0 6 6;" xml:space="preserve">
+												<polygon points="6,2.6 3.4,2.6 3.4,0 2.6,0 2.6,2.6 0,2.6 0,3.4 2.6,3.4 2.6,6 3.4,6 3.4,3.4 6,3.4 ">
+												</polygon>
+											</svg>
+										</span>
 
-            <div id="hero-slider-area" class="header-hero-area site-breadcrumb-header fix">
-                <div class="site-breadcrumb pb-100">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 text-center pt-100 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">
-                                <h1 class="breadcrumb-title"><?php echo wp_kses( $settings['title'], array() ); ?></h1>                                    				
-                            </div>
-                        </div>
-                    </div>
-                </div>			
-            </div>
-
-            
-            <div class="nft-product-area product_explores pt-50 pb-50">
-               
-                <div class="container">
-                    <div class="tab-content">
-                        <div id="home" class="tab-pane fade in active">
-                            <div class="row block">
-								<?php foreach( $categories as $cat ): ?>
-									<div class="col-md-4 mb-30">
-										<div class="card__item one is__hero">
-											<div class="card_body">
-												<div class="card_head">
-													<a href="<?php echo get_term_link($cat->cat_ID) ?>">
-														<img src="<?php echo z_taxonomy_image_url($cat->term_id); ?>">
-													</a>
-													<div class="details space-x-0">
-														<div class="text-center">
-															<h5><?php echo $cat->name; ?></h5>
-														</div>
-														<div class="fire-icon">
-															<i class="fa fa-map-marker"></i>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+										<img width="360" height="240" src="<?php echo z_taxonomy_image_url($cat->term_id); ?>"
+											class="attachment-post-thumbnail size-post-thumbnail wp-post-image">
+									</a>
+									<div class="content">
+										<h3 class="title"><a href="<?php echo get_term_link( $cat->term_id ) ?>" target="_blank"><?php echo $cat->name ?></a></h3>
+										<div></div>
 									</div>
-								<?php endforeach; ?>
-                                  
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
+								</article>
+								<?php
+								}
+							}
+						?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-            </div>
 
-	<?php
+<?php
 	}
 
 	/**
