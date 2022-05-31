@@ -11648,9 +11648,7 @@ button.slide-arrow.prev-arrow {
     width: unset;
     object-fit: unset;
 }
-.explore-style-one.media-resourses .content .title{
-    height: auto;
-}
+
 .explore-style-one.media-resourses .d-flex-between{
     justify-content: center;
 }
