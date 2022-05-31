@@ -170,14 +170,16 @@ class Regions_Demographic extends Widget_Base {
 													<a href="<?php echo get_term_link($cat->cat_ID) ?>">
 														<img src="<?php echo z_taxonomy_image_url($cat->term_id); ?>">
 													</a>
-													<div class="details space-x-0">
-														<div class="text-center">
-															<h5><?php echo $cat->name; ?></h5>
+													<a href="<?php echo get_term_link($cat->cat_ID) ?>">
+														<div class="details space-x-0">
+															<div class="text-center">
+																<h5><?php echo $cat->name; ?></h5>
+															</div>
+															<div class="fire-icon">
+																<i class="fa fa-map-marker"></i>
+															</div>
 														</div>
-														<div class="fire-icon">
-															<i class="fa fa-map-marker"></i>
-														</div>
-													</div>
+													</a>
 												</div>
 											</div>
 										</div>

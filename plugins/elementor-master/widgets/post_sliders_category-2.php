@@ -205,15 +205,16 @@ class Post_Sliders_Category_2 extends Widget_Base {
 								<div class="card_head">
 									<a href="<?php echo get_term_link($cat->cat_ID) ?>">
 										<img src="<?php echo z_taxonomy_image_url($cat->term_id); ?>">
+									
+										<div class="details space-x-0">
+											<div class="text-center">
+												<h5><?php echo $cat->name; ?></h5>
+											</div>
+											<div class="fire-icon">
+												<i class="fa fa-map-marker"></i>
+											</div>
+										</div>
 									</a>
-									<div class="details space-x-0">
-										<div class="text-center">
-											<h5><?php echo $cat->name; ?></h5>
-										</div>
-										<div class="fire-icon">
-											<i class="fa fa-map-marker"></i>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
