@@ -204,7 +204,7 @@ foreach( $postslistdocument as $post ){
 												</a>
 											</div>
 											<div class="content">
-												<div class="header d-flex-between pt-4 pb-3">
+												<div class="header d-flex-between pt-2 pb-2">
 													<h3 class="title"><?php the_title(); ?>	</h3>
 												</div>
 											</div>  
