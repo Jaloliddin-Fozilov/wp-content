@@ -25,10 +25,10 @@
 		  });		
 	});
 
-// ------------------------------------------------------------------------------ //
-// Toggle Profile
-// ------------------------------------------------------------------------------ //
-	
+	// ------------------------------------------------------------------------------ //
+	// Toggle Profile
+	// ------------------------------------------------------------------------------ //
+		
 	$(".header-transparent.sticky .action-nav").each(function(){  
 		$(".img-otr", this).on("click", function(e){
 			e.preventDefault();
@@ -36,9 +36,9 @@
 		});
 	});		 
 	
-//Mobile Menu 
+	//Mobile Menu 
 
-/*=====| 2. Responsive Menu |=====*/
+	/*=====| 2. Responsive Menu |=====*/
 
 	  // main menu 
 	  $('.main-menu-icon').click(function() {
@@ -244,6 +244,53 @@ $(window).on('scroll', function () {
             },
           },
         ],
+	});
+			
+	$(".top-seller-activation-2").slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        cssEase: "linear",
+        adaptiveHeight: true,
+        prevArrow:
+          '<button class="slide-arrow prev-arrow"><i class="fa fa-arrow-left"></i></button>',
+        nextArrow:
+          '<button class="slide-arrow next-arrow"><i class="fa fa-arrow-right"></i></button>',
+        responsive: [
+          {
+            breakpoint: 1499,
+            settings: {
+              slidesToShow: 4,
+            },
+          },
+          {
+            breakpoint: 1124,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              dots: false,
+              arrows: false,
+              centerMode: true,
+              centerPadding: "20px",
+            },
+          },
+        ],
       });
 // infografik carousel
 $('.category-slider.owl-carousel').owlCarousel({
@@ -365,6 +412,5 @@ $('.category-slider.owl-carousel').owlCarousel({
 		}
 
 	});
-
 
 })(jQuery)	

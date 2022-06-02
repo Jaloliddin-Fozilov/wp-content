@@ -4112,7 +4112,7 @@ input[type=checkbox] {
 
 
 .header-hero-area.site-breadcrumb-header {
-    background: url(../img/breadcrumb.svg);
+    /* background: url(../img/breadcrumb.svg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
