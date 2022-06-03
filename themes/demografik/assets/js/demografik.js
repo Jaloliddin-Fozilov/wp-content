@@ -144,6 +144,7 @@ const blocks = document.querySelectorAll(".block")
 const contents = document.querySelectorAll(".content_block")
 for(let i = 0; i < blocks.length; i++){
     blocks[i].addEventListener('click', (e) => {
+        console.log(blocks[i]);
         if(e.target.className || !e.target.className){
             if(contents[e.target.dataset.uuid - 1].classList.contains('unvisible')){
                 for(let j = 0; j < contents.length; j++){

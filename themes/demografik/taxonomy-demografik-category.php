@@ -206,170 +206,170 @@ get_header();
     <div  class="section section__content-slider section__content-slider--pl section__content-slider--carousel section__bg--off-white">
         <div class="touch_slider container">
 
-            <div class="top-seller-activation-2 slick-gutter-15 slick-arrow-between">
+            <div class="top-seller-activation-2 slick-gutter-15 slick-arrow-between block_list">
                 
-                <div class="top-seller-style-one" data-uuid="1">
+                <div class="top-seller-style-one block" data-uuid="1">
                     <a href="#table_content_1" class="thumb mb-2">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                         <i class="ri-check-line fa fa-check"></i>
                     </a>
                     <h4 class="title pb-1"><a href="#">1 Yoshgacha o'lim koeffitsiyenti</a></h4>
                 </div>
-                <div class="top-seller-style-one" data-uuid="2">
+                <div class="top-seller-style-one block" data-uuid="2">
                     <a href="#table_content_2" class="thumb mb-2">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                         <i class="ri-check-line fa fa-check"></i>
                     </a>
                     <h4 class="title pb-1"><a href="#">Oila</a></h4>
                 </div>
-                <div class="top-seller-style-one" data-uuid="3">
+                <div class="top-seller-style-one block" data-uuid="3">
                     <a  href="#table_content_3" class="thumb mb-2">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                         <i class="ri-check-line fa fa-check"></i>
                     </a>
                     <h4 class="title pb-1"><a href="#">100 ta nikohga ajrim</a></h4>
                 </div>
-                <div class="top-seller-style-one" data-uuid="4">
+                <div class="top-seller-style-one block" data-uuid="4">
                     <a  href="#table_content_4" class="thumb mb-2">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                         <i class="ri-check-line fa fa-check"></i>
                     </a>
                     <h4 class="title pb-1"><a href="#">2009-2022 Tumanlar ming</a></h4>
                 </div>
-                <div class="top-seller-style-one" data-uuid="5">
+                <div class="top-seller-style-one block" data-uuid="5">
                     <a  href="#table_content_5" class="thumb mb-2">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                         <i class="ri-check-line fa fa-check"></i>
                     </a>
                     <h4 class="title pb-1"><a href="#">2011-2022 yil Аxoli mehnatga loyiq tuman</a></h4>
                 </div>
-                <div class="top-seller-style-one" data-uuid="6">
+                <div class="top-seller-style-one block" data-uuid="6">
                     <a  href="#table_content_6" class="thumb mb-2">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                         <i class="ri-check-line fa fa-check"></i>
                     </a>
                     <h4 class="title pb-1"><a href="#">Аjrim koeffitsienti</a></h4>
                 </div>
-                <div class="top-seller-style-one" data-uuid="7">
+                <div class="top-seller-style-one block" data-uuid="7">
                     <a  href="#table_content_7" class="thumb mb-2">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                         <i class="ri-check-line fa fa-check"></i>
                     </a>
                     <h4 class="title pb-1"><a href="#">Аjrim</a></h4>
                 </div>
-                <div class="top-seller-style-one" data-uuid="8">
+                <div class="top-seller-style-one block" data-uuid="8">
                     <a  href="#table_content_8" class="thumb mb-2">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                         <i class="ri-check-line fa fa-check"></i>
                     </a>
                     <h4 class="title pb-1"><a href="#">Аholining tabiiy xarakati</a></h4>
                 </div>
-                <div class="top-seller-style-one" data-uuid="9">
+                <div class="top-seller-style-one block" data-uuid="9">
                         <a  href="#table_content_9" class="thumb mb-2">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                             <i class="ri-check-line fa fa-check"></i>
                         </a>
                         <h4 class="title pb-1"><a href="#">Yosh guruhlari boʼyicha doimiy aholi soni</a></h4>
                     </div>
-                    <div class="top-seller-style-one" data-uuid="10">
+                    <div class="top-seller-style-one block" data-uuid="10">
                         <a  href="#table_content_10" class="thumb mb-2">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                             <i class="ri-check-line fa fa-check"></i>
                         </a>
                         <h4 class="title pb-1"><a href="#">Zichlik</a></h4>
                     </div>
-                    <div class="top-seller-style-one" data-uuid="11">
+                    <div class="top-seller-style-one block" data-uuid="11">
                         <a  href="#table_content_11" class="thumb mb-2">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                             <i class="ri-check-line fa fa-check"></i>
                         </a>
                         <h4 class="title pb-1"><a href="#">Ko‘chib kelganlar</a></h4>
                     </div>
-                    <div class="top-seller-style-one" data-uuid="12">
+                    <div class="top-seller-style-one block" data-uuid="12">
                         <a  href="#table_content_12" class="thumb mb-2">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                             <i class="ri-check-line fa fa-check"></i>
                         </a>
                         <h4 class="title pb-1"><a href="#">Ko‘chib ketganlar soni</a></h4>
                     </div>
-                    <div class="top-seller-style-one" data-uuid="13">
+                    <div class="top-seller-style-one block" data-uuid="13">
                         <a  href="#table_content_13" class="thumb mb-2">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                             <i class="ri-check-line fa fa-check"></i>
                         </a>
                         <h4 class="title pb-1"><a href="#">Migrasion xarakat</a></h4>
                     </div>
-                    <div class="top-seller-style-one" data-uuid="14">
+                    <div class="top-seller-style-one block" data-uuid="14">
                         <a  href="#table_content_14" class="thumb mb-2">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                             <i class="ri-check-line fa fa-check"></i>
                         </a>
                         <h4 class="title pb-1"><a href="#">Nikoh koeffisienti</a></h4>
                     </div>
-                    <div class="top-seller-style-one" data-uuid="15">
+                    <div class="top-seller-style-one block" data-uuid="15">
                         <a  href="#table_content_15" class="thumb mb-2">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                             <i class="ri-check-line fa fa-check"></i>
                         </a>
                         <h4 class="title pb-1"><a href="#">Nikoh</a></h4>
                     </div>
-                    <div class="top-seller-style-one" data-uuid="16">
+                    <div class="top-seller-style-one block" data-uuid="16">
                         <a  href="#table_content_16" class="thumb mb-2">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                             <i class="ri-check-line fa fa-check"></i>
                         </a>
                         <h4 class="title pb-1"><a href="#">Reproduktiv yoshdagi (15-49) ayollar soni</a></h4>
                     </div>
-                    <div class="top-seller-style-one" data-uuid="17">
+                    <div class="top-seller-style-one block" data-uuid="17">
                             <a  href="#table_content_17" class="thumb mb-2">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                                 <i class="ri-check-line fa fa-check"></i>
                             </a>
                             <h4 class="title pb-1"><a href="#">Tug‘ilish</a></h4>
                         </div>
-                        <div class="top-seller-style-one" data-uuid="18">
+                        <div class="top-seller-style-one block" data-uuid="18">
                             <a  href="#table_content_18" class="thumb mb-2">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                                 <i class="ri-check-line fa fa-check"></i>
                             </a>
                             <h4 class="title pb-1"><a href="#">Tug‘ilishning umumiy koeffisienti</a></h4>
                         </div>
-                        <div class="top-seller-style-one" data-uuid="19">
+                        <div class="top-seller-style-one block" data-uuid="19">
                             <a  href="#table_content_19" class="thumb mb-2">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                                 <i class="ri-check-line fa fa-check"></i>
                             </a>
                             <h4 class="title pb-1"><a href="#">O‘lganlar soni</a></h4>
                         </div>
-                        <div class="top-seller-style-one" data-uuid="20">
+                        <div class="top-seller-style-one block" data-uuid="20">
                             <a  href="#table_content_20" class="thumb mb-2">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                                 <i class="ri-check-line fa fa-check"></i>
                             </a>
                             <h4 class="title pb-1"><a href="#">O‘lim koeffisienti</a></h4>
                         </div>
-                        <div class="top-seller-style-one" data-uuid="21">
+                        <div class="top-seller-style-one block" data-uuid="21">
                             <a  href="#table_content_21" class="thumb mb-2">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                                 <i class="ri-check-line fa fa-check"></i>
                             </a>
                             <h4 class="title pb-1"><a href="#">O‘lim sabablari</a></h4>
                         </div>
-                        <div class="top-seller-style-one" data-uuid="22">
+                        <div class="top-seller-style-one block" data-uuid="22">
                             <a  href="#table_content_22" class="thumb mb-2">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                                 <i class="ri-check-line fa fa-check"></i>
                             </a>
                             <h4 class="title pb-1"><a href="#">O‘rtacha aholi</a></h4>
                         </div>
-                        <div class="top-seller-style-one" data-uuid="23">
+                        <div class="top-seller-style-one block" data-uuid="23">
                             <a  href="#table_content_23" class="thumb mb-2">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                                 <i class="ri-check-line fa fa-check"></i>
                             </a>
                             <h4 class="title pb-1"><a href="#">Hudud maydoni</a></h4>
                         </div>
-                        <div class="top-seller-style-one" data-uuid="24">
+                        <div class="top-seller-style-one block" data-uuid="24">
                             <a  href="#table_content_24" class="thumb mb-2">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                                 <i class="ri-check-line fa fa-check"></i>
@@ -383,52 +383,10 @@ get_header();
 
 
         </div>
-        <div class="content_list">
-            <li id="table_content_24" class="content_block">
-                <div class="wrapper">
-                    <ul class="button_list">
-                        <li class="inner_block" data-id="85">
-                            <button class="button_icon" data-id="85">
-                                <img data-id="85" src="https://demografiya.uz/wp-content/themes/demografik/assets/images/icon1.png">
-                            </button>
-                        </li>
-                        <li class="inner_block" data-id="86">
-                            <button class="button_icon" data-id="86">
-                                <img data-id="86" src="https://demografiya.uz/wp-content/themes/demografik/assets/images/icon3.png">
-                            </button>
-                        </li>
-                        <li class="inner_block" data-id="87">
-                            <button class="button_icon" data-id="87">
-                                <img data-id="87" src="https://demografiya.uz/wp-content/themes/demografik/assets/images/icon4.png">
-                            </button>
-                        </li>
-                        <li class="inner_block" data-id="88">
-                            <button class="button_icon" data-id="88">
-                                <img data-id="88" src="https://demografiya.uz/wp-content/themes/demografik/assets/images/icon6.png">
-                            </button>
-                        </li>
-                    </ul>
-                    <ul class="contents">
-                        <li class="inner_content">
-                        </li>
-                        <li class="inner_content unvisible">
-                        </li>
-                        <li class="inner_content unvisible">
-                        </li>
-                        <li class="inner_content unvisible">
-                        </li>
-                    </ul>
-                </div>
-            </li>
-        </div>
-
-
-    </div>
-
     <!-- tabs content -->
-     <!-- Table and diagrams -->
+    <!-- Table and diagrams -->
     <ul class="content_list">
-        <li id="table_content_1" class="content_block unvisible">
+        <li id="table_content_1" class="content_block">
            <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode1', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -1413,7 +1371,10 @@ get_header();
             </ul>
           </div>
         </li>
-      </ul>
+    </ul>
+
+
+    </div>
 
 </main>
 

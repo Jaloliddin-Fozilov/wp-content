@@ -247,7 +247,7 @@ $(window).on('scroll', function () {
 	});
 			
 	$(".top-seller-activation-2").slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 4,
         slidesToScroll: 1,
         dots: false,
@@ -292,6 +292,7 @@ $(window).on('scroll', function () {
           },
         ],
       });
+
 // infografik carousel
 $('.category-slider.owl-carousel').owlCarousel({
 	loop:true,	
