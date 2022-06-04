@@ -256,17 +256,27 @@ foreach( $postslistdocument as $post ){
 						<div class="section-title">
 							<h2 class="section__title font__primary--31">Hisobot va hujjatlar</h2>
 						</div>
-						<div class="document-slider slick-slider">
+						<div class="row block">
 							<?php  
 								foreach( $postslistdocument as $post ):
 									setup_postdata($post);
 										?>
-										<div class="slick-slide">
-											<div>
-												<a href="<?php the_permalink(); ?>" class="items-center w-full h-auto flex flex-col py-8 px-2 text-center"style="width: 100%; display: inline-block;" tabindex="-1">
-													<img src="<?php echo the_post_thumbnail_url(); ?>" class="zoomable block mx-auto" style="max-height: 220px;">
-													<p class="item-title"><?php the_title(); ?></p>
-												</a>
+										<div class="col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+											<div class="explore-style-one media_block media-resourses">
+												<div class="thumb">
+													<a href="<?php the_permalink(); ?>">
+														<img src="<?php echo the_post_thumbnail_url(); ?>" class="video-21-9-rate-images">
+													</a>
+												</div>
+												<div class="content">
+													<div class="header d-flex-between pt-4 pb-3">
+														<h3 class="title">
+															<a href="<?php echo get_term_link($term); ?>">
+																<?php the_title();  ?>
+															</a>
+														</h3>
+													</div>
+												</div>
 											</div>
 										</div>
 									<?php

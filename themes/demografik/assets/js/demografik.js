@@ -5,8 +5,10 @@
 			alwaysShowClose: true
 		}, );
 	});
-(function ($) {
-    $('.document-slider').slick({
+
+window.onload=function(){
+     
+    jQuery('.document-slider').slick({
 		// centerMode: true,
 		centerPadding: '60px',
 		slidesToShow: 5,
@@ -20,20 +22,22 @@
 				centerMode: true,
 				centerPadding: '40px',
 				slidesToShow: 3
-			}
+			    }
 			},
-			{
+			
+            {
 			breakpoint: 480,
 			settings: {
 				arrows: true,
 				centerMode: true,
 				centerPadding: '40px',
 				slidesToShow: 1
-			}
+			    }
 			}
 		]
     });
-})(jQuery);
+
+}
 
 
 function maind() {
