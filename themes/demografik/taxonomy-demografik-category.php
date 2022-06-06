@@ -206,10 +206,9 @@ get_header();
     <div  class="section section__content-slider section__content-slider--pl section__content-slider--carousel section__bg--off-white">
         <div class="touch_slider container">
 
-            <div class="top-seller-activation-2 slick-gutter-15 slick-arrow-between block_list">
-                
+            <div class="top-seller-activation-2 owl-carousel">
                 <div class="top-seller-style-one block" data-uuid="1">
-                    <a href="#table_content_1" class="thumb mb-2">
+                    <a href="#table_content_1" class="thumb mb-2 tabs__btn" >
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                         <i class="ri-check-line fa fa-check"></i>
                     </a>
@@ -386,7 +385,7 @@ get_header();
     <!-- tabs content -->
     <!-- Table and diagrams -->
     <ul class="content_list">
-        <li id="table_content_1" class="content_block">
+        <li id="table_content_1" class="content_block unvisible tabs__pane">
            <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode1', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -427,7 +426,7 @@ get_header();
             </ul>
           </div>
         </li>
-        <li id="table_content_2" class="content_block unvisible">
+        <li id="table_content_2" class="content_block unvisible tabs__pane">
           <?php $queried_object = get_queried_object(); echo do_shortcode(get_field( 'table_shortcode2', $queried_object )); ?>
           <div class="wrapper">
             <ul class="button_list">
@@ -1377,6 +1376,61 @@ get_header();
     </div>
 
 </main>
+
+<style>
+
+
+
+  .tabs__btn {
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    flex-shrink: 0;
+    flex-grow: 1;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+
+  .tabs__btn_active {
+    background: #e0e0e0;
+    cursor: default;
+  }
+
+  .tabs__btn:not(.tabs__btn_active):hover,
+  .tabs__btn:not(.tabs__btn_active):focus {
+    background-color: #eee;
+  }
+
+
+
+  .tabs__pane {
+    display: none;
+  }
+
+  .tabs__pane_show {
+    display: block;
+  }
+</style>
+
+<div class="tabs">
+  <div class="tabs__nav">
+    <button class="tabs__btn tabs__btn_active">Вкладка 1</button>
+    <button class="tabs__btn">Вкладка 2</button>
+    <button class="tabs__btn">Вкладка 3</button>
+  </div>
+  <div class="tabs__content">
+    <div class="tabs__pane tabs__pane_show">
+      Содержимое 1...
+    </div>
+    <div class="tabs__pane">
+      Содержимое 2...
+    </div>
+    <div class="tabs__pane" id="content-3">
+      Содержимое 3...
+    </div>
+  </div>
+</div>
 
 
 <?php 

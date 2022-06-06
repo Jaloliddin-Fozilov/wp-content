@@ -126,39 +126,93 @@ function uzbekistan(year, month, date, hours, minutes, seconds) {
 }
 window.onload = maind
 
-const buttons = document.querySelectorAll(".inner_block")
-const inner_contents = document.querySelectorAll(".inner_content")
-for(let j = 0; j < buttons.length; j++){
-    buttons[j].addEventListener('click', (e) => {
-        e.preventDefault()
-        if(e.target.className || !e.target.className){
-            if(inner_contents[e.target.dataset.id - 1].classList.contains('unvisible')){
-                for(let j = 0; j < inner_contents.length; j++){
-                    if(!inner_contents[j].classList.contains('unvisible')){
-                        inner_contents[j].classList.add('unvisible')
-                    }
-                }
-                inner_contents[e.target.dataset.id - 1].classList.remove('unvisible')
-            }
-        }
-    })
-}
 
-const blocks = document.querySelectorAll(".block")
-const contents = document.querySelectorAll(".content_block")
-for(let i = 0; i < blocks.length; i++){
-    blocks[i].addEventListener('click', (e) => {
-        console.log(blocks[i]);
-        if(e.target.className || !e.target.className){
-            if(contents[e.target.dataset.uuid - 1].classList.contains('unvisible')){
-                for(let j = 0; j < contents.length; j++){
-                    if(!contents[j].classList.contains('unvisible')){
-                        contents[j].classList.add('unvisible')
-                    }
-                }
-                contents[e.target.dataset.uuid - 1].classList.remove('unvisible')
-            }
+
+// const buttons = document.querySelectorAll(".inner_block")
+// const inner_contents = document.querySelectorAll(".inner_content")
+// for(let j = 0; j < buttons.length; j++){
+//     buttons[j].addEventListener('click', (e) => {
+//         e.preventDefault()
+//         if(e.target.className || !e.target.className){
+//             if(inner_contents[e.target.dataset.id - 1].classList.contains('unvisible')){
+//                 for(let j = 0; j < inner_contents.length; j++){
+//                     if(!inner_contents[j].classList.contains('unvisible')){
+//                         inner_contents[j].classList.add('unvisible')
+//                     }
+//                 }
+//                 inner_contents[e.target.dataset.id - 1].classList.remove('unvisible')
+//             }
+//         }
+//     })
+// }
+
+// const blocks = document.querySelectorAll(".block")
+// const contents = document.querySelectorAll(".content_block")
+// for(let i = 0; i < blocks.length; i++){
+//     blocks[i].addEventListener('click', (e) => {
+//         console.log(blocks[i]);
+//         if(e.target.className || !e.target.className){
+
+//             if(contents[e.target.dataset.uuid - 1].classList.contains('unvisible')){
+//                 for(let j = 0; j < contents.length; j++){
+//                     if(!contents[j].classList.contains('unvisible')){
+//                         contents[j].classList.add('unvisible')
+//                     }
+//                 }
+//                 contents[e.target.dataset.uuid - 1].classList.remove('unvisible')
+//             }
+//         }
+//     })
+// }
+
+
+class ItcTabs {
+    constructor(target, config) {
+      const defaultConfig = {};
+      this._config = Object.assign(defaultConfig, config);
+      this._elTabs = typeof target === 'string' ? document.querySelector(target) : target;
+      this._elButtons = this._elTabs.querySelectorAll('.tabs__btn');
+      this._elPanes = this._elTabs.querySelectorAll('.tabs__pane');
+      this._eventShow = new Event('tab.itc.change');
+      this._init();
+      this._events();
+    }
+    _init() {
+      this._elTabs.setAttribute('role', 'tablist');
+      this._elButtons.forEach((el, index) => {
+        el.dataset.index = index;
+        el.setAttribute('role', 'tab');
+        this._elPanes[index].setAttribute('role', 'tabpanel');
+      });
+    }
+    show(elLinkTarget) {
+      const elPaneTarget = this._elPanes[elLinkTarget.dataset.index];
+      const elLinkActive = this._elTabs.querySelector('.tabs__btn_active');
+      const elPaneShow = this._elTabs.querySelector('.tabs__pane_show');
+      if (elLinkTarget === elLinkActive) {
+        return;
+      }
+      elLinkActive ? elLinkActive.classList.remove('tabs__btn_active') : null;
+      elPaneShow ? elPaneShow.classList.remove('tabs__pane_show') : null;
+      elLinkTarget.classList.add('tabs__btn_active');
+      elPaneTarget.classList.add('tabs__pane_show');
+      this._elTabs.dispatchEvent(this._eventShow);
+      elLinkTarget.focus();
+    }
+    showByIndex(index) {
+      const elLinkTarget = this._elButtons[index];
+      elLinkTarget ? this.show(elLinkTarget) : null;
+    };
+    _events() {
+      this._elTabs.addEventListener('click', (e) => {
+        const target = e.target.closest('.tabs__btn');
+        if (target) {
+          e.preventDefault();
+          this.show(target);
         }
-    })
-}
+      });
+    }
+  }
+
+  new ItcTabs('.tabs');
 
