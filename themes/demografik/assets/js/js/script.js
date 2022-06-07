@@ -297,7 +297,8 @@ $(window).on('scroll', function () {
 		loop:false,		
 		margin:15,
 		dots: false,			
-		responsiveClass:true,	
+		responsiveClass:true,
+		click: tabShow,	
 		responsive:{
 			0:{
 				items:1,
@@ -314,6 +315,12 @@ $(window).on('scroll', function () {
 			}
 		}
 	});
+	function tabShow(event) {
+		var items     = event.item.count; 
+		var item      = event.item.index;
+		console.log(items);
+		console.log(item);
+	}
 
 // infografik carousel
 $('.category-slider.owl-carousel').owlCarousel({
