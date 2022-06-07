@@ -1296,7 +1296,7 @@ span.category_title {
     margin-top: 7%;
     margin-bottom: 5%;
     border: none;
-    background: var(--white-color);	
+    background: #ffffff;
 }
 .modal-content .close {
     text-align: center;

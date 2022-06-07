@@ -220,6 +220,13 @@ get_header();
     <div  class="section section__content-slider section__content-slider--pl section__content-slider--carousel section__bg--off-white">
       <div class="touch_slider container">
         <div class="top-seller-activation-2 owl-carousel">
+          <div class="top-seller-style-one block" data-uuid="3">
+              <a  href="#table_content_3" class="thumb mb-2">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                  <i class="ri-check-line fa fa-check"></i>
+              </a>
+              <h4 class="title pb-1"><a href="#">100 ta nikohga ajrim</a></h4>
+          </div>
           <div class="top-seller-style-one block" data-uuid="1">
               <a href="#table_content_1" class="thumb mb-2 " >
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
@@ -234,19 +241,13 @@ get_header();
               </a>
               <h4 class="title pb-1"><a href="#">Oila</a></h4>
           </div>
-          <div class="top-seller-style-one block" data-uuid="3">
-              <a  href="#table_content_3" class="thumb mb-2">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
-                  <i class="ri-check-line fa fa-check"></i>
-              </a>
-              <h4 class="title pb-1"><a href="#">100 ta nikohga ajrim</a></h4>
-          </div>
+         
           <div class="top-seller-style-one block" data-uuid="4">
               <a  href="#table_content_4" class="thumb mb-2">
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                   <i class="ri-check-line fa fa-check"></i>
               </a>
-              <h4 class="title pb-1"><a href="#">2009-2022 Tumanlar ming</a></h4>
+              <h4 class="title pb-1"><a href="#">2009-2022 Aholi soni</a></h4>
           </div>
           <div class="top-seller-style-one block" data-uuid="5">
               <a  href="#table_content_5" class="thumb mb-2">
@@ -387,6 +388,42 @@ get_header();
                   <i class="ri-check-line fa fa-check"></i>
               </a>
               <h4 class="title pb-1"><a href="#">Ma'muriy hududiy birliklar</a></h4>
+          </div>
+          <div class="top-seller-style-one block" data-uuid="24">
+              <a  href="#table_content_24" class="thumb mb-2">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                  <i class="ri-check-line fa fa-check"></i>
+              </a>
+              <h4 class="title pb-1"><a href="#">Kam ta'minlangan oilalar soni</a></h4>
+          </div>
+          
+          <div class="top-seller-style-one block" data-uuid="24">
+              <a  href="#table_content_24" class="thumb mb-2">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                  <i class="ri-check-line fa fa-check"></i>
+              </a>
+              <h4 class="title pb-1"><a href="#">18 yoshdan kichik bolali oilalar soni</a></h4>
+          </div>
+          <div class="top-seller-style-one block" data-uuid="24">
+              <a  href="#table_content_24" class="thumb mb-2">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                  <i class="ri-check-line fa fa-check"></i>
+              </a>
+              <h4 class="title pb-1"><a href="#">Koʼp bolali oilalar soni (5 bola va undan koʼp)</a></h4>
+          </div>
+          <div class="top-seller-style-one block" data-uuid="24">
+              <a  href="#table_content_24" class="thumb mb-2">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                  <i class="ri-check-line fa fa-check"></i>
+              </a>
+              <h4 class="title pb-1"><a href="#">Toʼliq boʼlmagan oilalar soni (otasi yoki onasi yoʼq oilalar)</a></h4>
+          </div>
+          <div class="top-seller-style-one block" data-uuid="24">
+              <a  href="#table_content_24" class="thumb mb-2">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                  <i class="ri-check-line fa fa-check"></i>
+              </a>
+              <h4 class="title pb-1"><a href="#">Nogironligi boʼlgan shaxslar bor oilalar soni</a></h4>
           </div>
         </div>
       </div>
