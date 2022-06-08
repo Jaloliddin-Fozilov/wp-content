@@ -126,8 +126,6 @@ function uzbekistan(year, month, date, hours, minutes, seconds) {
 }
 window.onload = maind
 
-
-
 // const buttons = document.querySelectorAll(".inner_block")
 // const inner_contents = document.querySelectorAll(".inner_content")
 // for(let j = 0; j < buttons.length; j++){
@@ -164,5 +162,7 @@ window.onload = maind
 //         }
 //     })
 // }
+
+
 
 

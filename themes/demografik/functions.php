@@ -213,6 +213,7 @@ require get_template_directory() . '/inc/demogrf-scripts.php';
 
 require get_template_directory() . '/inc/post-types.php';
 
+require get_template_directory() . '/inc/carbon-fields.php';
 
 
 /**

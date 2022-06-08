@@ -296,9 +296,7 @@ get_header();
             foreach ($carousels as $key => $value) :
             ?>
             <li id="table_content_<?php echo $key ?>" class="content_block unvisible">
-              <?php echo apply_filters( 'the_content', $value['rating_table'] ); ?>
-              <?php echo $value['rating_table']; ?>
-              <?php echo $value['diagramm_one'] ?>
+              <?php echo do_shortcode($value['table']); ?>
             <div class="wrapper">
               <ul class="button_list">
                 <li class="inner_block" data-id="1">
@@ -324,16 +322,16 @@ get_header();
               </ul>
               <ul class="contents">
                 <li class="inner_content">
-                  <?php echo do_shortcode($value['diagramm_one']); ?>
+                  <?php echo do_shortcode('diagramm_one'); ?>
                 </li>
                   <li class="inner_content unvisible">
-                  <?php echo do_shortcode($value['diagramm_two']); ?>
+                  <?php echo do_shortcode('diagramm_two'); ?>
                 </li>
                 <li class="inner_content unvisible">
-                  <?php echo do_shortcode($value['diagramm_third']); ?>
+                  <?php echo do_shortcode('diagramm_third'); ?>
                 </li>
                 <li class="inner_content unvisible">
-                  <?php echo do_shortcode($value['diagramm_four']); ?>
+                  <?php echo do_shortcode('diagramm_four'); ?>
                 </li>
               </ul>
             </div>
