@@ -321,7 +321,7 @@ $(window).on('scroll', function () {
 		$(element).removeClass('unvisible');
 	});
 
-	$('.content_block').on('click', '.inner_block', function () {
+	$('.content_block .inner_block').on('click', function () {
 		const id = $(this).data('id');
 		const inner_contents = document.querySelectorAll(".inner_content");
 		console.log($(this).parents('.content_block'));
