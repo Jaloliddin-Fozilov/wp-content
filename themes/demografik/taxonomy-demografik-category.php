@@ -638,6 +638,1014 @@ get_header();
               </ul>
             </div>
           </li>
+          <li id="table_content_5" class="content_block unvisible">
+              <?php $group = get_field('the_population_district', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_6" class="content_block unvisible">
+              <?php $group = get_field('divorce_rate', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_7" class="content_block unvisible">
+              <?php $group = get_field('divorces', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_8" class="content_block unvisible">
+              <?php $group = get_field('movement_population', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_9" class="content_block unvisible">
+              <?php $group = get_field('population_by_age_group', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_10" class="content_block unvisible">
+              <?php $group = get_field('density', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_11" class="content_block unvisible">
+              <?php $group = get_field('immigrants', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_12" class="content_block unvisible">
+              <?php $group = get_field('migration_movement', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_13" class="content_block unvisible">
+              <?php $group = get_field('marriage_coefficients', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_14" class="content_block unvisible">
+              <?php $group = get_field('marriage', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_15" class="content_block unvisible">
+              <?php $group = get_field('reproductive_women', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_16" class="content_block unvisible">
+              <?php $group = get_field('birth', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_17" class="content_block unvisible">
+              <?php $group = get_field('birth_rate', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_18" class="content_block unvisible">
+              <?php $group = get_field('number_of_dead', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_19" class="content_block unvisible">
+              <?php $group = get_field('mortality_coefficient', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_20" class="content_block unvisible">
+              <?php $group = get_field('causes_of_death', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_21" class="content_block unvisible">
+              <?php $group = get_field('average_population', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_22" class="content_block unvisible">
+              <?php $group = get_field('area_area', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_23" class="content_block unvisible">
+              <?php $group = get_field('administrative_territorial', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_24" class="content_block unvisible">
+              <?php $group = get_field('low_income_families', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_25" class="content_block unvisible">
+              <?php $group = get_field('children_under_18_years', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_26" class="content_block unvisible">
+              <?php $group = get_field('five_children_and_more', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_27" class="content_block unvisible">
+              <?php $group = get_field('single_parent_families', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_28" class="content_block unvisible">
+              <?php $group = get_field('persons_with_disabilities', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
         </ul>
     </div>
 </main>
