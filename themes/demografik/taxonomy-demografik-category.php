@@ -33,7 +33,7 @@ get_header();
                 <?php
                 $queried_object = get_queried_object(); 
                 $permanent_population = get_field('group_permanent_population', $queried_object );
-                if( $permanent_population ): ?>              
+                 ?>              
                   <div class="flex flex-row  shadow-sm rounded-t-lg single-black-area">
                     <div class="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-xl">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm1.png" width="50">
@@ -50,13 +50,12 @@ get_header();
                         <div class="text-md text-italic text-center"><?php echo $permanent_population['for_year']; ?></div>
                     </div>
                   </div>
-                <?php endif; ?>
               </div>
               <div class="col">
                 <?php
                   $queried_object = get_queried_object(); 
-                  $permanent_population = get_field('group_number_of_families', $queried_object );
-                  if( $permanent_population ): ?>              
+                  $permanent_population = get_field('group_number_of_families', $queried_object ); ?>
+                              
                     <div class="flex flex-row  shadow-sm rounded-t-lg single-black-area">
                       <div class="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-xl">
                           <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm2.png" width="50">
@@ -73,13 +72,11 @@ get_header();
                           <div class="text-md text-italic text-center"><?php echo $permanent_population['for_year']; ?></div>
                       </div>
                     </div>
-                  <?php endif; ?>
               </div>
               <div class="col">
                 <?php
                   $queried_object = get_queried_object(); 
-                  $permanent_population = get_field('group_number_of_births', $queried_object );
-                  if( $permanent_population ): ?>              
+                  $permanent_population = get_field('group_number_of_births', $queried_object );?>              
                     <div class="flex flex-row  shadow-sm rounded-t-lg single-black-area">
                       <div class="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-xl">
                           <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm3.png" width="50">
@@ -96,13 +93,11 @@ get_header();
                           <div class="text-md text-italic text-center"><?php echo $permanent_population['for_year']; ?></div>
                       </div>
                     </div>
-                  <?php endif; ?>
               </div>
               <div class="col">
                 <?php
                   $queried_object = get_queried_object(); 
-                  $permanent_population = get_field('group_mumber_of_dead', $queried_object );
-                  if( $permanent_population ): ?>              
+                  $permanent_population = get_field('group_mumber_of_dead', $queried_object );?>              
                     <div class="flex flex-row  shadow-sm rounded-t-lg single-black-area">
                       <div class="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-xl">
                           <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm4.png" width="50">
@@ -119,13 +114,11 @@ get_header();
                           <div class="text-md text-italic text-center"><?php echo $permanent_population['for_year']; ?></div>
                       </div>
                     </div>
-                  <?php endif; ?>
               </div>
               <div class="col">
                 <?php
                   $queried_object = get_queried_object(); 
-                  $permanent_population = get_field('group_number_of_marriages', $queried_object );
-                  if( $permanent_population ): ?>              
+                  $permanent_population = get_field('group_number_of_marriages', $queried_object );?>              
                     <div class="flex flex-row  shadow-sm rounded-t-lg single-black-area">
                       <div class="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-xl">
                           <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm5.png" width="50">
@@ -142,15 +135,13 @@ get_header();
                           <div class="text-md text-italic text-center"><?php echo $permanent_population['for_year']; ?></div>
                       </div>
                     </div>
-                  <?php endif; ?>
               </div>
           </div>
           <div class="row">
               <div class="col">
                 <?php
                 $queried_object = get_queried_object(); 
-                $permanent_population = get_field('group_number_of_divorces', $queried_object );
-                if( $permanent_population ): ?>              
+                $permanent_population = get_field('group_number_of_divorces', $queried_object ); ?>              
                   <div class="flex flex-row  shadow-sm rounded-t-lg single-black-area">
                     <div class="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-xl">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm6.png" width="50">
@@ -167,13 +158,11 @@ get_header();
                         <div class="text-md text-italic text-center"><?php echo $permanent_population['for_year']; ?></div>
                     </div>
                   </div>
-                <?php endif; ?>
               </div>
               <div class="col">
                 <?php
                   $queried_object = get_queried_object(); 
-                  $permanent_population = get_field('group_number_of_immigrants', $queried_object );
-                  if( $permanent_population ): ?>              
+                  $permanent_population = get_field('group_number_of_immigrants', $queried_object ); ?>              
                     <div class="flex flex-row  shadow-sm rounded-t-lg single-black-area">
                       <div class="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-xl">
                           <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm7.png" width="50">
@@ -190,13 +179,11 @@ get_header();
                           <div class="text-md text-italic text-center"><?php echo $permanent_population['for_year']; ?></div>
                       </div>
                     </div>
-                  <?php endif; ?>
               </div>
               <div class="col">
                 <?php
                   $queried_object = get_queried_object(); 
-                  $permanent_population = get_field('group_number_of_migrants', $queried_object );
-                  if( $permanent_population ): ?>              
+                  $permanent_population = get_field('group_number_of_migrants', $queried_object ); ?>              
                     <div class="flex flex-row  shadow-sm rounded-t-lg single-black-area">
                       <div class="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-xl">
                           <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm8.png" width="50">
@@ -213,13 +200,11 @@ get_header();
                           <div class="text-md text-italic text-center"><?php echo $permanent_population['for_year']; ?></div>
                       </div>
                     </div>
-                  <?php endif; ?>
               </div>
               <div class="col">
                 <?php
                   $queried_object = get_queried_object(); 
-                  $permanent_population = get_field('group_migration_movement', $queried_object );
-                  if( $permanent_population ): ?>              
+                  $permanent_population = get_field('group_migration_movement', $queried_object ); ?>              
                     <div class="flex flex-row  shadow-sm rounded-t-lg single-black-area">
                       <div class="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-xl">
                           <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm9.png" width="50">
@@ -236,13 +221,11 @@ get_header();
                           <div class="text-md text-italic text-center"><?php echo $permanent_population['for_year']; ?></div>
                       </div>
                     </div>
-                  <?php endif; ?>
               </div>
               <div class="col">
                 <?php
                   $queried_object = get_queried_object(); 
-                  $permanent_population = get_field('group_average_population', $queried_object );
-                  if( $permanent_population ): ?>              
+                  $permanent_population = get_field('group_average_population', $queried_object ); ?>              
                     <div class="flex flex-row  shadow-sm rounded-t-lg single-black-area">
                       <div class="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-xl">
                           <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm10.png" width="50">
@@ -259,7 +242,6 @@ get_header();
                           <div class="text-md text-italic text-center"><?php echo $permanent_population['for_year']; ?></div>
                       </div>
                     </div>
-                  <?php endif; ?>
               </div>
           </div>
         </div>
