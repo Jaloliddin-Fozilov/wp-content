@@ -325,7 +325,7 @@ $(window).on('scroll', function () {
 		const id = $(this).data('id');
 		const inner_contents = document.querySelectorAll(".inner_content");
 		console.log($(this).parents('.content_block'));
-		if (!$(this).parents('.content_block')) {
+		if (!$(this).parents('.content_block').hasClass('unvisible')) {
 			const inner_con = $(".inner_content");
 			inner_con.each(function(index, element) {
 				if (index == id) {
