@@ -323,21 +323,19 @@ $(window).on('scroll', function () {
 
 	$('.content_block .inner_block').on('click', function () {
 		const id = $(this).data('id');
-		const inner_contents = document.querySelectorAll(".inner_content");
-		console.log($(this).parents('.content_block'));
-		if (!$(this).parents('.content_block').hasClass('unvisible')) {
-			const inner_con = $(".inner_content");
-			inner_con.each(function(index, element) {
-				if (index == id) {
-					$(this).removeClass('unvisible');
-				} else {
-					$(this).addClass('unvisible');	
-				}
-				
-			});
-		}
-		
+		const table_content_id = $(this).parents('.content_block').attr('id')
+		console.log(table_content_id);
+		const inner_contents = $('#' + table_content_id + ' .inner_content');
+		console.log(inner_contents);
+		inner_contents.each(function(index, element) {
+			if (index + 1 === id) {
+				$(element).removeClass('unvisible');
+			} else {
+				$(element).addClass('unvisible');	
+			}
+		});
 	});
+
 
 
 // infografik carousel
