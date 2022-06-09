@@ -317,10 +317,28 @@ $(window).on('scroll', function () {
 	$('.top-seller-activation-2').on('click', '.owl-item>div', function () {
 		var id = $(this).data('uuid');
 		var element = '#table_content_' + id;
-		console.log(element);
 		$('.tabs__content > .content_block').addClass('unvisible');
 		$(element).removeClass('unvisible');
 	});
+
+	$('.content_block').on('click', '.inner_block', function () {
+		const id = $(this).data('id');
+		const inner_contents = document.querySelectorAll(".inner_content");
+
+		if (!$(this).parent().hasClass('unvisible')) {
+			const inner_con = $(".inner_content");
+			inner_con.each(function(index, element) {
+				if (index == id) {
+					$(this).removeClass('unvisible');
+				} else {
+					$(this).addClass('unvisible');	
+				}
+				
+			});
+		}
+		
+	});
+
 
 // infografik carousel
 $('.category-slider.owl-carousel').owlCarousel({

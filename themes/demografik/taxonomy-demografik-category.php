@@ -269,36 +269,210 @@ get_header();
     <div  class="section section__content-slider section__content-slider--pl section__content-slider--carousel section__bg--off-white">
       <div class="touch_slider container">
         <div class="top-seller-activation-2 owl-carousel">
-          <?php 
-            $carousels = carbon_get_term_meta( $category->term_id, 'demographics_rating' );
-            if($carousels) :
-              foreach ($carousels as $key => $value) :
-              ?>
-              <div class="top-seller-style-one block" data-uuid="<?php echo $key ?>">
-                  <a  href="#table_content_<?php echo $key ?>" class="thumb mb-2">
-                      <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
-                      <i class="ri-check-line fa fa-check"></i>
-                  </a>
-                  <h4 class="title pb-1"><a href="#"><?php echo $value['title']; ?></a></h4>
-              </div>
-            
-            <?php
-            endforeach;
-          endif;
-          ?>
+            <div class="top-seller-style-one block" data-uuid="1">
+                <a  href="#table_content_1" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">100 ta nikohga ajrim</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="2">
+                <a  href="#table_content_2" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">1 Yoshgacha o'lim koeffitsiyenti</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="3">
+                <a  href="#table_content_3" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Oila</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="4">
+                <a  href="#table_content_4" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">2009-2022 Aholi soni</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="5">
+                <a  href="#table_content_5" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">2011-2022 yil Аxoli mehnatga loyiq tuman</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="6">
+                <a  href="#table_content_6" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Аjrim koeffitsienti</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="7">
+                <a  href="#table_content_7" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Аjrim</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="8">
+                <a  href="#table_content_8" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Аholining tabiiy xarakati</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="9">
+                <a  href="#table_content_9" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Yosh guruhlari boʼyicha doimiy aholi soni</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="10">
+                <a  href="#table_content_10" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Zichlik</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="11">
+                <a  href="#table_content_11" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Koʼchib kelganlar</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="12">
+                <a  href="#table_content_12" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Koʼchib ketganlar soni</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="13">
+                <a  href="#table_content_13" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Migrasion xarakat</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="14">
+                <a  href="#table_content_14" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Nikoh koeffisienti</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="15">
+                <a  href="#table_content_15" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Nikoh</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="16">
+                <a  href="#table_content_16" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Reproduktiv yoshdagi (15-49) ayollar soni</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="17">
+                <a  href="#table_content_17" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Tugʼilish</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="18">
+                <a  href="#table_content_18" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Oʼlganlar soni</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="19">
+                <a  href="#table_content_19" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Oʼlim koeffisienti</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="20">
+                <a  href="#table_content_20" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Oʼlim sabablari</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="21">
+                <a  href="#table_content_21" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Oʼrtacha aholi</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="22">
+                <a  href="#table_content_22" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Hudud maydoni</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="23">
+                <a  href="#table_content_23" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Ma'muriy hududiy birliklar</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="24">
+                <a  href="#table_content_24" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Kam ta'minlangan oilalar soni</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="25">
+                <a  href="#table_content_25" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">18 yoshdan kichik bolali oilalar soni</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="26">
+                <a  href="#table_content_26" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Koʼp bolali oilalar soni (5 bola va undan koʼp)</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="27">
+                <a  href="#table_content_27" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Toʼliq boʼlmagan oilalar soni (otasi yoki onasi yoʼq oilalar)</a></h4>
+            </div>
+            <div class="top-seller-style-one block" data-uuid="28">
+                <a  href="#table_content_28" class="thumb mb-2">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
+                    <i class="ri-check-line fa fa-check"></i>
+                </a>
+                <h4 class="title pb-1"><a href="#">Nogironligi boʼlgan shaxslar bor oilalar soni</a></h4>
+            </div>
         </div>
       </div>
       <!-- tabs content -->
       <!-- Table and diagrams -->
-      <ul class="content_list tabs__content container">
-        <?php 
-          if($carousels) :
-            foreach ($carousels as $key => $value) :
-            ?>
-            <li id="table_content_<?php echo $key ?>" class="content_block unvisible">
-              <?php echo apply_filters( 'the_content', $value['rating_table'] ); ?>
-              <?php echo $value['rating_table']; ?>
-              <?php echo $value['diagramm_one'] ?>
+        <ul class="content_list tabs__content container">
+          <li id="table_content_1" class="content_block unvisible">
+              <?php $group = get_field('divorce_for_100_marriages', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
               <ul class="button_list">
                 <li class="inner_block" data-id="1">
@@ -324,27 +498,147 @@ get_header();
               </ul>
               <ul class="contents">
                 <li class="inner_content">
-                  <?php echo do_shortcode($value['diagramm_one']); ?>
+                  <?php echo do_shortcode($group['diagram_one']); ?>
                 </li>
                   <li class="inner_content unvisible">
-                  <?php echo do_shortcode($value['diagramm_two']); ?>
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
                 </li>
                 <li class="inner_content unvisible">
-                  <?php echo do_shortcode($value['diagramm_third']); ?>
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
                 </li>
                 <li class="inner_content unvisible">
-                  <?php echo do_shortcode($value['diagramm_four']); ?>
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
                 </li>
               </ul>
             </div>
           </li>
-            <?php
-            endforeach;
-          endif;
-          ?>
-
-          
-      </ul>
+          <li id="table_content_2" class="content_block unvisible">
+              <?php $group = get_field('infant_mortality_rate', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_3" class="content_block unvisible">
+              <?php $group = get_field('family', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="table_content_4" class="content_block unvisible">
+              <?php $group = get_field('2009_2022_Population', $queried_object ); ?>
+              <?php echo do_shortcode($group['table']); ?>
+            <div class="wrapper">
+              <ul class="button_list">
+                <li class="inner_block" data-id="1">
+                  <button class="button_icon" data-id="1">
+                    <img data-id="1" src="<?php echo get_template_directory_uri() . '/assets/images/icon1.png'?>" alt="" width="31.5px">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="2">
+                  <button class="button_icon" data-id="2">
+                    <img data-id="2" src="<?php echo get_template_directory_uri() . '/assets/images/icon3.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="3">
+                  <button class="button_icon" data-id="3">
+                    <img data-id="3" src="<?php echo get_template_directory_uri() . '/assets/images/icon4.png'?>" alt="">
+                  </button>
+                </li>
+                <li class="inner_block" data-id="4">
+                  <button class="button_icon" data-id="4">
+                    <img data-id="4" src="<?php echo get_template_directory_uri() . '/assets/images/icon6.png'?>" alt="">
+                  </button>
+                </li>
+              </ul>
+              <ul class="contents">
+                <li class="inner_content">
+                  <?php echo do_shortcode($group['diagram_one']); ?>
+                </li>
+                  <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_two']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_three']); ?>
+                </li>
+                <li class="inner_content unvisible">
+                  <?php echo do_shortcode($group['diagramm_four']); ?>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
     </div>
 </main>
 

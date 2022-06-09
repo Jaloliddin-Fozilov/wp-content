@@ -114,7 +114,7 @@ function crb_attach_theme_options() {
          Field::make( 'complex', 'demographics_rating', 'Demografik ko\'rsatkichlar' )
             ->help_text( 'Ma\'lumotlarni kiritish' )
             ->add_fields( array(
-                Field::make( 'text', 'title', 'Sarlavha' ),
+                Field::make( 'text', 'title1', 'Sarlavha' ),
                 Field::make( 'rich_text', 'rating_table', 'Jadval' ),
                 Field::make( 'text', 'diagramm_one', 'Diagramma 1'),
                 Field::make( 'text', 'diagramm_two', 'Diagramma 2'),
