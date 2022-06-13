@@ -42,7 +42,14 @@ get_header();
                       <div class="text-md text-blue-500">Doimiy aholi soni</div>
                         <div class="text-xl color_green amount py-1">
                           <span>
-                            <?php $number = $permanent_population['number']; echo number_format($number, 0, '', ' '); ?>
+                            <?php 
+                              $number = $permanent_population['number']; 
+                              if ($number > 0) {
+                                echo number_format($number, 0, '', ' ');
+                              } else {
+                                echo ' ';
+                              }
+                            ?>
                           </span>
                           <span><?php echo $permanent_population['number_text']; ?></span>
                         </div>
@@ -64,7 +71,14 @@ get_header();
                         <div class="text-md text-blue-500">Oilalar soni</div>
                           <div class="text-xl color_green amount py-1">
                             <span>
-                              <?php $number = $permanent_population['number']; echo number_format($number, 0, '', ' '); ?>
+                              <?php 
+                                $number = $permanent_population['number']; 
+                                if ($number > 0) {
+                                  echo number_format($number, 0, '', ' ');
+                                } else {
+                                  echo ' ';
+                                }
+                               ?>
                             </span>
                             <span><?php echo $permanent_population['number_text']; ?></span>
                           </div>
@@ -85,7 +99,14 @@ get_header();
                         <div class="text-md text-blue-500">Tug'ilish soni</div>
                           <div class="text-xl color_green amount py-1">
                             <span>
-                              <?php $number = $permanent_population['number']; echo number_format($number, 0, '', ' '); ?>
+                              <?php 
+                                $number = $permanent_population['number']; 
+                                if ($number > 0) {
+                                  echo number_format($number, 0, '', ' ');
+                                } else {
+                                  echo ' ';
+                                }
+                               ?>
                             </span>
                             <span><?php echo $permanent_population['number_text']; ?></span>
                           </div>
@@ -106,7 +127,14 @@ get_header();
                         <div class="text-md text-blue-500">O'lganlar soni</div>
                           <div class="text-xl color_green amount py-1">
                             <span>
-                              <?php $number = $permanent_population['number']; echo number_format($number, 0, '', ' '); ?>
+                              <?php 
+                                $number = $permanent_population['number']; 
+                                if ($number > 0) {
+                                  echo number_format($number, 0, '', ' ');
+                                } else {
+                                  echo ' ';
+                                }
+                               ?>
                             </span>
                             <span><?php echo $permanent_population['number_text']; ?></span>
                           </div>
@@ -127,7 +155,14 @@ get_header();
                         <div class="text-md text-blue-500">Nikohlar soni</div>
                           <div class="text-xl color_green amount py-1">
                             <span>
-                              <?php $number = $permanent_population['number']; echo number_format($number, 0, '', ' '); ?>
+                              <?php 
+                                $number = $permanent_population['number']; 
+                                if ($number > 0) {
+                                  echo number_format($number, 0, '', ' ');
+                                } else {
+                                  echo ' ';
+                                }
+                               ?>
                             </span>
                             <span><?php echo $permanent_population['number_text']; ?></span>
                           </div>
@@ -150,7 +185,14 @@ get_header();
                       <div class="text-md text-blue-500">Ajrim soni</div>
                         <div class="text-xl color_green amount py-1">
                           <span>
-                            <?php $number = $permanent_population['number']; echo number_format($number, 0, '', ' '); ?>
+                              <?php 
+                                $number = $permanent_population['number']; 
+                                if ($number > 0) {
+                                  echo number_format($number, 0, '', ' ');
+                                } else {
+                                  echo ' ';
+                                }
+                               ?>
                           </span>
                           <span><?php echo $permanent_population['number_text']; ?></span>
                         </div>
@@ -171,7 +213,14 @@ get_header();
                         <div class="text-md text-blue-500">Ko'chib kelganlar soni</div>
                           <div class="text-xl color_green amount py-1">
                             <span>
-                              <?php $number = $permanent_population['number']; echo number_format($number, 0, '', ' '); ?>
+                              <?php 
+                                $number = $permanent_population['number']; 
+                                if ($number > 0) {
+                                  echo number_format($number, 0, '', ' ');
+                                } else {
+                                  echo ' ';
+                                }
+                               ?>
                             </span>
                             <span><?php echo $permanent_population['number_text']; ?></span>
                           </div>
@@ -192,7 +241,15 @@ get_header();
                         <div class="text-md text-blue-500">Ko'chib ketganlar soni</div>
                           <div class="text-xl color_green amount py-1">
                             <span>
-                              <?php $number = $permanent_population['number']; echo number_format($number, 0, '', ' '); ?>
+                              <?php 
+                                $number = $permanent_population['number']; 
+                                if ($number > 0) {
+                                  echo number_format($number, 0, '', ' ');
+                                } else {
+                                  echo ' ';
+                                }
+                               ?>
+                               
                             </span>
                             <span><?php echo $permanent_population['number_text']; ?></span>
                           </div>
@@ -213,7 +270,14 @@ get_header();
                         <div class="text-md text-blue-500">Migrasion harakat soni</div>
                           <div class="text-xl color_green amount py-1">
                             <span>
-                              <?php $number = $permanent_population['number']; echo number_format($number, 0, '', ' '); ?>
+                              <?php 
+                                $number = $permanent_population['number']; 
+                                if ($number > 0) {
+                                  echo number_format($number, 0, '', ' ');
+                                } else {
+                                  echo ' ';
+                                }
+                               ?>
                             </span>
                             <span><?php echo $permanent_population['number_text']; ?></span>
                           </div>
@@ -234,7 +298,14 @@ get_header();
                         <div class="text-md text-blue-500">O'rtacha aholi soni soni</div>
                           <div class="text-xl color_green amount py-1">
                             <span>
-                              <?php $number = $permanent_population['number']; echo number_format($number, 0, '', ' '); ?>
+                              <?php 
+                                $number = $permanent_population['number'];
+                                if ($number > 0) {
+                                  echo number_format($number, 0, '', ' ');
+                                } else {
+                                  echo ' ';
+                                }
+                              ?>
                             </span>
                             <span><?php echo $permanent_population['number_text']; ?></span>
                           </div>
@@ -487,7 +558,7 @@ get_header();
       </div>
       <!-- tabs content -->
       <!-- Table and diagrams -->
-        <ul class="content_list tabs__content container">
+      <ul class="content_list tabs__content container">
         <li id="table_content_4" class="content_block unvisible">
               <?php $group = get_field('2009_2022_Population', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
