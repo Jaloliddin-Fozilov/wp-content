@@ -336,6 +336,13 @@ $(window).on('scroll', function () {
 		});
 	});
 
+	$('.nice-select .list>li').on('click', function () { 
+		const value = $(this).data('value');
+		var element = '#table_content_' + value;
+		$('.tabs__content > .content_block').addClass('unvisible');
+		$(element).removeClass('unvisible');
+	});
+
 
 
 // infografik carousel

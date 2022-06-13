@@ -250,6 +250,42 @@ get_header();
   <!-- tabs -->
     <div  class="section section__content-slider section__content-slider--pl section__content-slider--carousel section__bg--off-white">
       <div class="touch_slider container">
+        <div class="row">
+          <div class="col-md-7">
+              <h2>Demografik ko'rsatgichlar</h2>
+          </div>
+          <div  class="col-md-5 d-flex justify-content-end">
+              <select id="#demographics_rate">
+                  <option value="1">Doimiy aholi soni</option>
+                  <option value="2">O'rtacha doimiy aholi soni</option>
+                  <option value="3">Tuzilgan nikohlar soni</option>
+                  <option value="4">Nikoh koeffitsienti</option>
+                  <option value="5">Oilalar soni</option>
+                  <option value="6">Tug'ilish</option>
+                  <option value="7">O'lganlar soni</option>
+                  <option value="8">1 yoshgacha o'lim koeffitsienti</option>
+                  <option value="9">O'lim koeffitsienti</option>
+                  <option value="10">O'lim sabablari</option>
+                  <option value="11">Ajrimlar soni</option>
+                  <option value="12">100 ta nikohga ajrim</option>
+                  <option value="13">Kam ta'minlangan oilalar soni</option>
+                  <option value="14">18 yoshdan kichik bolali oilalar soni</option>
+                  <option value="15">Ko'p bolali oilalar soni (4 bola va undan ko'p)</option>
+                  <option value="16">To'liq bo'lmagan oilalar soni (otasi yoki onasi yo'q oilalar)</option>
+                  <option value="17">Nogironligi bo'lgan shaxslar bor oilalar soni</option>
+                  <option value="18">Yosh guruhlari bo'yicha doimiy aholi soni</option>
+                  <option value="19">Mehnatga layoqatli aholi soni</option>
+                  <option value="20">Reproduktiv yoshdagi ayollar soni</option>
+                  <option value="21">Ko'chib ketganlar soni</option>
+                  <option value="22">Ko'chib kelganlar soni</option>
+                  <option value="23">Migratsion harakat</option>
+                  <option value="24">Zichlik</option>
+                  <option value="25">Ma'muriy hududiy birliklar</option>
+                  <option value="26">Hudud maydoni</option>
+              </select>
+          </div> 
+            
+        </div> 
         <div class="top-seller-activation-2 owl-carousel">
             <div class="top-seller-style-one block" data-uuid="1">
                 <a  href="#table_content_4" class="thumb mb-2">
