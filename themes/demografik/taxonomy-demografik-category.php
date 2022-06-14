@@ -339,20 +339,22 @@ get_header();
                   <option value="10">O'lim sabablari</option>
                   <option value="11">Ajrimlar soni</option>
                   <option value="12">100 ta nikohga ajrim</option>
-                  <option value="13">Kam ta'minlangan oilalar soni</option>
-                  <option value="14">18 yoshdan kichik bolali oilalar soni</option>
-                  <option value="15">Ko'p bolali oilalar soni (4 bola va undan ko'p)</option>
-                  <option value="16">To'liq bo'lmagan oilalar soni (otasi yoki onasi yo'q oilalar)</option>
-                  <option value="17">Nogironligi bo'lgan shaxslar bor oilalar soni</option>
-                  <option value="18">Yosh guruhlari bo'yicha doimiy aholi soni</option>
-                  <option value="19">Mehnatga layoqatli aholi soni</option>
-                  <option value="20">Reproduktiv yoshdagi ayollar soni</option>
-                  <option value="21">Ko'chib ketganlar soni</option>
-                  <option value="22">Ko'chib kelganlar soni</option>
-                  <option value="23">Migratsion harakat</option>
-                  <option value="24">Zichlik</option>
-                  <option value="25">Ma'muriy hududiy birliklar</option>
-                  <option value="26">Hudud maydoni</option>
+                  <option value="13">Аjrim koeffitsienti</option>
+                  <option value="14">Kam ta'minlangan oilalar soni</option>
+                  <option value="15">18 yoshdan kichik bolali oilalar soni</option>
+                  <option value="16">Ko'p bolali oilalar soni (4 bola va undan ko'p)</option>
+                  <option value="17">To'liq bo'lmagan oilalar soni (otasi yoki onasi yo'q oilalar)</option>
+                  <option value="18">Nogironligi bo'lgan shaxslar bor oilalar soni</option>
+                  <option value="19">Yosh guruhlari bo'yicha doimiy aholi soni</option>
+                  <option value="20">Mehnatga layoqatli aholi soni</option>
+                  <option value="21">Reproduktiv yoshdagi ayollar soni</option>
+                  <option value="22">Ko'chib ketganlar soni</option>
+                  <option value="23">Ko'chib kelganlar soni</option>
+                  <option value="24">Migratsion harakat</option>
+                  <option value="25">Аholining tabiiy xarakati</option>
+                  <option value="26">Zichlik</option>
+                  <option value="27">Ma'muriy hududiy birliklar</option>
+                  <option value="28">Hudud maydoni</option>
               </select>
           </div> 
             
@@ -363,21 +365,21 @@ get_header();
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                     <i class="ri-check-line fa fa-check"></i>
                 </a>
-                <h4 class="title pb-1"><a href="#">2009-2022 Aholi soni</a></h4>
+                <h4 class="title pb-1"><a href="#">Doimiy aholi soni</a></h4>
             </div>
             <div class="top-seller-style-one block" data-uuid="2">
                 <a  href="#table_content_21" class="thumb mb-2">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                     <i class="ri-check-line fa fa-check"></i>
                 </a>
-                <h4 class="title pb-1"><a href="#">Oʼrtacha aholi</a></h4>
+                <h4 class="title pb-1"><a href="#">O'rtacha doimiy aholi soni</a></h4>
             </div>
             <div class="top-seller-style-one block" data-uuid="3">
                 <a  href="#table_content_15" class="thumb mb-2">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                     <i class="ri-check-line fa fa-check"></i>
                 </a>
-                <h4 class="title pb-1"><a href="#">Nikoh</a></h4>
+                <h4 class="title pb-1"><a href="#">Tuzilgan nikohlar soni</a></h4>
             </div>
             <div class="top-seller-style-one block" data-uuid="4">
                 <a  href="#table_content_14" class="thumb mb-2">
@@ -433,7 +435,7 @@ get_header();
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                     <i class="ri-check-line fa fa-check"></i>
                 </a>
-                <h4 class="title pb-1"><a href="#">Аjrim</a></h4>
+                <h4 class="title pb-1"><a href="#">Ajrimlar soni</a></h4>
             </div>
             <div class="top-seller-style-one block" data-uuid="12">
                 <a  href="#table_content_1" class="thumb mb-2">
@@ -496,7 +498,7 @@ get_header();
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                     <i class="ri-check-line fa fa-check"></i>
                 </a>
-                <h4 class="title pb-1"><a href="#">2011-2022 yil Аxoli mehnatga loyiq tuman</a></h4>
+                <h4 class="title pb-1"><a href="#">Mehnatga layoqatli aholi soni</a></h4>
             </div>
             <div class="top-seller-style-one block" data-uuid="21">
                 <a  href="#table_content_16" class="thumb mb-2">
@@ -524,7 +526,7 @@ get_header();
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/alldems.png" width="50">
                     <i class="ri-check-line fa fa-check"></i>
                 </a>
-                <h4 class="title pb-1"><a href="#">Migrasion xarakat</a></h4>
+                <h4 class="title pb-1"><a href="#">Migratsion harakat</a></h4>
             </div>
             <div class="top-seller-style-one block" data-uuid="25">
                 <a  href="#table_content_8" class="thumb mb-2">
