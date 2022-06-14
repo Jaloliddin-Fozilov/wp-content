@@ -44,7 +44,7 @@ get_header();
                           <span>
                             <?php 
                               $number = $permanent_population['number']; 
-                              if ($number > 0) {
+                              if (!empty($number)) {
                                 echo number_format($number, 0, '', ' ');
                               } else {
                                 echo ' ';
@@ -73,7 +73,7 @@ get_header();
                             <span>
                               <?php 
                                 $number = $permanent_population['number']; 
-                                if ($number > 0) {
+                                if (!empty($number)) {
                                   echo number_format($number, 0, '', ' ');
                                 } else {
                                   echo ' ';
@@ -101,7 +101,7 @@ get_header();
                             <span>
                               <?php 
                                 $number = $permanent_population['number']; 
-                                if ($number > 0) {
+                                if (!empty($number)) {
                                   echo number_format($number, 0, '', ' ');
                                 } else {
                                   echo ' ';
@@ -129,7 +129,7 @@ get_header();
                             <span>
                               <?php 
                                 $number = $permanent_population['number']; 
-                                if ($number > 0) {
+                                if (!empty($number)) {
                                   echo number_format($number, 0, '', ' ');
                                 } else {
                                   echo ' ';
@@ -157,7 +157,7 @@ get_header();
                             <span>
                               <?php 
                                 $number = $permanent_population['number']; 
-                                if ($number > 0) {
+                                if (!empty($number)) {
                                   echo number_format($number, 0, '', ' ');
                                 } else {
                                   echo ' ';
@@ -187,7 +187,7 @@ get_header();
                           <span>
                               <?php 
                                 $number = $permanent_population['number']; 
-                                if ($number > 0) {
+                                if (!empty($number)) {
                                   echo number_format($number, 0, '', ' ');
                                 } else {
                                   echo ' ';
@@ -215,7 +215,7 @@ get_header();
                             <span>
                               <?php 
                                 $number = $permanent_population['number']; 
-                                if ($number > 0) {
+                                if (!empty($number)) {
                                   echo number_format($number, 0, '', ' ');
                                 } else {
                                   echo ' ';
@@ -243,7 +243,7 @@ get_header();
                             <span>
                               <?php 
                                 $number = $permanent_population['number']; 
-                                if ($number > 0) {
+                                if (!empty($number)) {
                                   echo number_format($number, 0, '', ' ');
                                 } else {
                                   echo ' ';
@@ -272,7 +272,7 @@ get_header();
                             <span>
                               <?php 
                                 $number = $permanent_population['number']; 
-                                if ($number > 0) {
+                                if (!empty($number)) {
                                   echo number_format($number, 0, '', ' ');
                                 } else {
                                   echo ' ';
@@ -300,7 +300,7 @@ get_header();
                             <span>
                               <?php 
                                 $number = $permanent_population['number'];
-                                if ($number > 0) {
+                                if (!empty($number)) {
                                   echo number_format($number, 0, '', ' ');
                                 } else {
                                   echo ' ';
