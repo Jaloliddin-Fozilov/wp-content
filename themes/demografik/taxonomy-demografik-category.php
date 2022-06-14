@@ -182,7 +182,7 @@ get_header();
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm6.png" width="50">
                     </div>
                     <div class="flex flex-col flex-grow ml-2">
-                      <div class="text-md text-blue-500">Ajrim soni</div>
+                      <div class="text-md text-blue-500">Ajrimlar soni</div>
                         <div class="text-xl color_green amount py-1">
                           <span>
                               <?php 
@@ -561,7 +561,7 @@ get_header();
       <!-- tabs content -->
       <!-- Table and diagrams -->
       <ul class="content_list tabs__content container">
-        <li id="table_content_4" class="content_block unvisible">
+          <li id="table_content_1" class="content_block unvisible">
               <?php $group = get_field('2009_2022_Population', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -603,7 +603,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_21" class="content_block unvisible">
+          <li id="table_content_2" class="content_block unvisible">
               <?php $group = get_field('average_population', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -645,7 +645,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_14" class="content_block unvisible">
+          <li id="table_content_3" class="content_block unvisible">
               <?php $group = get_field('marriage', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -687,7 +687,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_13" class="content_block unvisible">
+          <li id="table_content_4" class="content_block unvisible">
               <?php $group = get_field('marriage_coefficients', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -729,7 +729,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_3" class="content_block unvisible">
+          <li id="table_content_5" class="content_block unvisible">
               <?php $group = get_field('family', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -771,7 +771,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_16" class="content_block unvisible">
+          <li id="table_content_6" class="content_block unvisible">
               <?php $group = get_field('birth', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -813,7 +813,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_17" class="content_block unvisible">
+          <li id="table_content_7" class="content_block unvisible">
               <?php $group = get_field('birth_rate', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -855,7 +855,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_18" class="content_block unvisible">
+          <li id="table_content_8" class="content_block unvisible">
               <?php $group = get_field('number_of_dead', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -897,7 +897,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_2" class="content_block unvisible">
+          <li id="table_content_9" class="content_block unvisible">
               <?php $group = get_field('infant_mortality_rate', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -939,7 +939,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_19" class="content_block unvisible">
+          <li id="table_content_10" class="content_block unvisible">
               <?php $group = get_field('mortality_coefficient', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -981,7 +981,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_20" class="content_block unvisible">
+          <li id="table_content_11" class="content_block unvisible">
               <?php $group = get_field('causes_of_death', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1023,7 +1023,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_7" class="content_block unvisible">
+          <li id="table_content_12" class="content_block unvisible">
               <?php $group = get_field('divorces', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1065,7 +1065,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_1" class="content_block unvisible">
+          <li id="table_content_13" class="content_block unvisible">
               <?php $group = get_field('divorce_for_100_marriages', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1107,7 +1107,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_6" class="content_block unvisible">
+          <li id="table_content_14" class="content_block unvisible">
               <?php $group = get_field('divorce_rate', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1149,7 +1149,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_24" class="content_block unvisible">
+          <li id="table_content_15" class="content_block unvisible">
               <?php $group = get_field('low_income_families', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1191,7 +1191,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_25" class="content_block unvisible">
+          <li id="table_content_16" class="content_block unvisible">
               <?php $group = get_field('children_under_18_years', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1233,7 +1233,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_26" class="content_block unvisible">
+          <li id="table_content_17" class="content_block unvisible">
               <?php $group = get_field('five_children_and_more', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1275,7 +1275,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_27" class="content_block unvisible">
+          <li id="table_content_18" class="content_block unvisible">
               <?php $group = get_field('single_parent_families', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1317,7 +1317,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_28" class="content_block unvisible">
+          <li id="table_content_19" class="content_block unvisible">
               <?php $group = get_field('persons_with_disabilities', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1359,7 +1359,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_9" class="content_block unvisible">
+          <li id="table_content_20" class="content_block unvisible">
               <?php $group = get_field('population_by_age_group', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1401,7 +1401,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_5" class="content_block unvisible">
+          <li id="table_content_21" class="content_block unvisible">
               <?php $group = get_field('the_population_district', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1443,7 +1443,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_15" class="content_block unvisible">
+          <li id="table_content_22" class="content_block unvisible">
               <?php $group = get_field('reproductive_women', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1485,7 +1485,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_11" class="content_block unvisible">
+          <li id="table_content_23" class="content_block unvisible">
               <?php $group = get_field('migrants', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1527,7 +1527,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_11" class="content_block unvisible">
+          <li id="table_content_24" class="content_block unvisible">
               <?php $group = get_field('immigrants', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1569,7 +1569,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_12" class="content_block unvisible">
+          <li id="table_content_25" class="content_block unvisible">
               <?php $group = get_field('migration_movement', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1611,7 +1611,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_8" class="content_block unvisible">
+          <li id="table_content_26" class="content_block unvisible">
               <?php $group = get_field('movement_population', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1653,7 +1653,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_10" class="content_block unvisible">
+          <li id="table_content_27" class="content_block unvisible">
               <?php $group = get_field('density', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">
@@ -1695,7 +1695,7 @@ get_header();
               </ul>
             </div>
           </li>
-          <li id="table_content_23" class="content_block unvisible">
+          <li id="table_content_28" class="content_block unvisible">
               <?php $group = get_field('administrative_territorial', $queried_object ); ?>
               <?php echo do_shortcode($group['table']); ?>
             <div class="wrapper">

@@ -242,6 +242,10 @@ img, video {
 .content_list{
     list-style: none;
 }
+.nice-select.open .list{
+    height: 200px;
+    overflow-y: auto;
+}
 @media screen and (min-width: 1850px) {
   .tabs-div .block {
      width: 270px;
