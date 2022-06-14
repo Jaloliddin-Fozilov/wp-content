@@ -96,7 +96,7 @@ get_header();
                           <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm3.png" width="50">
                       </div>
                       <div class="flex flex-col flex-grow ml-2">
-                        <div class="text-md text-blue-500">Tug'ilish soni</div>
+                        <div class="text-md text-blue-500">Tug'ilganlar soni</div>
                           <div class="text-xl color_green amount py-1">
                             <span>
                               <?php 
@@ -267,7 +267,7 @@ get_header();
                           <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm9.png" width="50">
                       </div>
                       <div class="flex flex-col flex-grow ml-2">
-                        <div class="text-md text-blue-500">Migrasion harakat soni</div>
+                        <div class="text-md text-blue-500">Aholining migratsion harakati</div>
                           <div class="text-xl color_green amount py-1">
                             <span>
                               <?php 
@@ -295,7 +295,7 @@ get_header();
                           <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm10.png" width="50">
                       </div>
                       <div class="flex flex-col flex-grow ml-2">
-                        <div class="text-md text-blue-500">O'rtacha aholi soni soni</div>
+                        <div class="text-md text-blue-500">O'rtacha doimiy aholi soni</div>
                           <div class="text-xl color_green amount py-1">
                             <span>
                               <?php 

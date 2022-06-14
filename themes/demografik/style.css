@@ -243,9 +243,6 @@ img, video {
     list-style: none;
 }
 @media screen and (min-width: 1850px) {
- .tax-demografik-category .block {
-     width: 270px;
-  }
   .tabs-div .block {
      width: 270px;
   }
