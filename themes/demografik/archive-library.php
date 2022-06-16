@@ -9,97 +9,123 @@
 
 get_header();
 ?>
-		<main>
-			<section class="search">
-			<div class="my__container">
-				<div class="page__body">
-				<div class="headline">
-					<h1><?php pll_e('Digital library', 'demografik') ?></h1>
-				</div>
-
-				<form class="search__form" method="get" >
-					<input type="text" class="search-field" name="s" placeholder="<?php pll_e('Search', 'demografik') ?>" value="<?php echo get_search_query(); ?>">
-					<input type="hidden" name="post_type" value="library" />
-					<input type="submit" value="<?php pll_e('Search', 'demografik') ?>">
-				</form>
+	<main class="section__content-library">
+		<div id="hero-slider-area" class="header-hero-area site-breadcrumb-header fix">
+			<div class="site-breadcrumb pb-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center pt-100 wow fadeInUp" data-wow-duration="1s"
+							data-wow-delay=".3s"
+							style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s;">
+							<h1><?php pll_e('Digital library', 'demografik') ?></h1>
+						</div>
+					</div>
 				</div>
 			</div>
-			</section>
-			<section class="scrolable__categories">
-			<?php
-				if( $terms = get_terms( array( 'taxonomy' => 'library-category', 'orderby' => 'name' ) ) ) : 
-					echo '<ul name="category__list">';
-					foreach ( $terms as $term ) {
-						echo '<li> <a href="' . get_term_link($term) . '">' . $term->name . '</a></li>';
-					}
-					echo '</ul>';
-				endif;
-			?>
-			</section>
-			<section class="main__content">
+		</div>
+		<div class="section search pt-50 pb-50 search">
 			<div class="container">
-				<div class="full__search">
-				<div class="my__container">
-					<div class="inner__filter">
-					<div class="filter__title">
-						<h3> <?php  pll_e('Categories', 'demografik'); ?> </h3>
+				<div class="row justify-content-center">
+					<div class="col">
+						<form class="search__form" method="get" >
+							<input type="text" class="search-field" name="s" placeholder="<?php pll_e('Search', 'demografik') ?>" value="<?php echo get_search_query(); ?>">
+							<input type="hidden" name="post_type" value="library" />
+							<input type="submit" value="<?php pll_e('Search', 'demografik') ?>">
+						</form>
 					</div>
-					<div class="categories">
-						<ul class="category__list">
-						<?php
-							if( $terms = get_terms( array( 'taxonomy' => 'library-category', 'orderby' => 'name' ) ) ) : 
-								echo '<ul name="category__list">';
-								foreach ( $terms as $term ) {
-									echo '<li> <a href="' . get_term_link($term) . '">' . $term->name . '</a></li>';
-								}
-								echo '</ul>';
-							endif;
-						?>
-						</ul>
-					</div>
-					</div>
-				</div>
-				</div>
-				<div class="files">
-				<ul class="file__list">
-					<?php if ( have_posts() ) : ?>
-						<?php
-							/* Start the Loop */
-							while ( have_posts() ) :
-								the_post();
-							?>
-								<li class="file__list__item">
-									<div class="img__content">
-										<?php if ( has_post_thumbnail() ) { ?>
-											<img src="<?php the_post_thumbnail_url() ?>" alt="placeholder" width="80px">
-										<?php } else {?>
-											<img src="<?php echo get_template_directory_uri() . '/assets/images/file__placeholder.png'?>" alt="placeholder" width="80px">
-										<?php } ?>
-									</div>
-									<div class="text__content">
-										<a href="<?php the_permalink(); ?>" class="file__title">
-										<h3 class="fw__400">
-											<?php the_title(); ?>
-										</h3>
-										</a>
-										<p class="file__date fw__400"><i class="fa fa-calendar fw__400"></i><?php echo get_the_date('j.m.Y'); ?></p>
-									</div>
-								</li>
-							<?php
-							endwhile;
-							the_posts_navigation();
-						else:
-
-						get_template_part( 'template-parts/content', 'none' );
-
-					endif;
-					?>
-					
-				</ul>
 				</div>
 			</div>
-			</section>
-		</main>
+		</div>
+		<div class="content">
+			<div class="scrolable__categories">
+				<?php
+					if( $terms = get_terms( array( 'taxonomy' => 'library-category', 'orderby' => 'name' ) ) ) : 
+						echo '<ul name="category__list">';
+						foreach ( $terms as $term ) {
+							echo '<li> <a href="' . get_term_link($term) . '">' . $term->name . '</a></li>';
+						}
+						echo '</ul>';
+					endif;
+				?>
+			</div>
+			<div class="main__content">
+				<div class="container">
+					<div class="full__search">
+					<div class="my__container">
+						<div class="inner__filter">
+						<div class="filter__title">
+							<h3> <?php  pll_e('Categories', 'demografik'); ?> </h3>
+						</div>
+						<div class="categories">
+							<ul class="category__list">
+							<?php
+								if( $terms = get_terms( array( 'taxonomy' => 'library-category', 'orderby' => 'name' ) ) ) : 
+									echo '<ul name="category__list">';
+									foreach ( $terms as $term ) {
+										echo '<li> <a href="' . get_term_link($term) . '">' . $term->name . '</a></li>';
+									}
+									echo '</ul>';
+								endif;
+							?>
+							</ul>
+						</div>
+						</div>
+					</div>
+					</div>
+					<div class="files">
+						<div class="d_library">
+							<?php if ( have_posts() ) : ?>
+								<?php
+									/* Start the Loop */
+									while ( have_posts() ) :
+										the_post();
+									?>
+											<div class="explore-style-one">
+												<div class="thumb">
+													<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url() ?>"></a>
+												</div>
+												<!-- End .thumb -->
+												<div class="content">
+													<div class="header d-flex-between pt-4 pb-3">
+														<h3 class="title">
+															<a href="#">
+																<?php the_title(); ?>
+															</a>
+														</h3>
+													</div>
+
+													<div class="action-wrapper d-flex-between pt-2">
+														<a href="<?php the_permalink(); ?>" class="btn  btn-outline">
+															
+															<span>
+																<i class="fa fa-book"></i>
+																<?php pll_e("O'qish"); ?>
+															</span></a>
+													</div>
+													<!-- action-wrapper -->
+												</div>
+												<!-- End .content -->
+											</div>
+										
+											<?php
+											endwhile;
+											the_posts_navigation();
+										else:
+
+										get_template_part( 'template-parts/content', 'none' );
+
+									endif;
+								?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
 
 <?php 
 get_footer();
+
+
+?>
+
