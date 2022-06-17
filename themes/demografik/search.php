@@ -41,7 +41,7 @@ global $wp_query;
 				</div>
         <div class="container">
           <div class="files">
-            <div class="d_library">
+            <div class="d_library_page">
               <?php if ( have_posts() ) : ?>
                 <?php
                   /* Start the Loop */

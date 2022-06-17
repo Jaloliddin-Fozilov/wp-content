@@ -281,7 +281,7 @@ border: 2px solid #e6e6e6;
 .section__content-library {
   background: #cfd8dc;
 }
-.d_library {
+.d_library_page {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;

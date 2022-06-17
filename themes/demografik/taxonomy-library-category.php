@@ -73,7 +73,7 @@ get_header();
 					</div>
 					</div>
 					<div class="files">
-						<div class="d_library">
+						<div class="d_library_page">
 							<?php if ( have_posts() ) : ?>
 								<?php
 									/* Start the Loop */
