@@ -1,4 +1,3 @@
-
 /*=====================================
 
 	* Template Name		: Etherino | NFT HTML Marketplace
@@ -114,7 +113,7 @@
 	background:var(--body-bgcolor) !important;
 	}
 .mim_tm_all_wrap{
-	background:var(--body-bgcolor) !important;	
+	background:#cfd8dc;	
 }
 	h1, h2, h3, h4, h5, h6 {
 	font-family : FuturaPT;
