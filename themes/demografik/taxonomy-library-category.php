@@ -49,7 +49,7 @@ get_header();
 				?>
 			</div>
 			<div class="main__content">
-				<div class="container">
+				<div class="container library-container">
 					<div class="full__search">
 					<div class="my__container">
 						<div class="inner__filter">

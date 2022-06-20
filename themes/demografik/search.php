@@ -39,7 +39,7 @@ global $wp_query;
               ?>
             </h1>
 				</div>
-        <div class="container">
+        <div class="container library-container">
           <div class="files">
             <div class="d_library_page">
               <?php if ( have_posts() ) : ?>

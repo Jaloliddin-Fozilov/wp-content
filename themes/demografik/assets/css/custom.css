@@ -278,6 +278,12 @@ border: 2px solid #e6e6e6;
 .button.is-white.is-outlined.active {
   background-color: #f9553e;
 }
+/* library */
+.container.library-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .section__content-library {
   background: #cfd8dc;
 }
