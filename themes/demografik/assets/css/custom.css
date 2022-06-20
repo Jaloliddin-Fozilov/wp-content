@@ -300,7 +300,7 @@ border: 2px solid #e6e6e6;
   min-height: 285px;
   display: block;
 }
-
+.d_library_page .explore-style-one .thumb img,
 .d_library .explore-style-one .thumb img {
   display: block;
   width: 100%;
@@ -321,4 +321,32 @@ h1.search-result-page-title {
   height: 87px;
   width: auto;
   object-fit: unset;
+}
+
+/* parnters block on page */
+.partners-block-wrap .card__item.one .card_head {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners-block-wrap .card__item .card_head img {
+    width: 100%!important;
+    object-fit: contain;
+}
+
+.partners-wrap .section_heading {
+    text-align: center;
+}
+
+.partners-block-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: start;
+}
+.partners-block-wrap .card__item.is__hero {
+  width: calc(33% - 10px);
+  margin: unset;
 }
