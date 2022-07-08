@@ -143,6 +143,8 @@ get_header();
                       </div>
                     </div>
               </div>
+          </div>
+          <div class="row">
               <div class="col">
                 <?php
                   $queried_object = get_queried_object(); 
@@ -171,8 +173,6 @@ get_header();
                       </div>
                     </div>
               </div>
-          </div>
-          <div class="row">
               <div class="col">
                 <?php
                 $queried_object = get_queried_object(); 
@@ -250,62 +250,6 @@ get_header();
                                 }
                                ?>
                                
-                            </span>
-                            <span><?php echo $permanent_population['number_text']; ?></span>
-                          </div>
-                          
-                          <div class="text-md text-italic text-center"><?php echo $permanent_population['for_year']; ?></div>
-                      </div>
-                    </div>
-              </div>
-              <div class="col">
-                <?php
-                  $queried_object = get_queried_object(); 
-                  $permanent_population = get_field('group_migration_movement', $queried_object ); ?>              
-                    <div class="flex flex-row  shadow-sm rounded-t-lg single-black-area">
-                      <div class="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-xl">
-                          <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm9.png" width="50">
-                      </div>
-                      <div class="flex flex-col flex-grow ml-2">
-                        <div class="text-md text-blue-500">Aholining migratsion harakati</div>
-                          <div class="text-xl color_green amount py-1">
-                            <span>
-                              <?php 
-                                $number = $permanent_population['number']; 
-                                if (!empty($number)) {
-                                  echo number_format($number, 0, '', ' ');
-                                } else {
-                                  echo ' ';
-                                }
-                               ?>
-                            </span>
-                            <span><?php echo $permanent_population['number_text']; ?></span>
-                          </div>
-                          
-                          <div class="text-md text-italic text-center"><?php echo $permanent_population['for_year']; ?></div>
-                      </div>
-                    </div>
-              </div>
-              <div class="col">
-                <?php
-                  $queried_object = get_queried_object(); 
-                  $permanent_population = get_field('group_average_population', $queried_object ); ?>              
-                    <div class="flex flex-row  shadow-sm rounded-t-lg single-black-area">
-                      <div class="flex items-center justify-center flex-shrink-0 h-12 w-12 rounded-xl">
-                          <img src="<?php echo get_template_directory_uri() ?>/assets/images/dm10.png" width="50">
-                      </div>
-                      <div class="flex flex-col flex-grow ml-2">
-                        <div class="text-md text-blue-500">O'rtacha doimiy aholi soni</div>
-                          <div class="text-xl color_green amount py-1">
-                            <span>
-                              <?php 
-                                $number = $permanent_population['number'];
-                                if (!empty($number)) {
-                                  echo number_format($number, 0, '', ' ');
-                                } else {
-                                  echo ' ';
-                                }
-                              ?>
                             </span>
                             <span><?php echo $permanent_population['number_text']; ?></span>
                           </div>
