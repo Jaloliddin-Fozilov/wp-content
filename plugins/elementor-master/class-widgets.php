@@ -87,6 +87,7 @@ class Widgets {
 		require_once 'widgets/digital-library.php';
 		require_once 'widgets/partner_sliders-2.php';
 		require_once 'widgets/partner_blocks.php';
+		require_once 'widgets/faq-home.php';
 	}
 
 	/**
@@ -121,6 +122,7 @@ class Widgets {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Widget_Digital_Library() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Partner_Sliders_2() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Partner_Blocks() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Widgets\Faq_Home() );
 	}
 
 	/**
