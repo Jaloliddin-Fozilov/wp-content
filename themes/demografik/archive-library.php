@@ -88,7 +88,7 @@ get_header();
 												<div class="content">
 													<div class="header d-flex-between pt-4 pb-3">
 														<h3 class="title">
-															<a href="#">
+															<a href="<?php the_permalink(); ?>">
 																<?php the_title(); ?>
 															</a>
 														</h3>
