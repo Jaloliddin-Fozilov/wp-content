@@ -9,17 +9,11 @@
 
 get_header();
 ?>
-	<main id="primary" class="site-main d-container">
+	<main id="primary" class="site-main d-container pt-5 pb-5">
 
 	<?php
 	while ( have_posts() ) :
 		the_post();?>
-
-			<article class="library type-library status-publish has-post-thumbnail hentry">
-				
-
-				
-			</article>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="row">
@@ -60,7 +54,7 @@ get_header();
 			</div>
 			<div class="col-md-4 col-md-offset-2">
 				<div class="book-thumb">							
-					<img src="<?php echo get_post_thumbnail_url(); ?>">												
+					<img src="<?php echo get_the_post_thumbnail_url(); ?>">												
 				</div>
 				<a href="#book-item" class="btn-readmore" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">O'qish</a>
 				

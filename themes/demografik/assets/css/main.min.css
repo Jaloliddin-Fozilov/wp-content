@@ -2123,7 +2123,104 @@ nav.nav-main ul.dropdown-menu a:hover{
     height: 100%;
     box-shadow: none;
 }
-
+h1.o-book__title {
+    margin-top: 20px;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -.005em;
+    color: inherit;
+}
+.o-book__category a{
+    background-image: linear-gradient(to bottom,#e5e5e5,#e5e5e5);
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+    background-position: 0 1.3em;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+    text-decoration: none;
+    line-height: 25px;
+    font-size: 1.5rem;
+    color: inherit;
+}
+.o-book__meta .o-book__blurb {
+    
+    line-height: 25px;
+    margin-top: 25px;
+}
+.o-book__meta .o-book__blurb p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.f-landing {
+    font-size: 18px;
+    line-height: 25px;
+}
+ .f-secondary {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #757575;
+}
+.o-book-meta-item span:first-child{
+    font-weight: 600;
+}
+.o-book-meta{
+    font-size: 18px;
+    border-top: 1px solid #c0c6c9;
+    border-bottom: 1px solid #c0c6c9;
+}
+.o-book__authors {
+    padding-bottom: 10px;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+}
+.book-thumb{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 10px;
+    min-height: 515px;
+    margin-bottom: 1rem;
+}
+.btn-readmore{
+    width: 100%;
+    background: #384267;
+    color: #fff;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.btn-readmore:focus{
+    color: #fff;
+}
+.btn-readmore:hover{
+    color: #fff;
+    background: #f44336;
+}
+.book-thumb img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
 
 /* Media Queries */
 
@@ -2167,7 +2264,14 @@ nav.nav-main ul.dropdown-menu a:hover{
         padding: 0;
         max-height: 70px;
         overflow: hidden;
+        background: black;
         transition: max-height 0.4s ease;
+    }
+    h1 {
+        margin-bottom: 20px;
+        color: #607d8b;
+        font-size: 21px;
+        line-height: 1;
     }
     .section__header.open {
         box-shadow: 0px 0px 6px 3px rgba(24, 24, 81, 0.35);
@@ -14887,7 +14991,8 @@ figure.alignnone {
 
 @media (min-width: 1440px) {
     .wrapper {
-        width: 1175px;
+        max-width: 1280px;
+        width: 90%;
     }
     .wrapper--small {
         width: 790px;
