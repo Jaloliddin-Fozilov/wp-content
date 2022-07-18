@@ -61,7 +61,7 @@ get_header();
 			</div>
 		</div>
 		<div class="book-entry w-100 mt-4 collapse" id="book-item">
-			<?php the_field('book'); ?>
+			<?php echo do_shortcode(the_field('book')); ?>
 		</div>
 
 		<footer class="entry-footer">
