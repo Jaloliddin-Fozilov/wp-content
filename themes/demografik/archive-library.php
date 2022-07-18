@@ -95,12 +95,6 @@ get_header();
 													</div>
 
 													<div class="action-wrapper d-flex-between pt-2">
-														<a href="<?php the_permalink(); ?>" class="btn  btn-outline">
-															
-															<span>
-																<i class="fa fa-book"></i>
-																<?php pll_e("O'qish"); ?>
-															</span></a>
 													</div>
 													<!-- action-wrapper -->
 												</div>
