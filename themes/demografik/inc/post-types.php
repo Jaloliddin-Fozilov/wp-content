@@ -454,3 +454,20 @@ class LessonMetaBox {
         <?php
     }
 }
+
+
+function post_type_team() {
+   register_post_type('dteam',
+       array(
+           'labels'      => array(
+               'name'          => __('Teams', 'demografik'),
+               'singular_name' => __('Team', 'demografik'),
+           ),
+           'public'      => true,
+           'menu_icon'   => 'dashicons-groups',
+           'has_archive' => true,
+           'supports'   => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields' ),
+       )
+   );
+}
+add_action('init', 'post_type_team');
