@@ -10,19 +10,21 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main white-bg">
+	<main id="primary" class="site-main white-bg ">
+		<div class="container">
+			<div class="row">
+				<?php
+				while ( have_posts() ) :
+					the_post();
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', get_post_type() );
+					get_template_part( 'template-parts/content', get_post_type() );
 
 
 
-		endwhile; // End of the loop.
-		?>
-
+				endwhile; // End of the loop.
+				?>
+			</div>
+		</div>
 	</main><!-- #main -->
 
 <?php
