@@ -12,7 +12,7 @@
 ?>
 </div><!-- /.mim_tm_all_wrap -->
 
-	<footer class="section section__footer ">
+	<footer class="section section__footer white-bg">
 		<div class="footer_area_bg">
 
 			<div class="footer__top">
