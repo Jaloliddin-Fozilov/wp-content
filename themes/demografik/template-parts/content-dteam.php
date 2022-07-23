@@ -16,7 +16,7 @@
 			<div class="o-editor__id">
 				<div class="o-editor_sticky">
 					<div class="o-editor__img">
-						<img src="images/abduramanov.png" class="image-style-author-square">
+						<img src="<?php echo get_the_post_thumbnail_url(); ?>" class="image-style-author-square">
 					</div>
 					<div class="o-editor__name">
 						<h1 class="f-h6"><?php the_title(); ?></h1>								
