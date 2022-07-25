@@ -110,14 +110,6 @@ class About_Tabs_Blocks extends Widget_Base {
 				'label_block' => true,
 			]
 		);
-		$repeater->add_control(
-			'list_id', [
-				'label' => __( 'Id', 'elementor-awesomesauce' ),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __( 'title_1' , 'elementor-awesomesauce' ),
-				'label_block' => true,
-			]
-		);
 
 		$repeater->add_control(
 			'list_content', [
