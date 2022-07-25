@@ -171,9 +171,9 @@ class About_Tabs_Blocks extends Widget_Base {
 						<nav class="o-article__body-nav f-secondary">
 							<?php foreach ($settings['list']  as $key => $item) : ?>
 								<?php if ($key === 0) : ?>
-									<a href="#<?php echo $item['list_id'];?>" class="is-active"><span><?php echo $item['list_title'];?></span></a>
+									<a href="#<?php echo $key . str_replace(" ", "", strtolower($item['list_title'])); ?>" class="is-active"><span><?php echo $item['list_title'];?></span></a>
 								<?php else: ?>
-									<a href="#<?php echo $item['list_id'];?>" class=""><span><?php echo $item['list_title'];?></span></a>
+									<a href="#<?php echo $key . str_replace(" ", "", strtolower($item['list_title'])); ?>" class=""><span><?php echo $item['list_title'];?></span></a>
 								<?php endif; ?>
 							<?php endforeach; ?>
 						</nav>
