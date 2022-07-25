@@ -11,8 +11,8 @@
 
 ?>
 </div><!-- /.mim_tm_all_wrap -->
-
-	<footer class="section section__footer white-bg">
+	
+	<footer class="section section__footer <?php echo in_array('page-template-about-page', get_body_class()) ? 'white-bg' : ''; ?>">
 		<div class="footer_area_bg">
 
 			<div class="footer__top">
