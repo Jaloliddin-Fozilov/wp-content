@@ -163,9 +163,9 @@ class About_Tabs_Blocks extends Widget_Base {
 						<nav class="o-article__body-nav f-secondary">
 							<?php foreach ($settings['list']  as $key => $item) : ?>
 								<?php if ($key === 0) : ?>
-									<a href="#<?php echo $key . str_replace(" ", "", strtolower($item['list_title'])); ?>" class="is-active"><span><?php echo $item['list_title'];?></span></a>
+									<a href="#<?php echo 'title_' . $key; ?>" class="is-active"><span><?php echo $item['list_title'];?></span></a>
 								<?php else: ?>
-									<a href="#<?php echo $key . str_replace(" ", "", strtolower($item['list_title'])); ?>" class=""><span><?php echo $item['list_title'];?></span></a>
+									<a href="#<?php echo 'title_' . $key; ?>" class=""><span><?php echo $item['list_title'];?></span></a>
 								<?php endif; ?>
 							<?php endforeach; ?>
 						</nav>
@@ -176,7 +176,7 @@ class About_Tabs_Blocks extends Widget_Base {
 					<div class="o-article__body-content">
 						<div class="o-blocks">
 							<?php foreach ($settings['list'] as $key => $item) : ?>
-								<div class="o-block-item" id="<?php echo $key . str_replace(" ", "", strtolower($item['list_title'])); ?>">
+								<div class="o-block-item" id="<?php echo 'title_' . $key; ?>">
 									<h2><?php echo $item['list_title'];?></h2>
 									<?php echo $item['list_content'] ?>
 								</div>
