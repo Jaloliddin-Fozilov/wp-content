@@ -107,31 +107,37 @@ class Post_Type_Team extends Widget_Base {
 		);
 
 		$this->add_control(
-			'button_name',
-			array(
-				'label'   => __( 'Button text', 'elementor-master' ),
-				'type'    => Controls_Manager::TEXT,
-			)
-		);
-
-		$this->add_control(
-			'button_link',
+			'show_experts',
 			[
-				'label' => esc_html__( 'Button Link', 'plugin-name' ),
-				'type' => \Elementor\Controls_Manager::URL,
-				'placeholder' => esc_html__( 'https://your-link.com', 'plugin-name' ),
-				'default' => [
-					'url' => '',
-					'is_external' => true,
-					'nofollow' => true,
-					'custom_attributes' => '',
-				],
+				'label' => esc_html__( 'Show Experts', 'elementor-master' ),
+				'type' => \Elementor\Controls_Manager::SELECT2,
+				'multiple' => true,
+				'options' => $this->get_posts_title(),
+				'default' => [ 'title', 'description' ],
 			]
 		);
 
 
 		$this->end_controls_section();
 	}
+
+	public function get_posts_title() {
+		global $post;
+			$postslist = get_posts( [
+				'post_type' => 'dteam',
+				'posts_per_page' => 10,
+				'order'=> 'ASC',
+				'orderby' => 'title'
+			] );
+		
+		$titles = [];
+		foreach ($postslist as $key => $post) {
+			$titles[$post->ID] .=  get_the_title();
+		}
+		return $titles;
+	}
+
+
 
 	/**
 	 * Render image box widget output on the frontend.
@@ -159,37 +165,40 @@ class Post_Type_Team extends Widget_Base {
 
 
         ?>
-    <div class="d-container d-flex flex-row justify-content-between">
+    <div class="d-container d-flex flex-row justify-content-between flex-wrap">
+		<?php $experts = $settings['show_experts']; ?>
        <?php foreach( $postslist as $post ) : 
             setup_postdata($post); ?>
-            <div class="jl-card">        		
-                <a href="<?php the_permalink(); ?>" target="_blank"><img class="tm-image jl-border-rounded" src="<?php echo get_the_post_thumbnail_url(); ?>"></a>
-                <div class="jl-block">
-                    <a href="<?php the_permalink(); ?>" target="_blank">
-                        <h3 class="tm-title"><?php the_title(); ?></h3>
-                    </a>
-                    <div class="tm-meta jl-margin-top jl-text-meta"><?php echo get_field('experience') ?></div>
-                    <ul class="jl-iconnav jl-margin-top">
-                    <?php
-                    $phone = get_field('phone');
-                    $facebook = get_field('facebook');
-                    $telegram = get_field('telegram');
-                    $email = get_field('email');
-                    if( $phone ): ?>
-                        <li class="tm-social-icon"><a target="_self" href="tel:<?php $phone['number']?>" class="tm-social-icon"><span class="fa fa-phone" aria-hidden="true"></span></a></li>
-                    <?php endif; ?>
-                    <?php if( $facebook ): ?>    
-                        <li class="tm-social-icon"><a target="_self" href="<?php echo $facebook['link'] ?>" class="tm-social-icon"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
-                    <?php endif; ?>
-                    <?php if($telegram): ?>
-                        <li class="tm-social-icon"><a target="_self" href="<?php echo $telegram['link'] ?>" class="tm-social-icon"><span class="fa fa-telegram" aria-hidden="true"></span></a></li>
-                    <?php endif; ?>
-                    <?php if($email): ?>
-                        <li class="tm-social-icon"><a target="_self" href="mailto:<?php echo $email['link'] ?>" class="tm-social-icon"><span class="fa fa-envelope-o" aria-hidden="true"></span></a></li>
-                    <?php endif; ?>
-                    </ul>
-                </div>
-            </div>
+			<?php if(in_array(strval($post->ID), $experts)) : ?>
+				<div class="jl-card">        		
+					<a href="<?php the_permalink(); ?>" target="_blank"><img class="tm-image jl-border-rounded" src="<?php echo get_the_post_thumbnail_url(); ?>"></a>
+					<div class="jl-block">
+						<a href="<?php the_permalink(); ?>" target="_blank">
+							<h3 class="tm-title"><?php the_title(); ?></h3>
+						</a>
+						<div class="tm-meta jl-margin-top jl-text-meta"><?php echo get_field('experience') ?></div>
+						<ul class="jl-iconnav jl-margin-top">
+						<?php
+						$phone = get_field('phone');
+						$facebook = get_field('facebook');
+						$telegram = get_field('telegram');
+						$email = get_field('email');
+						if( $phone ): ?>
+							<li class="tm-social-icon"><a target="_self" href="tel:<?php $phone['number']?>" class="tm-social-icon"><span class="fa fa-phone" aria-hidden="true"></span></a></li>
+						<?php endif; ?>
+						<?php if( $facebook ): ?>    
+							<li class="tm-social-icon"><a target="_self" href="<?php echo $facebook['link'] ?>" class="tm-social-icon"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
+						<?php endif; ?>
+						<?php if($telegram): ?>
+							<li class="tm-social-icon"><a target="_self" href="<?php echo $telegram['link'] ?>" class="tm-social-icon"><span class="fa fa-telegram" aria-hidden="true"></span></a></li>
+						<?php endif; ?>
+						<?php if($email): ?>
+							<li class="tm-social-icon"><a target="_self" href="mailto:<?php echo $email['link'] ?>" class="tm-social-icon"><span class="fa fa-envelope-o" aria-hidden="true"></span></a></li>
+						<?php endif; ?>
+						</ul>
+					</div>
+				</div>
+			<?php endif; ?>
 
         <?php endforeach; 
         wp_reset_postdata(); 

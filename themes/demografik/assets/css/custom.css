@@ -566,6 +566,8 @@ h1.search-result-page-title {
 .jl-card{
   padding: 20px;
   margin-bottom: 3rem;
+  width: 33%;
+  min-width: 250px;
 }
 .jl-iconnav {
   margin-top: 20px!important;
