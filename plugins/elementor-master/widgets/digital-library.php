@@ -175,7 +175,7 @@ class Widget_Digital_Library extends Widget_Base {
 					<div class="container">
 						<div class="row">
 						<div class="col-md-7">
-							<h2 class="section__title nopade font__primary--31 text-center">
+							<h2 class="section__title nopade font__primary--31">
 								<?php echo wp_kses( $settings['title'], array() ); ?>
 							</h2>
 						</div>

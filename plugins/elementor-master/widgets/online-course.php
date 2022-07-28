@@ -159,7 +159,7 @@ class Widget_Online_Course extends Widget_Base {
 
                     <div class="row align-center">
                         <div class="col-md-7">
-                            <h2 class="section__title font__primary--40">
+                            <h2 class="section__title font__primary--31">
 								<?php echo wp_kses( $settings['title'], array() ); ?>
 							</h2>
                             <p class="cds-7 css-p0ww4y cds-9">
