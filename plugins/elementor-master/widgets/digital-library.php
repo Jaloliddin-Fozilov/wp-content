@@ -119,7 +119,7 @@ class Widget_Digital_Library extends Widget_Base {
 		);
 
 		$this->add_control(
-			'button_link',
+			'website_link',
 			[
 				'label' => esc_html__( 'Button Link', 'elementor-master' ),
 				'type' => \Elementor\Controls_Manager::URL,
