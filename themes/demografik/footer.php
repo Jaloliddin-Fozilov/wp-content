@@ -54,6 +54,7 @@
 						</div>
 
 						<div class="col-md-3">
+							<?php dynamic_sidebar('footer-widget-three'); ?>
 							<h3 class="subtitle font__secondary--15">Xar doim xabardor bo'ling!</h3>
 							<ul class="social__nav">
 								<li>
