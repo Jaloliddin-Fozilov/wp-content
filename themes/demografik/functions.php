@@ -272,3 +272,12 @@ add_action('init', function() {
 	pll_register_string('demografik', 'Search Results for:');
 	pll_register_string('demografik', 'About the instructor');
   });
+
+  add_filter("pre_get_posts", "tax_posts_per_page");
+  function tax_posts_per_page($query)
+  {
+	  if (is_tax("library")) {
+		  $query->set("posts_per_page", get_option("posts_per_page"));
+	  }
+	  return $query;
+  }

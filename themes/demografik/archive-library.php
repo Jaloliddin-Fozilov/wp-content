@@ -103,7 +103,16 @@ get_header();
 										
 											<?php
 											endwhile;
-											the_posts_navigation();
+											$pagination = paginate_links([
+												"show_all"           => false,            // настраивается end_size и mid_size (или показ всех страниц)
+												"prev_next"          => true,             // показ ссылок предыдущая/следующая
+												"prev_text"          => "&laquo; Oldingi",  // анкор ссылки на предыдущую страницу
+												"next_text"          => "Keyingi &raquo;",  // анкор ссылки на следующую страницу
+												"end_size"           => 1,                // кол-во ссылок в начале и конце
+												"mid_size"           => 2,                // кол-во ссылок до и после текущей страницы
+												"type"               => "plain",          // в каком виде вернуть результат ("plain", "array", "list")
+											]);
+											echo "<div class='pagination'>" . $pagination . "</div>";
 										else:
 
 										get_template_part( 'template-parts/content', 'none' );
