@@ -51,7 +51,7 @@ function demografik_scripts() {
     wp_enqueue_script( 'macaw-tabs', get_template_directory_uri() . '/assets/js/js/macaw-tabs.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/assets/js/js/modernizr-3.8.0.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'popper.min', get_template_directory_uri() . '/assets/js/js/popper.min.js', array(), _S_VERSION, true );
-    wp_enqueue_script( 'slick.min', get_template_directory_uri() . '/assets/js/js/slick.min.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'slick.min', get_template_directory_uri() . '/assets/js/js/slick.min.js', array('jquery'), _S_VERSION, true );
     wp_enqueue_script( 'admiral', get_template_directory_uri() . '/assets/js/admiral-tabs.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'wow', get_template_directory_uri() . '/assets/js/js/wow.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'gsap.min', get_template_directory_uri() . '/assets/js/js/gsap.min.js', array(), _S_VERSION, true );

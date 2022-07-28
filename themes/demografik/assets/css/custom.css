@@ -290,7 +290,7 @@ border: 2px solid #e6e6e6;
 .d_library_page {
   display: grid;
   gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
   padding-left: 15px;
   padding-right: 15px;
