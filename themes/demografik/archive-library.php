@@ -106,13 +106,13 @@ get_header();
 											$pagination = paginate_links([
 												"show_all"           => false,            // настраивается end_size и mid_size (или показ всех страниц)
 												"prev_next"          => true,             // показ ссылок предыдущая/следующая
-												"prev_text"          => "&laquo; Oldingi",  // анкор ссылки на предыдущую страницу
-												"next_text"          => "Keyingi &raquo;",  // анкор ссылки на следующую страницу
+												"prev_text"          => '<svg xmlns="http://www.w3.org/2000/svg" class="btn--icon" fill="none"viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>',  // анкор ссылки на предыдущую страницу
+												"next_text"          => '<svg xmlns="http://www.w3.org/2000/svg" class="btn--icon" fill="none"viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round"d="M9 5l7 7-7 7"/></svg>',  // анкор ссылки на следующую страницу
 												"end_size"           => 1,                // кол-во ссылок в начале и конце
 												"mid_size"           => 2,                // кол-во ссылок до и после текущей страницы
 												"type"               => "plain",          // в каком виде вернуть результат ("plain", "array", "list")
 											]);
-											echo "<div class='pagination'>" . $pagination . "</div>";
+											
 										else:
 
 										get_template_part( 'template-parts/content', 'none' );
@@ -120,6 +120,7 @@ get_header();
 									endif;
 								?>
 						</div>
+						<?php echo "<div class='pagination'>" . $pagination . "</div>"; ?>
 					</div>
 				</div>
 			</div>
@@ -132,3 +133,19 @@ get_footer();
 
 ?>
 
+<div class="pagination">
+      <button class="btn">
+      </button>
+      <div class="pages">
+        <a class="page">1</a>
+        <a class="page">2</a>
+        <a class="page active">3</a>
+        <a class="page">4</a>
+        <a class="page">5</a>
+        <a class="page">6</a>
+        <a class="page">...</a>
+        <a class="page">23</a>
+      </div>
+      <button class="btn">
+      </button>
+    </div>

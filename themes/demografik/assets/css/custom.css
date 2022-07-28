@@ -605,3 +605,56 @@ h3.tm-title{
   padding: 1rem;
     text-align: center;
 }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 200px;
+}
+
+.page-numbers {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.page-numbers:hover {
+  background-color: #f44337;
+  color: #fff;
+}
+
+.current {
+  background-color: #f44337;
+  color: #fff;
+}
+
+.prev, .next {
+  background-color: #fff;
+  border: 1px solid #f44337;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prev:hover, .next:hover {
+  background-color: #f44337;
+}
+.btn--icon {
+  height: 24px;
+  width: 24px;
+  stroke: #f44337;
+}
+.btn--icon:hover {
+  stroke: #fff;
+}
