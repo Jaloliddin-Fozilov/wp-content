@@ -607,11 +607,11 @@ h3.tm-title{
 }
 
 .pagination {
-  display: flex;
+  display: flex!important;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-top: 200px;
+  margin-top: 60px;
 }
 
 .page-numbers {
