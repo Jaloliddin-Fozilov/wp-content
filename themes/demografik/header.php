@@ -63,24 +63,7 @@
                             </div>
 
                             <div class="stm-header__element stm-header__element_icon_only">
-                                <div class="stm-socials">
-                                    <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only"
-                                        target="_blank">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                    <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only"
-                                        target="_blank">
-                                        <i class="fa fa-youtube-play"></i>
-                                    </a>
-                                    <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only"
-                                        target="_blank">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                    <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_icon_only"
-                                        target="_blank">
-                                        <i class="fa fa-paper-plane"></i>
-                                    </a>
-                                </div>
+                                <?php dynamic_sidebar('header_one'); ?>
                             </div>
                             <div class="stm-header__element stm-header__element_">
                                 <div class="stm-text fwn">
