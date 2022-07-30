@@ -65,7 +65,7 @@
                             <div class="stm-header__element stm-header__element_icon_only">
                                 <?php dynamic_sidebar('header_one'); ?>
                             </div>
-                            <div class="stm-header__element stm-header__element_">
+                            <div class="stm-header__element stm-header__element_" style="display: none">
                                 <div class="stm-text fwn">
                                     <a href="#" id="bvi-panel-show" class=" link top-bar__blind top-bar__link">
                                         <i class="fa fa-eye" aria-hidden="true"></i>
