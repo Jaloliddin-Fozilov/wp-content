@@ -657,3 +657,6 @@ h3.tm-title{
 .btn--icon:hover {
   stroke: #fff;
 }
+.more-container .ti-download {
+   display: none!important;
+}
