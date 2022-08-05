@@ -660,3 +660,9 @@ h3.tm-title{
 .more-container .ti-download {
    display: none!important;
 }
+
+form#tutor-registration-from {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
