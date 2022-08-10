@@ -3175,6 +3175,20 @@ ul.footer_nav li {
     list-style: none;
 }
 
+.footer-nav-menu li {
+    list-style: none;
+}
+.footer-nav-menu li a {
+    color: var(--nav-color);
+    line-height: 35px;
+    padding: 6px 0px !important;
+    font-size: 16px;	
+    font-weight: 900;
+	transition:all .4s ease;
+}
+.footer-nav-menu li {
+    color: var(--nav-color);
+}
 ul.footer_nav li a:hover {
 	color: var(--nav-color);
 }
