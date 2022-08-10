@@ -479,8 +479,8 @@ add_action('init', 'post_type_team');
 // post type Announcement
 function register_taxonomy_ads() {
     $labels = array(
-        'name'              => _x( 'categories', 'taxonomy general name' ),
-        'singular_name'     => _x( 'category', 'taxonomy singular name' ),
+        'name'              => _x( 'ads categories', 'taxonomy general name' ),
+        'singular_name'     => _x( 'ads category', 'taxonomy singular name' ),
         'search_items'      => __( 'Search categories', 'demografik' ),
         'all_items'         => __( 'All category', 'demografik' ),
         'parent_item'       => __( 'Parent category', 'demografik' ),
@@ -489,7 +489,7 @@ function register_taxonomy_ads() {
         'update_item'       => __( 'Update category', 'demografik' ),
         'add_new_item'      => __( 'Add new category', 'demografik' ),
         'new_item_name'     => __( 'New category name', 'demografik' ),
-        'menu_name'         => __( 'Category', 'demografik' ),
+        'menu_name'         => __( 'Ads Category', 'demografik' ),
     );
     $args   = array(
         'hierarchical'      => true, // make it hierarchical (like categories)
