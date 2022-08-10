@@ -471,3 +471,50 @@ function post_type_team() {
    );
 }
 add_action('init', 'post_type_team');
+
+
+
+
+
+// post type Announcement
+function register_taxonomy_ads() {
+    $labels = array(
+        'name'              => _x( 'categories', 'taxonomy general name' ),
+        'singular_name'     => _x( 'category', 'taxonomy singular name' ),
+        'search_items'      => __( 'Search categories', 'demografik' ),
+        'all_items'         => __( 'All category', 'demografik' ),
+        'parent_item'       => __( 'Parent category', 'demografik' ),
+        'parent_item_colon' => __( 'Parent category', 'demografik' ),
+        'edit_item'         => __( 'Edit category', 'demografik' ),
+        'update_item'       => __( 'Update category', 'demografik' ),
+        'add_new_item'      => __( 'Add new category', 'demografik' ),
+        'new_item_name'     => __( 'New category name', 'demografik' ),
+        'menu_name'         => __( 'Category', 'demografik' ),
+    );
+    $args   = array(
+        'hierarchical'      => true, // make it hierarchical (like categories)
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => [ 'slug' => 'ads-category' ],
+    );
+    register_taxonomy( 'ads-category', [ 'post-ads' ], $args );
+}
+add_action( 'init', 'register_taxonomy_ads' );
+
+function post_type_ads() {
+    register_post_type('post-ads',
+        array(
+            'labels'      => array(
+                'name'          => __('Announcement', 'demografik'),
+                'singular_name' => __('Announcements', 'demografik'),
+            ),
+            'public'      => true,
+            'menu_icon'   => 'dashicons-embed-post',
+            'has_archive' => true,
+            'supports'   => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields' ),
+        )
+    );
+ }
+ add_action('init', 'post_type_ads');
