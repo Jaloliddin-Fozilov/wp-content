@@ -129,23 +129,3 @@ get_header();
 
 <?php 
 get_footer();
-
-
-?>
-
-<div class="pagination">
-      <button class="btn">
-      </button>
-      <div class="pages">
-        <a class="page">1</a>
-        <a class="page">2</a>
-        <a class="page active">3</a>
-        <a class="page">4</a>
-        <a class="page">5</a>
-        <a class="page">6</a>
-        <a class="page">...</a>
-        <a class="page">23</a>
-      </div>
-      <button class="btn">
-      </button>
-    </div>
