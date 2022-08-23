@@ -138,13 +138,13 @@
 		color:var(--green-color);
 	}
 
-	p {
-	font-family :FuturaPT;
-	font-size : 16px;
-	letter-spacing : 0.2px;
-	line-height : 29px;
-	color:#384267;
-	}
+	/*p {*/
+	/*font-family :FuturaPT;*/
+	/*font-size : 16px;*/
+	/*letter-spacing : 0.2px;*/
+	/*line-height : 29px;*/
+	/*color:#384267;*/
+	/*}*/
 	
 	img.responsive-fluid {
 		max-width: 100%;

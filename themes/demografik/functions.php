@@ -195,6 +195,28 @@ function demografik_widgets_init() {
 			'after_title'   => '</h5>',
 		)
 	);
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'Sidebar on post page left', 'demografik' ),
+            'id'            => 'sidebar_post_1',
+            'description'   => esc_html__( 'Add widgets here.', 'demografik' ),
+            'before_widget' => '<div id="%1$s" class="widget last-post %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>',
+        )
+    );
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'Sidebar on post page right', 'demografik' ),
+            'id'            => 'sidebar_post_2',
+            'description'   => esc_html__( 'Add widgets here.', 'demografik' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>',
+        )
+    );
 }
 add_action( 'widgets_init', 'demografik_widgets_init' );
 
@@ -282,6 +304,7 @@ add_action('init', function() {
 	pll_register_string('demografik', 'Categories');
 	pll_register_string('demografik', 'Search Results for:');
 	pll_register_string('demografik', 'About the instructor');
+    pll_register_string('demografik', 'news');
   });
 
   add_filter("pre_get_posts", "tax_posts_per_page");
