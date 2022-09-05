@@ -1,0 +1,1 @@
+/home/bakhtiyar/Work/demografiya/hosting/wp-content/themes/demografik/search copy.php

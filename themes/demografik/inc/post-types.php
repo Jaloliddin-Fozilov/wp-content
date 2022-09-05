@@ -518,3 +518,47 @@ function post_type_ads() {
     );
  }
  add_action('init', 'post_type_ads');
+
+
+// post type wiki
+function register_taxonomy_wiki() {
+    $labels = array(
+        'name'              => _x( 'wiki categories', 'taxonomy general name' ),
+        'singular_name'     => _x( 'wiki category', 'taxonomy singular name' ),
+        'search_items'      => __( 'Search categories', 'demografik' ),
+        'all_items'         => __( 'All category', 'demografik' ),
+        'parent_item'       => __( 'Parent category', 'demografik' ),
+        'parent_item_colon' => __( 'Parent category', 'demografik' ),
+        'edit_item'         => __( 'Edit category', 'demografik' ),
+        'update_item'       => __( 'Update category', 'demografik' ),
+        'add_new_item'      => __( 'Add new category', 'demografik' ),
+        'new_item_name'     => __( 'New wiki category name', 'demografik' ),
+        'menu_name'         => __( 'Wiki Category', 'demografik' ),
+    );
+    $args   = array(
+        'hierarchical'      => true, // make it hierarchical (like categories)
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => [ 'slug' => 'wiki_cat' ],
+    );
+    register_taxonomy( 'wiki_cat', [ 'wiki' ], $args );
+}
+add_action( 'init', 'register_taxonomy_wiki' );
+
+function post_type_wiki() {
+    register_post_type('wiki',
+        array(
+            'labels'      => array(
+                'name'          => __('Wiki', 'demografik'),
+                'singular_name' => __('Wiki', 'demografik'),
+            ),
+            'public'      => true,
+            'menu_icon'   => 'dashicons-embed-post',
+            'has_archive' => true,
+            'supports'   => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields' ),
+        )
+    );
+}
+add_action('init', 'post_type_wiki');
