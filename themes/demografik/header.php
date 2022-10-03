@@ -93,7 +93,9 @@
                             </div>
                         </div>
                     </div>
-
+                    <div id="burger-menu">
+                        <span></span>
+                    </div>
                 </div>
 
             </div>
@@ -103,9 +105,7 @@
         <div class="header--bottom">
 
             <div class="wrapper">
-                <div id="burger-menu">
-                    <span></span>
-                </div>
+               
                 <nav class="nav-main" id="mainMenu">
                     <button class="nav__close" style="display: none;">
 
@@ -154,5 +154,27 @@
 
             </div>
 
+        </div>
+        <div class="mobile-menu-wrap">
+            <div class="mobile-menu" id="mobileMenu">
+                
+                    <?php 
+                    wp_nav_menu( [
+                        'theme_location'  => 'menu-1',
+                        'menu'            => '',
+                        'container'       => false,
+                        'menu_class'      => 'nav nav-pills',
+                        'menu_id'         => 'menu-primary-navigation',
+                        'fallback_cb'     => 'wp_page_menu',
+                        'before'          => '',
+                        'after'           => '',
+                        'link_before'     => '',
+                        'link_after'      => '',
+                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                        'depth'           => 0,
+                        'walker'          => new BEM_Walker_Nav_Menu(),
+                    ] );
+                    ?>
+            </div><!-- ./mobile-menu -->
         </div>
     </header>

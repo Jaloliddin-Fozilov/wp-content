@@ -167,8 +167,8 @@ window.onload = maind
 
 
 var burgerMenu = document.getElementById('burger-menu');
-// var overlay = document.getElementById('menu');
+var overlay = document.getElementById('mobileMenu');
 burgerMenu.addEventListener('click',function(){
   this.classList.toggle("close");
-//   overlay.classList.toggle("overlay");
+  overlay.classList.toggle("_active");
 });

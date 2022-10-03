@@ -1900,7 +1900,6 @@ a.back_project_footer svg.icon.icon__arrow.rotate_90 {
 }
 
 .top-nav {
-    position: relative;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;

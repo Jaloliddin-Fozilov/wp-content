@@ -1,6 +1,14 @@
 #burger-menu {
     display: none;
 }
+#mobileMenu {
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    height: calc(100% - 107px);
+    width: 100%;
+    z-index: 999999;
+}
 @media (max-width: 992px){
     .header_lang_social_icon {
         display: none;
@@ -173,6 +181,16 @@
     }
     .stm-header__cell.stm-header__cell_right.col-md-5.col-sm-5.col-xs-6 {
         padding: 0;
+    }
+    .top-nav {
+        flex-wrap: nowrap;
+        padding-right: 15px;
+    }
+    .header--bottom {
+        display: none;
+    }
+    #mobileMenu._active{
+        right: 100%;
     }
 }
 
