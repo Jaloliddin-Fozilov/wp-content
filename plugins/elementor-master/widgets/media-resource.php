@@ -229,7 +229,7 @@ class Media_Resource extends Widget_Base {
 						if ( $settings['list'] ) {
 							
 							foreach (  $settings['list'] as $item ) { ?>
-								<div class="col-md-3">
+								<div class="col-md-3 col-sm-6 col-xs-6">
 									<div class="explore-style-one media-resourses">
 										<div class="thumb">
 											<a href="<?php echo $item['link']['url'];?>"><img src="<?php echo $item['image']['url'];?>"></a>                                                      

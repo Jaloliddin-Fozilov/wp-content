@@ -50,6 +50,7 @@ function demografik_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'demografik' ),
+			'media-menu' => esc_html__( 'Media resourses', 'demografik' ),
 		)
 	);
 
@@ -330,3 +331,11 @@ add_filter( 'get_the_archive_title', function ($title) {
     }
     return $title;
 });
+
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class($classes, $item){
+    $classes[] = 'media-menu__item';
+    return $classes;
+}

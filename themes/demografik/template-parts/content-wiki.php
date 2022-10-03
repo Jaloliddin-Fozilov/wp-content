@@ -34,7 +34,7 @@
                     endif;
                 ?>
             </div>
-            <div class="row pt-5 pb-5 justify-center wiki-content">
+            <div class="row pt-5 pb-5">
                 <div class="col-md-8">
                     <div class="wiki_detail">
                         <?php the_content(); ?>

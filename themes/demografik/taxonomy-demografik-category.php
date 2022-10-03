@@ -287,7 +287,7 @@ get_header();
                   <option value="14">Аjrim koeffitsienti</option>
                   <option value="15">Kam ta'minlangan oilalar soni</option>
                   <option value="16">18 yoshdan kichik bolali oilalar soni</option>
-                  <option value="17">Ko'p bolali oilalar soni (4 bola va undan ko'p)</option>
+                  <option value="17">Koʼp bolali oilalar soni (5 bola va undan koʼp)</option>
                   <option value="18">To'liq bo'lmagan oilalar soni (otasi yoki onasi yo'q oilalar)</option>
                   <option value="19">Nogironligi bo'lgan shaxslar bor oilalar soni</option>
                   <option value="20">Yosh guruhlari bo'yicha doimiy aholi soni</option>

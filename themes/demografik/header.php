@@ -40,7 +40,7 @@
                 <div class="top-nav">
 
                     <div class="stm-header__row stm-header__row_top">
-                        <div class="stm-header__cell stm-header__cell_left col-md-3">
+                        <div class="stm-header__cell stm-header__cell_left col-md-3 col-sm-6 col-xs-6">
                             <div class="stm-header__element stm-header__element_">
 
                                 <div class="stm-logo lang-uz logo-uz">
@@ -48,7 +48,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="stm-header__cell stm-header__cell_center col-md-4">
+                        <div class="stm-header__cell stm-header__cell_center header_lang_social_icon col-md-4">
                             <div class="stm-header__element stm-header__element_">
                                 <div class="stm-icontext ">
                                     <div class="languages">
@@ -73,7 +73,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="stm-header__cell stm-header__cell_right col-md-5">
+                        <div class="stm-header__cell stm-header__cell_right col-md-5 col-sm-5 col-xs-6">
                             <div class="stm-header__element stm-header__element_">
                                 <div class="stm-logo ">
                                     <a href="https://moiti.uz/">
@@ -103,7 +103,10 @@
         <div class="header--bottom">
 
             <div class="wrapper">
-                <nav class="nav-main">
+                <div id="burger-menu">
+                    <span></span>
+                </div>
+                <nav class="nav-main" id="mainMenu">
                     <button class="nav__close" style="display: none;">
 
                         <span class="content">
@@ -152,7 +155,4 @@
             </div>
 
         </div>
-
-        <button class="menu-toggle">Menu</button>
-
     </header>

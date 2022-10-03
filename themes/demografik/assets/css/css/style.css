@@ -5422,12 +5422,8 @@ a.arrow-wallet i {
         max-width: 150px;
         width: 100%;
     }
-    .header--bottom{
-        display: none;
-    }
-    .top-nav, .header--top{
-        opacity: 0;
-    }
+
+
     .stm-header.active .header--bottom{
         left: 0;
     margin: auto;

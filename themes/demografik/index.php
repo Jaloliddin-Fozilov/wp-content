@@ -43,8 +43,18 @@ get_header();
 
                         endwhile;
 
-                        the_posts_navigation();
+                        $pagination = paginate_links([
+                            "show_all"           => false,            // настраивается end_size и mid_size (или показ всех страниц)
+                            "prev_next"          => true,             // показ ссылок предыдущая/следующая
+                            "prev_text"          => '<svg xmlns="http://www.w3.org/2000/svg" class="btn--icon" fill="none"viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>',  // анкор ссылки на предыдущую страницу
+                            "next_text"          => '<svg xmlns="http://www.w3.org/2000/svg" class="btn--icon" fill="none"viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round"d="M9 5l7 7-7 7"/></svg>',  // анкор ссылки на следующую страницу
+                            "end_size"           => 1,                // кол-во ссылок в начале и конце
+                            "mid_size"           => 2,                // кол-во ссылок до и после текущей страницы
+                            "type"               => "plain",          // в каком виде вернуть результат ("plain", "array", "list")
+                        ]);
                         ?>
+
+                       
                     </div>
                 </div>
                 <!-- .entry-footer -->
@@ -56,8 +66,13 @@ get_header();
 
 		endif;
 		?>
+         <?php echo "<div class='pagination' style='padding-bottom: 60px'> " . $pagination . "</div>"; ?>
 
 	</main><!-- #main -->
 
 <?php
-get_footer();
+if (is_archive()) {
+    get_footer( 'white' );
+} else {
+    get_footer('white');
+}

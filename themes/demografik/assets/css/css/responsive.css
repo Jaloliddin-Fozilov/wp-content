@@ -31,30 +31,8 @@
     .menu ul {
         display: none;
     }
-    .menu {
-        position: absolute;
-        background:#262648 !important;
-        width: 100%;
-        top: 100%;
-        left: 0;
-        z-index: 20;
-        display: block !important;
-        transition: .4s ease-in-out;
-    }
-    .menu::before,
-    .menu::after {
-        content: "";
-        height: 100%;
-        width: 1000px;
-        position: absolute;
-        top: 0;
-        left: 100%;
-        background-color: inherit;
-    }
-    .menu::before {
-        right: 100%;
-        left: unset;
-    }
+
+
     .menu.menu-open {
         display: block !important;
         visibility: visible;

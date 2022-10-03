@@ -209,9 +209,21 @@ table {
     align-items: center;
 }
 
+
+
 .stm-header__cell_center {
     -ms-flex-pack: center;
     justify-content: center;
+}
+
+@media (max-width: 1200px){
+    .stm-header__cell {
+        flex-shrink: 1;
+    }
+    .stm-header__cell_center {
+        flex-direction: column;
+        gap: 12px;
+    }
 }
 
 .stm-header__cell_left {
@@ -306,6 +318,11 @@ table {
     max-width: 100%;
     min-width: 100%;
     min-height: 100%;
+}
+@media (max-width: 1200px) {
+    #myVideo {
+        position: absolute;
+    }
 }
 
 .slide .title,
@@ -2247,10 +2264,6 @@ h1.o-book__title {
         margin-top: 70px;
     }
     .section__header {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-flow: row wrap;
@@ -2258,7 +2271,6 @@ h1.o-book__title {
         -ms-flex-pack: start;
         justify-content: flex-start;
         padding: 0;
-        max-height: 70px;
         overflow: hidden;
         background: black;
         transition: max-height 0.4s ease;
@@ -2294,8 +2306,6 @@ h1.o-book__title {
         width: 100%;
     }
     .header--top {
-        -ms-flex-order: 1;
-        order: 1;
         background-color: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(5px);
         color: #fff;
@@ -2356,17 +2366,7 @@ h1.o-book__title {
         width: 100%;
         padding-right: 0;
     }
-    .top-nav li {
-        -ms-flex-order: 1;
-        order: 1;
-        display: block;
-        width: 50%;
-        padding: 45px 30px;
-        font-size: 18px;
-    }
-    .top-nav li+li {
-        margin-top: 0px;
-    }
+
     .top-nav .top__donate {
         -ms-flex-order: 0;
         order: 0;
@@ -2415,10 +2415,7 @@ h1.o-book__title {
         display: block;
         padding: 0;
     }
-    .nav-main {
-        position: relative;
-        color: #fff;
-    }
+
     .nav-main .nav__close {
         position: absolute;
         right: 20px;
@@ -2509,7 +2506,7 @@ h6 {
     font-weight: 700;
     font-family: FuturaPT;
 }
-h1{
+h1 {
     margin-bottom: 20px;
     color: #e7e7ef;
     font-size: 64px;
@@ -2520,14 +2517,13 @@ h1{
     .nav-main li:last-child a {
         border-bottom: none;
     }
-    nav.nav-main li a {
-        font-size: 20px;
+    /* nav.nav-main li a {
         letter-spacing: 0.1em;
         padding: 20px 0px;
         margin-bottom: -1px;
         display: inline-block;
         width: 100%;
-    }
+    } */
     .nav-main a:hover {
         color: #fff;
     }
@@ -2629,6 +2625,7 @@ h1{
     .top-nav .top__social {
         width: 30%;
     }
+
 }
 
 @media (min-width: 992px) {
@@ -2816,6 +2813,8 @@ h1{
     }
     .nav-main .nav {
         padding: 5px 0;
+        display: flex;
+        justify-content: center;
     }
     .nav-main li {
         display: block;
@@ -2873,6 +2872,7 @@ h1{
     .nav-main .dropdown-menu__secondary a:hover {
         color: #003BB3;
     }
+
 }
 
 @media (min-width: 992px) {
@@ -12080,10 +12080,6 @@ button.slide-arrow.prev-arrow {
     -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
     backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
-.wiki-content p{
-	font-size: 24px;
-    line-height: 1.5;
-}
 /* Media Queries */
 
 @media (min-width: 320px) {
@@ -14789,7 +14785,14 @@ button.slide-arrow.prev-arrow {
     content: "";
     padding: 0;
 }
-
+@media (max-width: 1200px){
+    .languages:nth-child(1){
+        padding: 0;
+    }
+    .languages ul {
+        margin: 0;
+    }
+}
 .hero-body {
     flex-grow: 1;
     flex-shrink: 0;
@@ -14947,8 +14950,7 @@ figure.alignnone {
 
 @media (min-width: 992px) {
     .wrapper {
-        width: 950px;
-        padding: 0;
+        padding: 0 15px;
     }
     .wrapper--small {
         width: 650px;

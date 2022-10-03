@@ -72,31 +72,91 @@ $cat = get_queried_object();
 									
 								echo '</h2>';
 								
-								$arguments = array(
-									'post_type' => 'wiki',
-									'order' => 'ASC', 
-									'orderby' => 'title',
-									'wiki_cat' => $cat->slug,
-								);
-								$query = new WP_Query( $arguments );
+								// $arguments = array(
+								// 	'post_type' => 'wiki',
+								// 	'order' => 'ASC', 
+								// 	'orderby' => 'title',
+								// 	'wiki_cat' => $cat->slug,
+								// );
+
+                                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+                                $args = array(
+                                    'posts_per_page' => 16,
+                                    'orderby'     => 'date',
+                                    'order'       => 'DESC',
+                                    'include'     => array(),
+                                    'exclude'     => array(),
+                                    'meta_key'    => '',
+                                    'meta_value'  =>'',
+                                    'post_type'   => 'wiki',
+                                    'paged'=>$paged,
+                                    'suppress_filters' => true,
+                                    'wiki_cat' => $cat->slug,
+                                    'tax_query' => array(
+                                        array(
+                                            'taxonomy' => 'wiki_cat',
+                                            'field' => 'term_id', 
+                                            'terms' => $cat->term_id
+                                            
+                                        )
+                                    )			
+                                );// end args
+
+								$query = new WP_Query( $args );
 									/* Start the Loop */
-								while ( $query->have_posts() ) :
-									$query->the_post();
+                                echo '<ul class="kbe_article_list">';
+                                    while ( $query->have_posts() ) :
+                                        $query->the_post();
 
-									?>
-									<ul class="kbe_article_list">
-										<li><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></li>
-									</ul>
-									<?php
+                                        ?>
+                                        
+                                            <li><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></li>
+                                        
+                                        <?php
 
-								endwhile;
+                                    endwhile;
+                                echo '</ul>';
+                                $total_pages = $query->max_num_pages;
 								echo '</div></div>';
 
                                       
                         ?>
                     </div>
+                    <?php
+                        if ($total_pages > 1){
+		
+                            $current_page = max(1, get_query_var('paged'));
+                            ?>
+                            <nav class="navigation pagination active">
+                                <div class="nav-links">
+                            <?php
+                            echo paginate_links(array(
+                                'base' => get_pagenum_link(1) . '%_%',
+                                'format' => '/page/%#%',
+                                
+                                'current' => $current_page,
+                                'total' => $total_pages,
+                                'show_all'     => false, // показаны все страницы участвующие в пагинации
+                                'end_size'     => 1,     // количество страниц на концах
+                                'mid_size'     => 1,     // количество страниц вокруг текущей
+                                'prev_next'    => true,  // выводить ли боковые ссылки "предыдущая/следующая страница".
+                                'prev_text'    => __('<i class="fa fa-chevron-left"></i>'),
+                                'next_text'    => __('<i class="fa fa-chevron-right"></i>'),
+                                'add_args'     => false, // Массив аргументов (переменных запроса), которые нужно добавить к ссылкам.
+                                'add_fragment' => '',     // Текст который добавиться ко всем ссылкам.
+                                
+                                'class'        => 'pagination', // CSS класс, добавлено в 5.5.0.
+                            ));
+                            ?>
+                                </div>
+                            </nav>
+                            
+                            <?php
+                        }
+                        ?>
                 </div> 
-                <?php         
+                <?php     
 
                 else:
 
@@ -107,5 +167,5 @@ $cat = get_queried_object();
         </article>
     </div>
 <?php
-get_footer('zero');
+get_footer('white');
 

@@ -10,55 +10,47 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main white-bg mt-6">
 
 		<?php
 		while ( have_posts() ) :
 			the_post();?>
+            <div class="container">
+                <div class="row">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                        <div class="single-layout__center slc">
+                            <div class="single-header">
+                                <h1 class="single-header__title text-center pb-4 pt-4"><?php the_title(); ?></h1>
+                            </div>
 
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <header class="entry-header">
-                <?php
-                if ( is_singular() ) :
-                    the_title( '<h1 class="entry-title" style="text-align: center; padding: 25px;">', '</h1>' );
-                else :
-                    the_title( '<h2 class="entry-title" style="text-align: center; padding: 25px;" ><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-                endif;
+                            <div class="single-content">
+                                <div class="main-img">
+                                    <img src="<?php echo get_the_post_thumbnail_url(); ?>">
+                                </div>
 
-                ?>
-            </header><!-- .entry-header -->
+                                <?php
+                                    the_content(
+                                        sprintf(
+                                            wp_kses(
+                                                /* translators: %s: Name of current post. Only visible to screen readers */
+                                                __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'demografik' ),
+                                                array(
+                                                    'span' => array(
+                                                        'class' => array(),
+                                                    ),
+                                                )
+                                            ),
+                                            wp_kses_post( get_the_title() )
+                                        )
+                                    );
 
-
-            <div class="entry-content">
-                <?php
-                the_content(
-                    sprintf(
-                        wp_kses(
-                            /* translators: %s: Name of current post. Only visible to screen readers */
-                            __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'demografik' ),
-                            array(
-                                'span' => array(
-                                    'class' => array(),
-                                ),
-                            )
-                        ),
-                        wp_kses_post( get_the_title() )
-                    )
-                );
-
-                wp_link_pages(
-                    array(
-                        'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'demografik' ),
-                        'after'  => '</div>',
-                    )
-                );
-                ?>
-            </div><!-- .entry-content -->
-
-            <footer class="entry-footer">
-                <?php demografik_entry_footer(); ?>
-            </footer><!-- .entry-footer -->
-        </article><!-- #post-<?php the_ID(); ?> -->
+                                    ?>
+                            </div>
+                        </div>
+                    </article><!-- #post-<?php the_ID(); ?> -->
+                </div>
+            </div>
+           
 
 		<?php
        
@@ -71,4 +63,4 @@ get_header();
 <?php
 
 
-get_footer();
+get_footer('white');

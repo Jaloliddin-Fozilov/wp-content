@@ -448,6 +448,11 @@ li.inner_block:nth-child(4) {
 .single-content .main-img {
     width: 100%;
     margin-bottom: 40px;
+    
+}
+.single-content .main-img img{
+    display: block;
+    margin: 0 auto;
 }
 .single-content p {
     font-weight: 500;
@@ -612,7 +617,7 @@ section.error-404.not-found {
 }
 /* archive wiki */
 
-}
+
 .b-wikiABC {
     margin-bottom: 28px;
 }
@@ -671,6 +676,7 @@ section.error-404.not-found {
     color: inherit;
     font-size: 20px;
 }
+/* Wiki detial */
 .wiki_detail{
     font-size: 20px;
     line-height: 2;
@@ -678,7 +684,150 @@ section.error-404.not-found {
 .wiki_detail strong{
     font-weight: bold;
 }
+.wiki_detail {
+    list-style-type: none;
+    counter-reset: section;
+  }
+  
+  .wiki_detail ol li::before {
+      content: counters(section, ".") ". ";
+      counter-increment: section;
+  }
+  .wiki_detail ol li {
+      font-size: 24px;
+  }
+.wiki_detail ul li {
+    display: list-item;
+    list-style: inside !important;
+    font-size: 24px;
+}
+
+/* News page */
+
+.single-content{
+    font-size: 20px;
+    line-height: 2;
+}
+.single-content strong{
+    font-weight: bold;
+}
+.single-content {
+    list-style-type: none;
+    counter-reset: section;
+  }
+  
+  .single-content ol li::before {
+      content: counters(section, ".") ". ";
+      counter-increment: section;
+  }
+  .single-content ol li {
+	display: list-item;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    padding: 0 20px;
+    border-left: 1px solid rgba(151, 151, 151, 0.23);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: 500;
+  }
+.single-content ul li {
+    display: list-item;
+    list-style: inside !important;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    padding: 0 20px;
+    border-left: 1px solid rgba(151, 151, 151, 0.23);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+.single-content strong {
+    font-weight: 550 !important;
+}
+/* Elon detail */
+
+.elon-detail{
+    font-size: 20px;
+    line-height: 2;
+}
+.elon-detail strong{
+    font-weight: bold;
+}
+.elon-detail {
+    list-style-type: none;
+    counter-reset: section;
+  }
+  
+  .elon-detail ol li::before {
+      content: counters(section, ".") ". ";
+      counter-increment: section;
+  }
+  .elon-detail ol li {
+      font-size: 24px;
+  }
+.elon-detail ul li {
+    display: list-item;
+    list-style: inside !important;
+    font-size: 24px;
+}
 
 .d-row{
     display: block!important;
+}
+nav.navigation.pagination .nav-links {
+    display: flex;
+}
+em {
+    font: revert !important;
+}
+
+
+/* media resourses menu */
+
+.media-page-tabs .media-menu__item {
+    line-height: 1.42857143;
+    padding: 10px 20px;
+    color: #384267;
+    transition: 1s;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-size: 18px;
+    margin: 0 7.5px;
+    border: 2px solid #384267;
+}
+.media-page-tabs .media-menu__item a {
+    color: #384267;
+}
+
+.media-page-tabs .media-menu__item.current-menu-item {
+    background: #384267;
+}
+
+.media-page-tabs .media-menu__item.current-menu-item a,
+.media-page-tabs .media-menu__item:hover a {
+    color: #fff;
+}
+.media-page-tabs .media-menu__item {
+    padding: 0;
+    overflow: hidden;
+}
+.media-page-tabs .media-menu__item a {
+    display: flex;
+
+    padding: 10px 20px;
+}
+/* blog page */
+
+.post-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }

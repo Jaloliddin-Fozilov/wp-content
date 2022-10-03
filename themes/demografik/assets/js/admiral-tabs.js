@@ -55,7 +55,7 @@ alltTabsOnPage.forEach(tabs => {
 
                 connectedTabsContentChildrens[index].classList.add('admiral-active')
 
-                window.location.hash = tab.getAttribute('data-hash');
+                // window.location.hash = tab.getAttribute('data-hash');
             })
             
         })

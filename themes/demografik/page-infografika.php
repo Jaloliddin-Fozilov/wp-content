@@ -36,7 +36,7 @@ $postslistinfografika = get_posts( [
     'order' => 'DESC',	
 ] ); 
 $postslistrasm = get_posts( [
-	'posts_per_page' => 100,
+	'posts_per_page' => 10,
 	'post_type' => 'infographics',
 	'infographic-cat' => 'rasmlar',
 	'order'=> 'DESC',	
@@ -191,8 +191,21 @@ foreach( $postslistdocument as $post ){
 						</div>
 						<div class="row block">
 							<?php  
-							foreach( $postslistrasm as $post ):
-								setup_postdata($post);
+							global $wp_query;
+							$save_wpq = $wp_query;
+							$args = array(
+								'post_type' => 'infographics',
+								'infographic-cat' => 'rasmlar',
+								'order' => 'ASC', 
+								'orderby' => 'title',
+								'post_per_page' => 10,
+							);
+							$wp_query;
+
+							// ваш запрос и код вывода с пагинацией
+							$wp_query = new WP_Query( $args );
+							while ( $wp_query->have_posts() ) {
+								$wp_query->the_post();
 								if(has_post_thumbnail()):
 									?>
 									<div class="col-md-3 col-sm-12 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
@@ -212,10 +225,44 @@ foreach( $postslistdocument as $post ){
 									</div>
 									<?php
 								endif;
-							endforeach;
-							wp_reset_postdata();
+								
+							}
+
+							// пагинация
+							$pagination = paginate_links([
+								"show_all"           => false,            // настраивается end_size и mid_size (или показ всех страниц)
+								"prev_next"          => true,             // показ ссылок предыдущая/следующая
+								"prev_text"          => '<svg xmlns="http://www.w3.org/2000/svg" class="btn--icon" fill="none"viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>',  // анкор ссылки на предыдущую страницу
+								"next_text"          => '<svg xmlns="http://www.w3.org/2000/svg" class="btn--icon" fill="none"viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round"d="M9 5l7 7-7 7"/></svg>',  // анкор ссылки на следующую страницу
+								"end_size"           => 1,                // кол-во ссылок в начале и конце
+								"mid_size"           => 2,                // кол-во ссылок до и после текущей страницы
+								"add_fragment" =>    '#tab_images',           
+								"type"               => "plain",          // в каком виде вернуть результат ("plain", "array", "list")
+							]);
+							
+
+							$args = array(
+								'show_all'     => false, // показаны все страницы участвующие в пагинации
+								'end_size'     => 1,     // количество страниц на концах
+								'mid_size'     => 1,     // количество страниц вокруг текущей
+								'prev_next'    => true,  // выводить ли боковые ссылки "предыдущая/следующая страница".
+								'prev_text'    => __('« Previous'),
+								'next_text'    => __('Next »'),
+								'add_args'     => false, // Массив аргументов (переменных запроса), которые нужно добавить к ссылкам.
+								'add_fragment' => '#tab_images',     // Текст который добавиться ко всем ссылкам.
+								'screen_reader_text' => __( 'Posts navigation' ),
+								'class'        => 'pagination', // CSS класс, добавлено в 5.5.0.
+							);
+							
+							
+														
 							?>
 						</div>
+					    <?php	the_posts_pagination( $args );
+						// вернем global $wp_query
+						wp_reset_postdata();
+						$wp_query = $save_wpq;
+						?>
 					</div>
 					<div>
 						<div class="section-title">

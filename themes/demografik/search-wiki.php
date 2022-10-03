@@ -9,6 +9,7 @@
 
 get_header();
 global $wp_query;
+$save_q  = $wp_query;
 ?>
 
 
@@ -94,6 +95,6 @@ global $wp_query;
   </main>
 
 <?php
-get_footer('zero');
+get_footer();
 
 

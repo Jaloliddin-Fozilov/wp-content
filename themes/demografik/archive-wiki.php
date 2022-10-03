@@ -35,12 +35,7 @@ $query = new WP_Query( $arguments );
                                     <input type="submit" value="<?php pll_e('Search', 'demografik') ?>">
                                 </form> 
                                 */ ?>
-                                <form class="search__form" method="get" >
-                                    <input type="text" class="search-field" name="s" placeholder="<?php pll_e('Search', 'demografik') ?>" value="<?php echo get_search_query(); ?>">
-                                    <input type="hidden" name="post_type" value="wiki" />
-                                    <input type="submit" value="<?php pll_e('Search', 'demografik') ?>">
-                                </form>
-                               
+                               <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
                             </div>
                         </div>
                     </div>
@@ -50,8 +45,10 @@ $query = new WP_Query( $arguments );
                         <?php
                             $args = array(
                                     'taxonomy' => 'wiki_cat', 
-                                    'orderby' => 'name',
+                                    'orderby' => 'include',
+                                    'order' => 'ASC',
                                     'hide_empty' => false,
+                                    'include' => array('67','68','70','72','71','73','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','74','96','97'),
                                     );
 
                             if( $terms = get_terms( $args ) ) : 
@@ -69,10 +66,12 @@ $query = new WP_Query( $arguments );
                     <div class="row d-row pt-5 pb-5">
                         <?php
                             $args = array(
-                                'taxonomy' => 'wiki_cat', 
-                                'orderby' => 'name',
-                                'order' => 'ASC', 
+                                'taxonomy' => 'wiki_cat',
+                                'orderby' => 'include',
+                                'order' => 'ASC',
                                 'hide_empty' => true,
+                                'include' => array('67','68','70','72','71','73','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','74','96','97'),
+                                
                                 );
 
                             if( $terms = get_terms( $args ) ) : ?>
@@ -126,7 +125,7 @@ $query = new WP_Query( $arguments );
         </article>
     </div>
 <?php
-get_footer('zero');
+get_footer('white');
 
 
 
