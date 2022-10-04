@@ -14,6 +14,20 @@
     backdrop-filter: blur(5px);
     overflow-y: auto;
 }
+.header--top {
+    position: static;
+    background-color: #363a44;
+    backdrop-filter: blur(5px);
+    padding: 15px 0;
+}
+nav.nav-main li a {
+    font-size: 14px;
+    letter-spacing: inherit;
+    padding: 0px;
+    display: inline-block;
+    width: auto;
+    color: #ffeb3b;
+}
 @media (max-width: 992px){
     .header_lang_social_icon {
         display: none;
@@ -31,7 +45,62 @@
     .header--bottom .wrapper {
         height: 100%;
     }
+    /* About us   first page */
+    .m-section-header__title{
+        font-size: 50px;
+    }
+
+    nav.o-article__body-nav.f-secondary {
+        padding: 0;
+    }
+
+
+    .col-md-3.d-flex.flex-column.justify-content-around {
+        flex-grow: 1;
+    }
+
+    .d-container.d-flex.flex-row.justify-content-between.flex-wrap {
+        justify-content: center !important;
+    }
+    /* About us thrid page  */
+    h1.m-section-header__title.f-h0 {
+        font-size: 50px;
+    }
+    /*   About us sixth page   */
+    .partners-block-wrap .card__item.is__hero {
+        width: 100% !important;
+    }
+    /*   Archive library   */
+    .explore-style-one {
+        width: 100%;
+    }
+    
+    .d_library_page {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .files {
+        width: 100%;
+    }
+    /*     single library */
+    h1.o-book__title.f-h4 {
+        font-size: 40px;
+    }
+    
+    article.library.type-library.status-publish.has-post-thumbnail.hentry.library-category-kitoblar {
+        padding: 0 10px;
+    }
+    .explore-style-one.media-resourses {
+        margin-top: 15px;
+    }
 }
+
+
 
 @media only screen and (max-width: 767px) {
     .scrolable__categories{
@@ -88,6 +157,24 @@
         text-decoration: none;
         color: #333;
     }
+    .nc-CardLarge1 {
+        flex-wrap: wrap;
+    }
+    
+    .md\:absolute {
+        position: static;
+        width: 90%;
+        margin: 0 auto;
+        transform: unset;
+        margin-bottom: 15px;
+        padding: 0!important;
+    }
+    
+    .md\:w-4\/5.lg\:w-2\/3 {
+        width: 90%;
+        margin: 0 auto;
+    }
+ 
 }
 @media (max-width: 520px) {
     .row {
@@ -234,6 +321,17 @@
     }
     body.fixed{
         position: fixed;
+    }
+    .container.pt-50 {
+        padding-top: 0;
+    }
+    
+    .footer__top {
+        padding: 40px 0 0px;
+    }
+    h1.m-section-header__title.f-h0 {
+        font-size: 32px;
+        line-height: 1.6;
     }
 }
 

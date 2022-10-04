@@ -1152,3 +1152,26 @@ display: none;
     line-height: 1;
     padding: 10px 10px 0;
 }
+@media (max-width: 767px) {
+    .country-stats__detailed {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .country-content {
+        flex-wrap: wrap;
+    }
+    
+    .country-content__toc {
+        display: flex;
+        flex: 0 0 100%;
+        flex-wrap: wrap;
+    }
+    .stat--donut .stat__content {
+        position: static;
+    }
+    .country {
+        height: 100vh;
+    }
+    
+}

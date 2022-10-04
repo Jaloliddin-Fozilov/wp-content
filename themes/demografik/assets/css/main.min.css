@@ -2026,7 +2026,6 @@ a.back_project_footer svg.icon.icon__arrow.rotate_90 {
 }
 
 .nav-main {
-    color: #003BB3;
     padding: 2rem 0;
 }
 
@@ -2303,12 +2302,7 @@ h1.o-book__title {
     .header--bottom {
         width: 100%;
     }
-    .header--top {
-        background-color: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(5px);
-        color: #fff;
-        padding: 0;
-    }
+
     .form__search {
         margin-right: 0;
         width: 100%;
@@ -2444,9 +2438,7 @@ h1.o-book__title {
     .nav-main .nav__close .icon polygon {
         fill: #fff;
     }
-    .nav-main .nav {
-        padding: 30px 0 0;
-    }
+
     .nav-main li {
         display: block;
         padding: 0 30px;
@@ -14920,9 +14912,7 @@ figure.alignnone {
         width: 100%;
         padding: 0 30px;
     }
-    main {
-        margin-top: 70px;
-    }
+
     .section__bg--off-white {
         padding-bottom: 45px;
     }
@@ -15408,9 +15398,7 @@ h2.section__title.font__primary--40 {
     flex: 50%;
 }
 
-.row {
-    display: flex;
-}
+
 
 .left {
     width: 65%;

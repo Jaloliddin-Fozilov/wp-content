@@ -1397,7 +1397,10 @@
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/color_logo.png" class="map-sidebar__logo">
                             </div>
                             <div class="map-sidebar__mobile-header">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/color_logo.png" class="map-sidebar__logo">
+                                <a href="/" class="map-sidebar__logo">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/color_logo.png" class="map-sidebar__logo">
+                                </a>
+                                
                                 <button class="button-naked atlas-chart">
                                   <svg>
                                     <use xlink:href="#atlas-chart"></use>
