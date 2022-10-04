@@ -10,8 +10,6 @@ function demografik_scripts() {
     wp_enqueue_style( 'b4', get_template_directory_uri() . '/assets/css/b4.css', array(), _S_VERSION );
     wp_enqueue_style( 'flickity', get_template_directory_uri() . '/assets/css/flickity.css', array(), _S_VERSION );
     wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.min.css', array(), _S_VERSION );
-    // wp_enqueue_style( 'redisgn', get_template_directory_uri() . '/assets/css/redesign.css', array(), _S_VERSION );
-    // wp_enqueue_style( 'redisgn2', get_template_directory_uri() . '/assets/css/redesign2.css', array(), _S_VERSION );
     wp_enqueue_style( 'ekko-lightbox', get_template_directory_uri() . '/assets/css/ekko-lightbox.css', array(), _S_VERSION );
     wp_enqueue_style( 'slickcss',  get_template_directory_uri() . '/assets/css/slick.css', array(), _S_VERSION );
     wp_enqueue_style( 'custom',  get_template_directory_uri() . '/assets/css/custom.css', array(), _S_VERSION );
@@ -37,7 +35,6 @@ function demografik_scripts() {
     wp_enqueue_script( 'core', get_template_directory_uri() . '/assets/js/core.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'jquery-ui', get_template_directory_uri() . '/assets/js/jquery-ui.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), _S_VERSION, true );
-    // wp_enqueue_script( 'slickjs',  get_template_directory_uri() . '/assets/js/slick.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'ekko-lightbox', get_template_directory_uri() . '/assets/js/ekko-lightbox.min.js', array(), _S_VERSION, true );
     
     wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array(), _S_VERSION, true );

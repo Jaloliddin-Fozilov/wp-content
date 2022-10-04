@@ -2270,7 +2270,6 @@ h1.o-book__title {
         -ms-flex-pack: start;
         justify-content: flex-start;
         padding: 0;
-        overflow: hidden;
         background: black;
         transition: max-height 0.4s ease;
     }

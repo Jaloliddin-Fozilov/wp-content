@@ -171,4 +171,5 @@ var overlay = document.getElementById('mobileMenu');
 burgerMenu.addEventListener('click',function(){
   this.classList.toggle("close");
   overlay.classList.toggle("_active");
+  document.body.classList.add('fixed');
 });
