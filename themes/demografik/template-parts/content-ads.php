@@ -25,6 +25,6 @@
 	</a>
 	<div class="content">
 		<h3 class="title"><a href="<?php the_permalink() ?>" target="_blank"><?php the_title() ?></a></h3>
-		<div></div>
+		<div><?php the_content() ?></div>
 	</div>
 </article>

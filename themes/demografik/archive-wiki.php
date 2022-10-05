@@ -35,7 +35,7 @@ $query = new WP_Query( $arguments );
                                     <input type="submit" value="<?php pll_e('Search', 'demografik') ?>">
                                 </form> 
                                 */ ?>
-                               <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
+                               <?php echo do_shortcode('[wd_asp id=1]'); ?>
                             </div>
                         </div>
                     </div>

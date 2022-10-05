@@ -22,11 +22,7 @@ $cat = get_queried_object();
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col">
-                                <form class="search__form" method="get" >
-                                    <input type="text" class="search-field" name="s" placeholder="<?php pll_e('Search', 'demografik') ?>" value="<?php echo get_search_query(); ?>">
-                                    <input type="hidden" name="post_type" value="wiki" />
-                                    <input type="submit" value="<?php pll_e('Search', 'demografik') ?>">
-                                </form>
+                                <?php echo do_shortcode('[wd_asp id=1]'); ?>
                             </div>
                         </div>
                     </div>

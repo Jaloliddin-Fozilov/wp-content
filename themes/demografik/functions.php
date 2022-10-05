@@ -242,6 +242,7 @@ function demografik_get_the_archive_title_prefix($prefix) {
 
 
 require get_template_directory() . '/inc/BEM_Walker_Nav_Menu.php';
+require get_template_directory() . '/inc/walker-nav-menu.php';
 
 require get_template_directory() . '/inc/demogrf-scripts.php';
 

@@ -48,7 +48,7 @@
 
     <div class="col-md-6">
         <div class="kbe_category">
-        <?php
+        <?php /*
             if( is_array( $cur_terms )){
                 
                     echo  '<h2>';                
@@ -64,6 +64,7 @@
                 </ul>
             <?php
             }
+            */
             ?>
 
 

@@ -27,11 +27,12 @@ get_header();
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col">
-						<form class="search__form" method="get" >
+						<?php echo do_shortcode( '[wpdreams_ajaxsearchpro id=3]'  ); ?>
+						<!-- <form class="search__form" method="get" >
 							<input type="text" class="search-field" name="s" placeholder="<?php pll_e('Search', 'demografik') ?>" value="<?php echo get_search_query(); ?>">
 							<input type="hidden" name="post_type" value="library" />
-							<input type="submit" value="<?php pll_e('Search', 'demografik') ?>">
-						</form>
+							<input type="submit" value="<?php // pll_e('Search', 'demografik') ?>">
+						</form> -->
 					</div>
 				</div>
 			</div>
