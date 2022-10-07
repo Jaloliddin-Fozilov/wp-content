@@ -309,6 +309,28 @@ body._touch .menu__list > li._active .menu__arrow {
     .dropdown-menu::after {
         left: 105px;
     }
+    .text-center {
+        text-align: center !important;
+    }
+    .row.gx-lg-8.gx-xl-12.mt-lg-n16.mt-xl-n12.mt-xxl-0.align-items-xxl-center>* {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin: var(--bs-gutter-y) 0 0 0;
+    }
+    
+    
+    
+    img.position-lg-absolute.col-12.col-lg-12.mt-xxl-n3.mb-3.mb-md-10.mb-lg-0 {
+        box-sizing: border-box;
+        left:auto!important;
+    }
+    
+    .position-relative {
+        position: relative!important;
+    }
 }
 
 
