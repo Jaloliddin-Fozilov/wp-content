@@ -5,7 +5,13 @@
 .mobile-links {
     display: none;
 }
-
+.display-flex {
+    display: flex;
+}
+.display-flex::after,
+.display-flex::before {
+    display: none;
+}
 .header--top {
     position: static;
     background-color: #363a44;
@@ -175,9 +181,24 @@ body._touch .menu__list > li._active .menu__arrow {
     nav.nav-main li a { 
         font-size: 13px;
     }
-
-    
-
+    .display-flex {
+        flex-wrap: wrap;
+    }
+    .display-flex .col {
+        height: 190px;
+        flex: 0 0 49%;
+    }    
+    .display-flex .col .flex {
+        height: 100%;
+    }
+    .nice-select .list {
+        left: unset;
+        right: 0;
+    }
+    .nice-select.open .list {
+        left: unset;
+        right: 0;
+    }
     .header--top {
         padding: 17px 0;
     }

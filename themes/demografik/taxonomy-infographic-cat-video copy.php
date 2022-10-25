@@ -84,9 +84,8 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
 								<div class="row row__video">
 									<?php
-									if ($query->have_posts()) :
-										while ($query->have_posts()) :
-											$query->the_post();
+									foreach( $postslistvideo as $post ):
+										setup_postdata($post);
 										// Load value.
 										$iframe = get_field('video_link');
 										// Use preg_match to find iframe src.
@@ -107,9 +106,8 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 											</div>
 										</div>
 										<?php
-										endwhile;
-										wp_reset_postdata();
-									endif;
+									endforeach;
+									wp_reset_postdata();
 									?>
 								</div>
 							</div>

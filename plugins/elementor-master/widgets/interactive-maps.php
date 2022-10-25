@@ -165,7 +165,7 @@ class Widget_Interactive_Maps extends Widget_Base {
 			<div class="container">
 				<div class="space-y-30 relative">
 					<div class="nc-CardLarge1 relative flex flex-col-reverse md:flex-row justify-end ">
-						<div class="md:absolute z-9 md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:mt-0 px-3 sm:px-6 md:px-0 md:w-3/5 lg:w-1/2 xl:w-2/5">
+						<div class="md:absolute z-9 md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:mt-0 px-3 sm:px-6 md:px-0 md:w-3/5 lg:w-1/2 text-content">
 							<div class="p-4 sm:p-8 xl:py-14 md:px-10 bg-white bg-opacity-40 backdrop-filter backdrop-blur-lg shadow-lg rounded-3xl space-y-3 sm:space-y-5 !border-opacity-0 -- nc-dark-box-bg">
 								<h2 class="section__title font__primary--31">
 									<?php echo wp_kses( $settings['title'], array() ); ?>
@@ -188,7 +188,7 @@ class Widget_Interactive_Maps extends Widget_Base {
 							
 						</div>
 						<?php if(!empty($settings['image'])): ?>
-						<div class="md:w-4/5 lg:w-2/3">                               
+						<div class="md:w-4/5 lg:w-2/3 z-8">                               
 							<div class="nc-NcImage aspect-w-16 aspect-h-12 sm:aspect-h-9 md:aspect-h-14 lg:aspect-h-10 2xl:aspect-h-9 relative">
 								<img src="<?php echo $settings['image']['url'];?>" class="absolute inset-0 object-cover rounded-3xl">
 							</div>

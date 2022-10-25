@@ -122,7 +122,7 @@
                     data-rural="<?php the_field('rural'); ?>"
                     data-number_of_families="<?php the_field('number_of_families') ?>"
                     data-number_of_mahalla="<?php the_field('number_of_mahalla') ?>"
-                    data-page="#"
+                    data-page="<?php the_field('interactive_button'); ?>"
                     data-history="<?php the_field('history') ?>" 
                     data-geography="<?php the_field('geography') ?>" 
                     data-population_data="<?php the_field('population_data') ?>" 
@@ -1597,7 +1597,7 @@
                                                 </tbody>
                                             </table>
                                             <p class="stat-date">*2022 yil 1 yanvardagi statistik ma'lumotlarga asosan tuzilgan.</p>
-                                            <a class="open_map btn" href="#">Batafsil</a>
+                                            <a class="open_map btn more-button"  href="#">Batafsil</a>
                                         </div>
                                     </div>
                                 </div>

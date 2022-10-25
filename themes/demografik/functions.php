@@ -50,6 +50,7 @@ function demografik_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'demografik' ),
+			'menu-lang' => esc_html__( 'Languages', 'demografik' ),
 			'media-menu' => esc_html__( 'Media resourses', 'demografik' ),
 		)
 	);

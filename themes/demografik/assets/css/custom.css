@@ -769,3 +769,16 @@ form#tutor-registration-from {
   box-shadow: 0 0.25rem 0.75rem rgb(30 34 40 / 15%);
   color: #fff;
 }
+.footer__top h5 {
+  color: #fff;
+  margin: 1.33rem 0px;
+}
+.footer__top p {
+  font-size: 18px;
+  line-height: 1.25!important;
+  opacity: 0.8;
+  color: #fff;
+}
+.text-content {
+  width: 35%;
+}

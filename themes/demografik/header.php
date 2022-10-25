@@ -52,12 +52,15 @@
                             <div class="stm-header__element stm-header__element_">
                                 <div class="stm-icontext ">
                                     <div class="languages">
-                                        <ul>
-                                            <li><a href="#" class="link top-bar__help top-bar__link">Oʻz</a>
-                                            </li>
-                                            <li><a href="#" class="link top-bar__help top-bar__link">Ўз</a></li>
-                                            <li><a href="#" class="link top-bar__help top-bar__link">Ру</a></li>
-                                        </ul>
+                                    <?php 
+                                        wp_nav_menu( [
+                                            'theme_location'  => 'menu-lang',
+                                            'menu'            => '',
+                                            'container'       => false,
+                                            'menu_class'      => 'languages',
+                                            'menu_id'         => 'menu-languages',
+                                        ] );
+                                    ?>
                                     </div>
                                 </div>
                             </div>
